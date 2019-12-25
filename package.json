@@ -1,0 +1,30 @@
+{
+  "name": "incand_registration",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "@sendgrid/mail": "^6.4.0",
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "mongoose": "^5.8.1",
+    "msg91-lib": "^1.1.0",
+    "node-localstorage": "^2.1.5",
+    "razorpay": "^2.0.5",
+    "validator": "^12.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Abinash Dutta",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abinashdtt45/Incandescence.git"
+  },
+  "bugs": {
+    "url": "https://github.com/abinashdtt45/Incandescence/issues"
+  },
+  "homepage": "https://github.com/abinashdtt45/Incandescence#readme"
+}
