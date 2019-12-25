@@ -1,0 +1,569 @@
+/* #textContainer {
+    transform: translate(50px, -50px) scale(1,1);
+} */
+
+#incand {
+    position: absolute;
+    top:0px;
+    left: 0px;
+}
+ #ic {
+     height: 100px;
+     width: 40px;
+     background-size: 100% 100%;
+     z-index: 2;
+     position: absolute;
+     animation: ic 2s both ease;
+ }
+ 
+ #i {
+     background-image: url(../image/i.png);
+     height: 110px;
+     width: 50px;
+     background-size: 100% 100%;
+     z-index: 2;
+     position: absolute;
+     animation: i 2s linear both;
+ }
+ 
+ @keyframes bounce {
+     0% {
+         transform: translateY(-5px)
+     }
+     50% {
+         transform: translateY(10px)
+     }
+     100% {
+         transform: translateY(-5px)
+     }
+ }
+ 
+ @keyframes bounce1 {
+     0% {
+         transform: translateY(-1px)
+     }
+     50% {
+         transform: translateY(6px)
+     }
+     100% {
+         transform: translateY(-1px)
+     }
+ }
+ 
+ #irotate {
+     height: 100px;
+     width: 40px;
+     background-size: 100% 100%;
+     z-index: 2;
+     position: absolute;
+     left: 220px;
+     top: 500px;
+     transform-origin: 90px -340px;
+     animation: irotate 2s 2s both ease;
+ }
+ 
+ @keyframes i {
+     0% {
+         transform: translateY(-20px) scale(0);
+     }
+     10% {
+         transform: translateY(-20px) scale(0.3);
+     }
+     100% {
+         transform: translateY(-400px) scale(1);
+     }
+ }
+ 
+ @keyframes ic {
+     0% {
+         transform: translateX(0);
+     }
+     50% {
+         transform: translateX(150px);
+     }
+     100% {
+         transform: translateX(80px);
+     }
+ }
+ 
+ @keyframes irotate {
+     from {
+         transform: rotateZ(0);
+     }
+     to {
+         transform: rotateZ(360deg);
+     }
+ }
+ 
+ #nc {
+     height: 100px;
+     width: 40px;
+     background-size: 100% 100%;
+     z-index: 2;
+     position: absolute;
+     animation: nc 2s 0.4s both ease;
+ }
+ 
+ #n {
+     background-image: url(../image/n.png);
+     height: 100px;
+     width: 40px;
+     background-size: 100% 100%;
+     z-index: 2;
+     position: absolute;
+     animation: n 2s 0.4s linear both;
+ }
+ 
+ #nrotate {
+     height: 100px;
+     width: 40px;
+     background-size: 100% 100%;
+     z-index: 2;
+     position: absolute;
+     left: 220px;
+     top: 500px;
+     transform-origin: 140px -340px;
+ }
+ 
+ @keyframes n {
+     0% {
+         transform: translateY(-20px) scale(0);
+     }
+     10% {
+         transform: translateY(-20px) scale(0.5);
+     }
+     100% {
+         transform: translateY(-400px) scale(1);
+     }
+ }
+ 
+ @keyframes nc {
+     0% {
+         transform: translateX(-20px);
+     }
+     50% {
+         transform: translateX(150px);
+     }
+     100% {
+         transform: translateX(140px);
+     }
+ }
+ 
+ @keyframes nrotate {
+     from {
+         transform: rotateZ(0);
+     }
+     to {
+         transform: rotateZ(360deg);
+     }
+ }
+ 
+ #cc {
+     height: 100px;
+     width: 40px;
+     background-size: 100% 100%;
+     z-index: 2;
+     position: absolute;
+     animation: cc 2s 0.8s both ease;
+     left: 220px;
+     top: 500px;
+ }
+ 
+ #c {
+     background-image: url(../image/c.png);
+     height: 100px;
+     width: 40px;
+     background-size: 100% 100%;
+     z-index: 2;
+     position: absolute;
+     animation: n 2s 0.8s linear both;
+ }
+ 
+ @keyframes cc {
+     0% {
+         transform: translateX(-20px);
+     }
+     100% {
+         transform: translateX(195px);
+     }
+ }
+ 
+ #ac {
+     height: 100px;
+     width: 40px;
+     background-size: 100% 100%;
+     z-index: 2;
+     position: absolute;
+     animation: ac 2s 1.2s both ease;
+ }
+ 
+ #a {
+     background-image: url(../image/a.png);
+     height: 100px;
+     width: 40px;
+     background-size: 100% 100%;
+     z-index: 2;
+     position: absolute;
+     animation: n 2s 1.2s linear both;
+ }
+ 
+ #arotate {
+     height: 100px;
+     width: 40px;
+     background-size: 100% 100%;
+     z-index: 2;
+     position: absolute;
+     left: 220px;
+     top: 500px;
+     transform-origin: 270px -340px;
+ }
+ 
+ @keyframes a {
+     from {
+         transform: translateY(0) scale(0.2);
+     }
+     to {
+         transform: translateY(-400px) scale(1);
+     }
+ }
+ 
+ @keyframes ac {
+     0% {
+         transform: translateX(-20px);
+     }
+     50% {
+         transform: translateX(150px);
+     }
+     100% {
+         transform: translateX(255px);
+     }
+ }
+ 
+ @keyframes arotate {
+     from {
+         transform: rotateZ(0);
+     }
+     to {
+         transform: rotateZ(-360deg);
+     }
+ }
+ 
+ #n2c {
+     height: 100px;
+     width: 40px;
+     background-size: 100% 100%;
+     z-index: 2;
+     position: absolute;
+     animation: ntoc 2.5s 1.6s both ease;
+     left: 220px;
+     top: 500px;
+ }
+ 
+ #n2 {
+     background-image: url(../image/n.png);
+     height: 100px;
+     width: 40px;
+     background-size: 100% 100%;
+     z-index: 2;
+     position: absolute;
+     animation: n 2.5s 1.6s linear both;
+ }
+ 
+ @keyframes ntoc {
+     0% {
+         transform: translateX(-20px);
+     }
+     50% {
+         transform: translateX(170px);
+     }
+     100% {
+         transform: translateX(300px);
+     }
+ }
+ 
+ #dc {
+     height: 100px;
+     width: 40px;
+     background-size: 100% 100%;
+     z-index: 2;
+     position: absolute;
+     animation: dc 2.5s 2s both ease;
+     left: 220px;
+     top: 500px;
+ }
+ 
+ #d {
+     background-image: url(../image/d.png);
+     height: 100px;
+     width: 40px;
+     background-size: 100% 100%;
+     z-index: 2;
+     position: absolute;
+     animation: n 2.5s 2s linear both;
+ }
+ 
+ @keyframes dc {
+     0% {
+         transform: translateX(-20px);
+     }
+     50% {
+         transform: translateX(170px);
+     }
+     100% {
+         transform: translateX(350px);
+     }
+ }
+ 
+ #ec {
+     height: 100px;
+     width: 40px;
+     background-size: 100% 100%;
+     z-index: 2;
+     position: absolute;
+     animation: ec 2.5s 2.4s both ease;
+     left: 220px;
+     top: 500px;
+ }
+ 
+ #e {
+     background-image: url(../image/e.png);
+     height: 100px;
+     width: 40px;
+     background-size: 100% 100%;
+     z-index: 2;
+     position: absolute;
+     animation: n 2.5s 2.4s linear both;
+ }
+ 
+ @keyframes ec {
+     0% {
+         transform: translateX(-20px);
+     }
+     50% {
+         transform: translateX(170px);
+     }
+     100% {
+         transform: translateX(400px);
+     }
+ }
+ 
+ #sc {
+     height: 100px;
+     width: 40px;
+     background-size: 100% 100%;
+     z-index: 2;
+     position: absolute;
+     animation: sc 2.5s 2.8s both ease;
+     left: 220px;
+     top: 500px;
+ }
+ 
+ #s {
+     background-image: url(../image/s.png);
+     height: 100px;
+     width: 40px;
+     background-size: 100% 100%;
+     z-index: 2;
+     position: absolute;
+     animation: n 2.5s 2.8s linear both;
+ }
+ 
+ @keyframes sc {
+     0% {
+         transform: translateX(-20px);
+     }
+     50% {
+         transform: translateX(170px);
+     }
+     100% {
+         transform: translateX(450px);
+     }
+ }
+ 
+ #c2c {
+     height: 100px;
+     width: 40px;
+     background-size: 100% 100%;
+     z-index: 2;
+     position: absolute;
+     animation: ctoc 2.5s 3.2s both ease;
+     left: 220px;
+     top: 500px;
+ }
+ 
+ #c2 {
+     background-image: url(../image/c.png);
+     height: 100px;
+     width: 40px;
+     background-size: 100% 100%;
+     z-index: 2;
+     position: absolute;
+     animation: n 2.5s 3.2s linear both;
+ }
+ 
+ @keyframes ctoc {
+     0% {
+         transform: translateX(-20px);
+     }
+     50% {
+         transform: translateX(170px);
+     }
+     100% {
+         transform: translateX(500px);
+     }
+ }
+ 
+ #e2c {
+     height: 100px;
+     width: 40px;
+     background-size: 100% 100%;
+     z-index: 2;
+     position: absolute;
+     animation: etoc 2.5s 3.6s both ease;
+ }
+ 
+ #jump {
+     animation: jump 1s 7s both ease;
+     position: absolute;
+     left: 220px;
+     top: 500px;
+     height: 100px;
+     width: 40px;
+     z-index: 2;
+ }
+ 
+ #e2 {
+     background-image: url(../image/e.png);
+     height: 100px;
+     width: 40px;
+     background-size: 100% 100%;
+     z-index: 2;
+     position: absolute;
+     animation: n 2.5s 3.6s linear both;
+ }
+ 
+ @keyframes etoc {
+     0% {
+         transform: translateX(-20px);
+     }
+     50% {
+         transform: translateX(170px);
+     }
+     100% {
+         transform: translateX(550px);
+     }
+ }
+ 
+ #n3c {
+     height: 100px;
+     width: 40px;
+     background-size: 100% 100%;
+     z-index: 2;
+     position: absolute;
+     animation: nthreec 2.5s 4s both ease;
+     left: 220px;
+     top: 500px;
+ }
+ 
+ #n3 {
+     background-image: url(../image/n.png);
+     height: 100px;
+     width: 40px;
+     background-size: 100% 100%;
+     z-index: 2;
+     position: absolute;
+     animation: n 2.5s 4s linear both;
+ }
+ 
+ @keyframes nthreec {
+     0% {
+         transform: translateX(-20px);
+     }
+     50% {
+         transform: translateX(170px);
+     }
+     100% {
+         transform: translateX(600px);
+     }
+ }
+ 
+ #c3c {
+     height: 100px;
+     width: 40px;
+     background-size: 100% 100%;
+     z-index: 2;
+     position: absolute;
+     animation: cthreec 2.5s 4.4s both ease;
+     left: 220px;
+     top: 500px;
+ }
+ 
+ #c3 {
+     background-image: url(../image/c.png);
+     height: 100px;
+     width: 40px;
+     background-size: 100% 100%;
+     z-index: 2;
+     position: absolute;
+     animation: n 2.5s 4.4s linear both;
+ }
+ 
+ @keyframes cthreec {
+     0% {
+         transform: translateX(-20px);
+     }
+     50% {
+         transform: translateX(170px);
+     }
+     100% {
+         transform: translateX(650px);
+     }
+ }
+ 
+ #e3c {
+     height: 100px;
+     width: 40px;
+     background-size: 100% 100%;
+     z-index: 2;
+     position: absolute;
+     animation: ethreec 2.5s 4.8s both ease;
+     left: 220px;
+     top: 500px;
+ }
+ 
+ #e3 {
+     background-image: url(../image/e.png);
+     height: 100px;
+     width: 40px;
+     background-size: 100% 100%;
+     z-index: 2;
+     position: absolute;
+     animation: n 2.5s 4.8s linear both;
+ }
+ 
+ @keyframes ethreec {
+     0% {
+         transform: translateX(-20px);
+     }
+     50% {
+         transform: translateX(170px);
+     }
+     100% {
+         transform: translateX(700px);
+     }
+ }
+ 
+ @keyframes jump {
+     0% {
+         transform: translateY(0px);
+     }
+     25% {
+         transform: translateY(-30px);
+     }
+     75% {
+         transform: translateY(30px);
+     }
+     100% {
+         transform: translateY(0px);
+     }
+ }
