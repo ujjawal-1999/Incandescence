@@ -15,10 +15,10 @@ if (typeof localStorage === "undefined" || localStorage === null) {
 }
 
 const msg91sms = require('msg91-lib').msg91SMS;
-const msg91SMS = new msg91sms('309320AUiZd9175dfd9491P1', 'incand', 4, 91);
+const msg91SMS = new msg91sms('own_key', 'incand', 4, 91);
 
 const sgMail = require('@sendgrid/mail');
-sgMail.setApiKey('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');
+sgMail.setApiKey('own_key');
 
 var app = express()
 
