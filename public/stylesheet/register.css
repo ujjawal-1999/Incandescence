@@ -55,6 +55,8 @@
   }
   
   .form-label-group {
+    text-overflow: clip;
+    overflow: hidden;
     position: relative;
     margin-bottom: 1rem;
   }
