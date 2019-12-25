@@ -28,7 +28,7 @@
     
     width: 45%; 
     /* Link to your background image using in the property below! */
-    background-image: url('incandescence.jpg');
+    background-image: url('/image/incandescence.jpg');
     
     /* Center and scale the image nicely */
     background-position: center;
