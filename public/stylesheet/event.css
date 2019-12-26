@@ -271,7 +271,7 @@
 
      /* copy this */
      .modal-content {
-      background: url("scroll.png") no-repeat ;
+      background: url("events2/scroll.png") no-repeat ;
       margin: 0 auto 15% 25%;/*  15% from the top and centered */
       padding:0;
       height: 100%;
