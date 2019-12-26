@@ -42,6 +42,15 @@ app.use(bodyParser.urlencoded({ extended: true }))
 
 
 // start of get request
+
+app.get('/reachus',(req, res)=>{
+    res.render('reach')
+})
+
+app.get('/faq',(req, res)=>{
+    res.render('faq')
+})
+
 app.get('/',(req, res)=>{
     res.render('landing')
 })
