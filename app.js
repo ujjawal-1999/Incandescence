@@ -1,6 +1,10 @@
 const express = require('express')
 const bodyParser = require('body-parser')
 var Razorpay = require('razorpay')
+const shortid = require('shortid');
+
+shortid.characters('0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ$@');
+
 
 const { mongoose } = require('./connect')
 const { User } = require('./user.js')
@@ -68,7 +72,8 @@ app.get('/payment', (req, res) => {
 
 app.get('/success', (req, res) => {
     var name = localStorage.getItem("name") || req.query.name;
-    res.render('success', { name: name })
+    var id = req.query.id
+    res.render('success', { name: name, cust_id:id })
     console.log(localStorage.getItem("name"))
     localStorage.clear()
 })
@@ -103,14 +108,16 @@ app.post('/register', fun1, (req, res) => {
         phone = req.body.number
         if (phone.length != 10) res.redirect('/register')
         else {
+            uniq_id = shortid.generate()
             new User({
                 name: req.body.name,
                 email: req.body.email,
                 institute: "NIT Silchar",
-                phonenumber: phone
+                phonenumber: phone,
+                id: uniq_id
             }).save().then((user) => {
                 console.log(user)
-                res.redirect('/success?name=' + req.body.name)
+                res.redirect('/success?name=' + req.body.name+"&id="+uniq_id)
             })
         }
     } else {
@@ -155,14 +162,16 @@ app.post('/pay', (req, res) => {
                 console.log("Payment Instance")
                 console.log(response)
                 rzp.payments.capture(req.body.razorpay_payment_id, response.amount).then((capture) => {
+                    uniq_id = shortid.generate()
                     new User({
                         name: name,
                         email: email,
                         institute: "Others",
-                        phonenumber: phone
+                        phonenumber: phone,
+                        id: uniq_id
                     }).save().then((user) => {
                         console.log(user)
-                        res.redirect('/success')
+                        res.redirect('/success?id='+uniq_id)
                     })
                     console.log("Payment Captured Successfully: ")
                     console.log(capture)

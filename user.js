@@ -29,6 +29,10 @@ var UserSchema = new mongoose.Schema({
         type: String,
         require: true,
         minlength: 10
+    },
+    id: {
+        type: String,
+        require: true
     }
 })
 
