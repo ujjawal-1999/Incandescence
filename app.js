@@ -46,7 +46,12 @@ app.use(bodyParser.urlencoded({ extended: true }))
 
 
 // start of get request
-app.get('/',(req, res)=>{
+app.get('/database', (req, res) => {
+    var name = req.query.name|| "NO ONE"
+    res.render('database', { customer: name })
+})
+
+app.get('/', (req, res) => {
     res.render('landing')
 })
 
@@ -73,7 +78,7 @@ app.get('/payment', (req, res) => {
 app.get('/success', (req, res) => {
     var name = localStorage.getItem("name") || req.query.name;
     var id = req.query.id
-    res.render('success', { name: name, cust_id:id })
+    res.render('success', { name: name, cust_id: id })
     console.log(localStorage.getItem("name"))
     localStorage.clear()
 })
@@ -117,7 +122,7 @@ app.post('/register', fun1, (req, res) => {
                 id: uniq_id
             }).save().then((user) => {
                 console.log(user)
-                res.redirect('/success?name=' + req.body.name+"&id="+uniq_id)
+                res.redirect('/success?name=' + req.body.name + "&id=" + uniq_id)
             })
         }
     } else {
@@ -171,7 +176,7 @@ app.post('/pay', (req, res) => {
                         id: uniq_id
                     }).save().then((user) => {
                         console.log(user)
-                        res.redirect('/success?id='+uniq_id)
+                        res.redirect('/success?id=' + uniq_id)
                     })
                     console.log("Payment Captured Successfully: ")
                     console.log(capture)
@@ -206,7 +211,7 @@ app.post('/send', (req, res) => {
             string = user.phonenumber
             phnumber = string
             console.log(phnumber)
-            
+
             smsobj = [{
                 "message": message,
                 "to": [phnumber]
@@ -224,7 +229,7 @@ app.post('/send', (req, res) => {
             console.log('success')
         })
 
-        users.map((mail_user)=>{
+        users.map((mail_user) => {
             const msg = {
                 to: 'abinashdtt45@gmail.com',
                 from: 'incand@gmail.com',
@@ -241,7 +246,16 @@ app.post('/send', (req, res) => {
 
 })
 
+app.post('/check', (req, res) => {
+    console.log(req.body.id)
+    User.find({ id: req.body.id }, function (err, result) {
+        console.log(result.length)
+        if(result.length !=0) res.redirect('/database?name='+result[0].name)
+        else res.redirect('/database')
+        console.log(result)
 
+    })
+})
 
 //End of post request
 
