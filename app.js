@@ -237,6 +237,10 @@ app.post('/send', (req, res) => {
 //End of post request
 
 
+//Team Page
+app.get("/team",(req,res)=>{
+	res.render("team")
+})
 
 app.listen(3000, () => {
     console.log('Connected to server')
