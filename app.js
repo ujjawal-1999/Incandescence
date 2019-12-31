@@ -46,6 +46,14 @@ app.use(bodyParser.urlencoded({ extended: true }))
 
 
 // start of get request
+app.get('/campus', (req, res) => {
+    var name = req.query.name|| "NO ONE"
+    res.render('campus')
+})
+app.get('/reachus', (req, res) => {
+    var name = req.query.name|| "NO ONE"
+    res.render('reachus')
+})
 app.get('/database', (req, res) => {
     var name = req.query.name|| "NO ONE"
     res.render('database', { customer: name })
