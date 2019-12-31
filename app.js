@@ -46,6 +46,11 @@ app.use(bodyParser.urlencoded({ extended: true }))
 
 
 // start of get request
+app.get('/event', (req, res) => {
+    var name = req.query.name|| "NO ONE"
+    res.render('event')
+})
+
 app.get('/campus', (req, res) => {
     var name = req.query.name|| "NO ONE"
     res.render('campus')
