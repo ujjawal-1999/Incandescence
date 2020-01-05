@@ -34,7 +34,21 @@
       scroll-behavior: smooth;
       overflow-x: hidden; overflow-y: auto;
     }
+    .t1{
+      color: yellow;
+      font-family: 'Papyrus';
+      font-size: 25px;
 
+
+    }
+    .t2{
+      color:#ffd11a;
+      
+    }
+    #thunder{
+    	font-size: 35px;
+    	font-family: 'Papyrus';s
+    }
 
     /* The actual timeline */
     .time {
@@ -43,7 +57,10 @@
       margin: 0 auto;
       top: -80px;
     }
+    .pics{
+      padding-bottom: 4px;
 
+    }
 
     /* Title */
     @import url(https://fonts.googleapis.com/css?family=Montserrat);
@@ -152,6 +169,7 @@
       background:-webkit-linear-gradient(right, black, #9d0b0b);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
+      font-family: 'Ananda Neptouch 2';
     }
 
     /*Button in each container*/
@@ -217,9 +235,8 @@
       top: 5vh;
       left: 15.7vw;
       z-index: 2;
-      background: url('/image/banner5.png') no-repeat;
+      background: url(/image/banner5.png) no-repeat ;
       background-size: contain;
-      
       background-position: top center;
       width: 71vw;
       height: 97vh;
@@ -230,7 +247,7 @@
       top: 5vh;
       left: 15.7vw;
       z-index: 2;
-      background: url('/image/banner5.png') no-repeat;
+      background: url(/image/banner5.png) no-repeat;
       background-size: contain;
       background-position: top center;
       width: 71vw;
@@ -255,6 +272,33 @@
       flex: 1 1 250px;
     }
 
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0 4px;
+    }
+    .column {
+      flex: 25%;
+      max-width: 25px;
+      padding: 0 4px;
+    }
+    .column img {
+      margin-top: 8px;
+      vertical-align: middle;
+      width: 100%;
+    }
+    @media screen and (max-width: 800px){
+      .column {
+        flex: 50%;
+        max-width: 50%;
+      }
+    }
+    @media screen and (max-width: 600px){
+      .column {
+        flex: 100%;
+        max-width: 100%;
+      }
+    }
 
     /* Incand logo*/
     #logo {
@@ -281,7 +325,7 @@
       vertical-align: middle;
     }
 
-    img:hover {
+   .img:hover {
       height: 150px;
       width: 150px;
       transition: 0.3s ease-out;
@@ -321,7 +365,7 @@
     }*/
     /* copy this */
     .text{
-      font-family: 'Lobster', cursive;
+      font-family: 'Century Gothic';
       font-size: 20px;
       z-index: 5;
       padding: 2vh 2vw 27vh 5vw;
@@ -510,7 +554,7 @@
       background-attachment: fixed;
       left: 22vw;
       top: 2vh;
-      background: url('/image/banner2.png') no-repeat;
+      background: url(/image/banner2.png) no-repeat;
       background-size: contain;
       height: 94vh;
       width: 99vw;
@@ -521,7 +565,7 @@
       background-attachment: fixed;
       left: 22vw;
       top: 2vh;
-      background: url('/image/banner2.png') no-repeat;
+      background: url(/image/banner2.png) no-repeat;
       background-size: contain;
       height: 94vh;
       width: 99vw;
@@ -560,6 +604,15 @@
     background-color: red;
     color: black;
     text-align: center;
+  }
+
+  .t1{
+    color: yellow;
+    /*font-family: 'Ananda Neptouch';*/
+    font-family: 'Papyrus';
+    font-size: 15px;
+
+
   }
 }
 /*responsive for all heights and full screen widths*/

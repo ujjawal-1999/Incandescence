@@ -14,7 +14,7 @@ var modal12 = document.getElementById("myModal12");
 var modal13 = document.getElementById("myModal13");
 var modal14 = document.getElementById("myModal14");
 var modal15 = document.getElementById("myModal15");
-
+var modal16 = document.getElementById("myModal16");
 // Get the button that opens the modal
 var btn1 = document.getElementById("myBtn1");
 var btn2 = document.getElementById("myBtn2");
@@ -31,6 +31,7 @@ var btn12 = document.getElementById("myBtn12");
 var btn13 = document.getElementById("myBtn13");
 var btn14 = document.getElementById("myBtn14");
 var btn15 = document.getElementById("myBtn15");
+var btn16 = document.getElementById("myBtn16");
 
 // Get the <span> element that closes the modal
 var span1 = document.getElementById("close1");
@@ -48,7 +49,7 @@ var span12 = document.getElementById("close12");
 var span13 = document.getElementById("close13");
 var span14 = document.getElementById("close14");
 var span15 = document.getElementById("close15");
-
+var span16 = document.getElementById("close16");
 
 
 // When the user clicks on the button, open the modal
@@ -97,7 +98,9 @@ btn14.onclick = function() {
 btn15.onclick = function() {
   modal15.style.display = "block";
 }
-
+btn16.onclick = function() {
+  modal16.style.display = "block";
+}
 
 
 
@@ -146,6 +149,9 @@ span14.onclick = function(){
 }
 span15.onclick = function(){
   modal15.style.display = "none";
+}
+span16.onclick = function(){
+  modal16.style.display = "none";
 }
 
 
