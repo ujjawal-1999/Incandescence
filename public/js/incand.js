@@ -23,11 +23,15 @@ function fontChange() {
     if (xsize > ysize) {
         var textScaleX = Math.max(0.1, xsize / 1368);
         var textScaleY = Math.max(0.1, ysize / 685);
+        textScaleX = Math.min(textScaleX, textScaleY);
+        textScaleY = textScaleX;
         document.getElementById('incand').style.transform = 'scale(' + textScaleX + ',' + textScaleY + ')';
     }
     else {
         var textScaleX = Math.max(0.1, (window.screen.width / 800));
         var textScaleY = Math.max(0.1, ysize / 685);
+        textScaleX = Math.min(textScaleX, textScaleY);
+        textScaleY = textScaleX;
         document.getElementById('incand').style.transform = 'scale(' + textScaleX + ',' + textScaleY + ')';
 
         document.getElementById('incand').style.top = '' + 0.05 * ysize + 'px';

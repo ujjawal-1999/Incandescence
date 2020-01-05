@@ -49,10 +49,10 @@ function rem(){
 
 function testfn(move,id1,id2,id3) {
   if(move==="left"){ 
-    $('<div class="example enterleft"><div class="clip"><div class="film eve" id="'+id1+'"><img src="images/'+id1+'.jpg"></div></div><div class="clip"><div class="film eve" id="'+id2+'"><img src="images/'+id2+'.jpg"></div></div><div class="clip"><div class="film eve" id="'+id3+'"><img src="images/'+id3+'.jpg"></div></div></div>').appendTo('.cover');
+    $('<div class="example enterleft"><div class="clip"><div class="film eve" id="'+id1+'"><img src="image/'+id1+'.jpg"></div></div><div class="clip"><div class="film eve" id="'+id2+'"><img src="image/'+id2+'.jpg"></div></div><div class="clip"><div class="film eve" id="'+id3+'"><img src="image/'+id3+'.jpg"></div></div></div>').appendTo('.cover');
   }
   if(move==="right"){
-    $('<div class="example enterright"><div class="clip"><div class="film eve" id="'+id1+'"><img src="images/'+id1+'.jpg"></div></div><div class="clip"><div class="film eve" id="'+id2+'"><img src="images/'+id2+'.jpg"></div></div><div class="clip"><div class="film eve" id="'+id3+'"><img src="images/'+id3+'.jpg"></div></div></div>').appendTo('.cover');
+    $('<div class="example enterright"><div class="clip"><div class="film eve" id="'+id1+'"><img src="image/'+id1+'.jpg"></div></div><div class="clip"><div class="film eve" id="'+id2+'"><img src="image/'+id2+'.jpg"></div></div><div class="clip"><div class="film eve" id="'+id3+'"><img src="image/'+id3+'.jpg"></div></div></div>').appendTo('.cover');
   }
   setTimeout(function(){rem();}, 900);
 }
@@ -60,11 +60,20 @@ function testfn(move,id1,id2,id3) {
 
 $(document).ready(function(){
   var values={
-    "Nirvana": ["1","2","3"],
-    "Glitterati": ["4","5","6"],
-    "Thundermarch": ["7","8","9"],
-    "Carpedieum": ["14","16","18"],
-    "NITSMun": ["10","11","12"]
+    "carpediem": ["1","2","3"],
+    "deprador": ["1","2","3"],
+    "glitterati": ["1","2","3"],
+    "Indie": ["1","2","3"],
+    "intro+history": ["1"],
+    "kavisanmilla":["1","2","3"],
+    "mr nits":["1"],
+    "nataraj":["1","2","3"],
+    "nits mun":["1","2"],
+    "prom night":["1","2"],
+    "razzmatazz":["1","2"],
+    "sokratik":["1","2"],
+    "thundermarch":["1","2","3"],
+    "what the food":["1"]
   }
   /*var events=["Nirvana","Glitterati","Thundermarch","Carpedieum","NITSMun"];
   for(var i=0;i<events.length;i++){
@@ -72,7 +81,7 @@ $(document).ready(function(){
     values[events[i]]=val_list;
   }*/
   
-  showstuff(values["Nirvana"],"Nirvana");
+  showstuff(values["carpediem"],"carpediem");
 
   $('.cover').on('click', '.eve', function() {
     var myval = this.id;
@@ -83,7 +92,7 @@ $(document).ready(function(){
 
   $("#left").click(function(){
     lclick++;
-    lclick%=2;
+    lclick%=5;
     $(".example").removeClass("enterleft");
     $(".example").removeClass("enterright");
     $(".example").addClass("exitleft");
@@ -91,14 +100,35 @@ $(document).ready(function(){
       setTimeout(
         function() 
         {
-          testfn("left","Nirvana","Glitterati","Thundermarch")
+          testfn("left","carpediem","deprador","glitterati")
         }, 100);
     }
     if(lclick===1){
       setTimeout(
         function() 
         {
-          testfn("left","NITSMun","Carpedieum","Nothing")
+          testfn("left","Indie","intro+history","kavisanmillan")
+        }, 100);
+    }
+    if(lclick===2){
+      setTimeout(
+        function() 
+        {
+          testfn("left","mr nits","nataraj","nits mun")
+        }, 100);
+    }
+    if(lclick===3){
+      setTimeout(
+        function() 
+        {
+          testfn("left","prom night","razzmatazz","sokratik")
+        }, 100);
+    }
+    if(lclick===4){
+      setTimeout(
+        function() 
+        {
+          testfn("left","thundermarch","what the food","")
         }, 100);
     }
 
@@ -106,7 +136,7 @@ $(document).ready(function(){
 
   $("#right").click(function(){
     rclick++;
-    rclick%=2;
+    rclick%=5;
     $(".example").removeClass("enterright");
     $(".example").removeClass("enterleft");
     $(".example").addClass("exitright");
@@ -114,16 +144,38 @@ $(document).ready(function(){
       setTimeout(
         function() 
         {
-          testfn("right","Nirvana","Glitterati","Thundermarch")
+          testfn("right","carpediem","deprador","glitterati")
         }, 100);
     }
     if(rclick===1){
       setTimeout(
         function() 
         {
-          testfn("right","NITSMun","Carpedieum","Nothing")
+          testfn("right","indie","intro+history","kavisanmillan")
         }, 100);
     }
+    if(rclick===2){
+      setTimeout(
+        function() 
+        {
+          testfn("right","mr nits","nataraj","nits mun")
+        }, 100);
+    }
+    if(rclick===3){
+      setTimeout(
+        function() 
+        {
+          testfn("right","prom night","razzmatazz","sokratik")
+        }, 100);
+    }
+    if(rclick===4){
+      setTimeout(
+        function() 
+        {
+          testfn("right","thundermarch","what the food","")
+        }, 100);
+    }
+
 
   }); 
 
