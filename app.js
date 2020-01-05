@@ -47,26 +47,21 @@ app.use(bodyParser.urlencoded({ extended: true }))
 
 // start of get request
 app.get('/history', (req, res) => {
-    var name = req.query.name|| "NO ONE"
     res.render('history')
 })
 
 app.get('/faq', (req, res) => {
-    var name = req.query.name|| "NO ONE"
     res.render('faq')
 })
 
 app.get('/event', (req, res) => {
-    var name = req.query.name|| "NO ONE"
     res.render('event')
 })
 
 app.get('/campus', (req, res) => {
-    var name = req.query.name|| "NO ONE"
     res.render('campus')
 })
 app.get('/reachus', (req, res) => {
-    var name = req.query.name|| "NO ONE"
     res.render('reachus')
 })
 app.get('/database', (req, res) => {
@@ -284,7 +279,7 @@ app.post('/check', (req, res) => {
 
 
 
-app.listen(3000, () => {
+app.listen(5000, () => {
     console.log('Connected to server')
 })
 
