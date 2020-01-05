@@ -46,6 +46,10 @@ app.use(bodyParser.urlencoded({ extended: true }))
 
 
 // start of get request
+app.get('/gallery', (req, res) => {
+    res.render('gallery')
+})
+
 app.get('/history', (req, res) => {
     res.render('history')
 })
