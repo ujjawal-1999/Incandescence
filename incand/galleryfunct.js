@@ -33,7 +33,7 @@ function showstuff(m,myval) {
     $( ".carousel-indicators" ).empty();
     $('<h1>'+myval+'</h1>').appendTo('.carousel-inner');
     setTimeout(function(){for(var i=0 ; i< m.length ; i++) {
-      string1="image/"+myval+"/"+m[i]+".jpg"
+      string1="images/"+myval+"/"+m[i]+".jpg"
       $('<div class="carousel-item"><img id="myimg" src="'+string1+'" class="d-block fadein"></div>').appendTo('.carousel-inner');
       $('<li data-target="#carousel-example-generic" data-slide-to="'+i+'"></li>').appendTo('.carousel-indicators')
     }
