@@ -3,22 +3,6 @@ var $elem = $(".example");
 var $elem1 = $("#carousel-example-generic");
 var $elem2 = $(".clown");
 
-function get_images(folder){
-  var names=[];
-  $.ajax({
-        url : folder,
-        success: function (data) {
-            $(data).find("a").attr("href", function (i, val) {
-                if( val.match(/\.(jpe?g|png|gif)$/) ) { 
-                    if(val.split('/').length - 1>2){
-                        $("#hell").append(val);
-                        names.push(val);
-                    }
-                } 
-            });
-        }
-    });
-}
 function isScrolledIntoView($elem, $window) {
     var docViewTop = $window.scrollTop();
     var docViewBottom = docViewTop + $window.height();
@@ -27,13 +11,22 @@ function isScrolledIntoView($elem, $window) {
 
     return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
 }
-
+function change_name(myval){
+  if(myval==="Whatthefood"){return "What The Food"}
+  if(myval==="Promnight"){return "Prom Night"}
+  if(myval==="Mrnits"){return "Mr NITS"}
+  if(myval==="Nitsmun"){return "NITS MUN"}
+  if(myval==="Theend"){return "The End"}
+  else{return myval}
+}
 function showstuff(m,myval) {
+
+    var vali=change_name(myval);
     $( ".carousel-inner" ).empty();
     $( ".carousel-indicators" ).empty();
-    $('<h1>'+myval+'</h1>').appendTo('.carousel-inner');
+    $('<h1>'+vali+'</h1>').appendTo('.carousel-inner');
     setTimeout(function(){for(var i=0 ; i< m.length ; i++) {
-      string1="image/"+myval+"/"+m[i]+".jpg"
+      string1="image/"+myval+"/"+m[i]+".jpg";
       $('<div class="carousel-item"><img id="myimg" src="'+string1+'" class="d-block fadein"></div>').appendTo('.carousel-inner');
       $('<li data-target="#carousel-example-generic" data-slide-to="'+i+'"></li>').appendTo('.carousel-indicators')
     }
@@ -48,11 +41,14 @@ function rem(){
 }
 
 function testfn(move,id1,id2,id3) {
+  var nwid1=change_name(id1);
+  var nwid2=change_name(id2);
+  var nwid3=change_name(id3);
   if(move==="left"){ 
-    $('<div class="example enterleft"><div class="clip"><div class="film eve" id="'+id1+'"><img src="image/'+id1+'.jpg"></div></div><div class="clip"><div class="film eve" id="'+id2+'"><img src="image/'+id2+'.jpg"></div></div><div class="clip"><div class="film eve" id="'+id3+'"><img src="image/'+id3+'.jpg"></div></div></div>').appendTo('.cover');
+    $('<div class="example enterleft"><div class="clip"><div class="film eve" id="'+id1+'"><img src="image/'+id1+'.jpg"><span class="popuptext" id="popup'+id1+'">'+nwid1+'</span></div></div><div class="clip"><div class="film eve" id="'+id2+'"><img src="image/'+id2+'.jpg"><span class="popuptext" id="popup'+id2+'">'+nwid2+'</span></div></div><div class="clip"><div class="film eve" id="'+id3+'"><img src="image/'+id3+'.jpg"><span class="popuptext" id="popup'+id3+'">'+nwid3+'</span></div></div></div>').appendTo('.cover');
   }
   if(move==="right"){
-    $('<div class="example enterright"><div class="clip"><div class="film eve" id="'+id1+'"><img src="image/'+id1+'.jpg"></div></div><div class="clip"><div class="film eve" id="'+id2+'"><img src="image/'+id2+'.jpg"></div></div><div class="clip"><div class="film eve" id="'+id3+'"><img src="image/'+id3+'.jpg"></div></div></div>').appendTo('.cover');
+    $('<div class="example enterright"><div class="clip"><div class="film eve" id="'+id1+'"><img src="image/'+id1+'.jpg"><span class="popuptext" id="popup'+id1+'">'+nwid1+'</span></div></div><div class="clip"><div class="film eve" id="'+id2+'"><img src="image/'+id2+'.jpg"><span class="popuptext" id="popup'+id2+'">'+nwid2+'</span></div></div><div class="clip"><div class="film eve" id="'+id3+'"><img src="image/'+id3+'.jpg"><span class="popuptext" id="popup'+id3+'">'+nwid3+'</span></div></div></div>').appendTo('.cover');
   }
   setTimeout(function(){rem();}, 900);
 }
@@ -60,20 +56,21 @@ function testfn(move,id1,id2,id3) {
 
 $(document).ready(function(){
   var values={
-    "carpediem": ["1","2","3"],
-    "deprador": ["1","2","3"],
-    "glitterati": ["1","2","3"],
-    "Indie": ["1","2","3"],
-    "intro+history": ["1"],
-    "kavisanmilla":["1","2","3"],
-    "mr nits":["1"],
-    "nataraj":["1","2","3"],
-    "nits mun":["1","2"],
-    "prom night":["1","2"],
-    "razzmatazz":["1","2"],
-    "sokratik":["1","2"],
-    "thundermarch":["1","2","3"],
-    "what the food":["1"]
+    "Carpediem": ["1","2","3","4","5","6","7","8"],
+    "Deprador": ["1","2","3"],
+    "Glitterati": ["1","2","3","4","5","6","7","8"],
+    "Indie": ["1","2","3","4","5"],
+    "Nirvana": ["1","2"],
+    "Kavisanmillan":["1","2","3","4"],
+    "Mrnits":["1","2","3","4","5","6","7"],
+    "Nataraj":["1","2","3","4","5","6","7","8","9"],
+    "Nitsmun":["1","2","3","4","5","6"],
+    "Promnight":["1","2","3"],
+    "Razzmatazz":["1","2","3","4","5","6","7"],
+    "Sokratik":["1","2","3","4","5"],
+    "Thundermarch":["1","2","3","4","5","6"],
+    "Whatthefood":["1"],
+    "Theend":["1"]
   }
   /*var events=["Nirvana","Glitterati","Thundermarch","Carpedieum","NITSMun"];
   for(var i=0;i<events.length;i++){
@@ -81,18 +78,21 @@ $(document).ready(function(){
     values[events[i]]=val_list;
   }*/
   
-  showstuff(values["carpediem"],"carpediem");
+  showstuff(values["Carpediem"],"Carpediem");
 
   $('.cover').on('click', '.eve', function() {
+    $('#carousel-example-generic').carousel('dispose');
     var myval = this.id;
+
     showstuff(values[myval],myval); 
   });
 
   var lclick=0, rclick=0;
 
   $("#left").click(function(){
-    lclick++;
-    lclick%=5;
+    if(rclick==0) rclick=5;
+    lclick=rclick-1;
+    rclick=lclick;
     $(".example").removeClass("enterleft");
     $(".example").removeClass("enterright");
     $(".example").addClass("exitleft");
@@ -100,43 +100,44 @@ $(document).ready(function(){
       setTimeout(
         function() 
         {
-          testfn("left","carpediem","deprador","glitterati")
+          testfn("left","Carpediem","Deprador","Glitterati")
         }, 100);
     }
     if(lclick===1){
       setTimeout(
         function() 
         {
-          testfn("left","Indie","intro+history","kavisanmillan")
+          testfn("left","Indie","Nirvana","Kavisanmillan")
         }, 100);
     }
     if(lclick===2){
       setTimeout(
         function() 
         {
-          testfn("left","mr nits","nataraj","nits mun")
+          testfn("left","Mrnits","Nataraj","Nitsmun")
         }, 100);
     }
     if(lclick===3){
       setTimeout(
         function() 
         {
-          testfn("left","prom night","razzmatazz","sokratik")
+          testfn("left","Promnight","Razzmatazz","Sokratik")
         }, 100);
     }
     if(lclick===4){
       setTimeout(
         function() 
         {
-          testfn("left","thundermarch","what the food","")
+          testfn("left","Thundermarch","Whatthefood","Theend")
         }, 100);
     }
 
   }); 
 
   $("#right").click(function(){
-    rclick++;
-    rclick%=5;
+    if(lclick===4) lclick=-1;
+    rclick=lclick+1;
+    lclick=rclick;
     $(".example").removeClass("enterright");
     $(".example").removeClass("enterleft");
     $(".example").addClass("exitright");
@@ -144,54 +145,41 @@ $(document).ready(function(){
       setTimeout(
         function() 
         {
-          testfn("right","carpediem","deprador","glitterati")
+          testfn("right","Carpediem","Deprador","Glitterati")
         }, 100);
     }
     if(rclick===1){
       setTimeout(
         function() 
         {
-          testfn("right","indie","intro+history","kavisanmillan")
+          testfn("right","Indie","Nirvana","Kavisanmillan")
         }, 100);
     }
     if(rclick===2){
       setTimeout(
         function() 
         {
-          testfn("right","mr nits","nataraj","nits mun")
+          testfn("right","Mrnits","Nataraj","Nitsmun")
         }, 100);
     }
     if(rclick===3){
       setTimeout(
         function() 
         {
-          testfn("right","prom night","razzmatazz","sokratik")
+          testfn("right","Promnight","Razzmatazz","Sokratik")
         }, 100);
     }
     if(rclick===4){
       setTimeout(
         function() 
         {
-          testfn("right","thundermarch","what the food","")
+          testfn("right","Thundermarch","Whatthefood","Theend")
         }, 100);
     }
 
 
   }); 
 
-  var folder = "images/";
-
-  $.ajax({
-      url : folder,
-      success: function (data) {
-          $(data).find("a").attr("href", function (i, val) {
-              if( val.match(/\.(jpe?g|png|gif)$/) ) { 
-                  $("#fileNames").append( "<img src='"+ folder + val +"'>" );
-              } 
-          });
-      }
-  });
-  
     
 });
 
@@ -203,7 +191,7 @@ $(document).on("scroll", function () {
     }
 });
 
-$(document).on("scroll", function () {
+/*$(document).on("scroll", function () {
     if (isScrolledIntoView($elem1, $window)) {
         $elem1.removeClass("opa");
         $elem1.addClass("fadein");
@@ -218,7 +206,107 @@ $(document).on("scroll", function () {
         $elem2.addClass("clownani");
         
     }
+});*/
+
+$(document).on("mouseenter", "#Carpediem", function(e) {
+    $(this).find("#popupCarpediem").addClass("show");
 });
 
+$(document).on("mouseleave", "#Carpediem", function(e) {
+    $(this).find("#popupCarpediem").removeClass("show");
+});
+$(document).on("mouseenter", "#Deprador", function(e) {
+    $(this).find("#popupDeprador").addClass("show");
+});
 
+$(document).on("mouseleave", "#Deprador", function(e) {
+    $(this).find("#popupDeprador").removeClass("show");
+});
+$(document).on("mouseenter", "#Glitterati", function(e) {
+    $(this).find("#popupGlitterati").addClass("show");
+});
+
+$(document).on("mouseleave", "#Glitterati", function(e) {
+    $(this).find("#popupGlitterati").removeClass("show");
+});
+$(document).on("mouseenter", "#Nitsmun", function(e) {
+    $(this).find("#popupNitsmun").addClass("show");
+});
+
+$(document).on("mouseleave", "#Nitsmun", function(e) {
+    $(this).find("#popupNitsmun").removeClass("show");
+});
+$(document).on("mouseenter", "#Promnight", function(e) {
+    $(this).find("#popupPromnight").addClass("show");
+});
+
+$(document).on("mouseleave", "#Promnight", function(e) {
+    $(this).find("#popupPromnight").removeClass("show");
+});
+$(document).on("mouseenter", "#Mrnits", function(e) {
+    $(this).find("#popupMrnits").addClass("show");
+});
+
+$(document).on("mouseleave", "#Mrnits", function(e) {
+    $(this).find("#popupMrnits").removeClass("show");
+});
+$(document).on("mouseenter", "#Thundermarch", function(e) {
+    $(this).find("#popupThundermarch").addClass("show");
+});
+
+$(document).on("mouseleave", "#Thundermarch", function(e) {
+    $(this).find("#popupThundermarch").removeClass("show");
+});
+
+$(document).on("mouseenter", "#Whatthefood", function(e) {
+    $(this).find("#popupWhatthefood").addClass("show");
+});
+$(document).on("mouseleave", "#Whatthefood", function(e) {
+    $(this).find("#popupWhatthefood").removeClass("show");
+});
+
+$(document).on("mouseenter", "#Sokratik", function(e) {
+    $(this).find("#popupSokratik").addClass("show");
+});
+
+$(document).on("mouseleave", "#Sokratik", function(e) {
+    $(this).find("#popupSokratik").removeClass("show");
+});
+$(document).on("mouseenter", "#Nataraj", function(e) {
+    $(this).find("#popupNataraj").addClass("show");
+});
+
+$(document).on("mouseleave", "#Nataraj", function(e) {
+    $(this).find("#popupNataraj").removeClass("show");
+});
+$(document).on("mouseenter", "#Indie", function(e) {
+    $(this).find("#popupIndie").addClass("show");
+});
+
+$(document).on("mouseleave", "#Indie", function(e) {
+    $(this).find("#popupIndie").removeClass("show");
+});
+$(document).on("mouseenter", "#Razzmatazz", function(e) {
+    $(this).find("#popupRazzmatazz").addClass("show");
+});
+
+$(document).on("mouseleave", "#Razzmatazz", function(e) {
+    $(this).find("#popupRazzmatazz").removeClass("show");
+});
+
+$(document).on("mouseenter", "#Nirvana", function(e) {
+    $(this).find("#popupNirvana").addClass("show");
+});
+
+$(document).on("mouseleave", "#Nirvana", function(e) {
+    $(this).find("#popupNirvana").removeClass("show");
+});
+
+$(document).on("mouseenter", "#Kavisanmillan", function(e) {
+    $(this).find("#popupKavisanmillan").addClass("show");
+});
+
+$(document).on("mouseleave", "#Kavisanmillan", function(e) {
+    $(this).find("#popupKavisanmillan").removeClass("show");
+});
 
