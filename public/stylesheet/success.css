@@ -4,8 +4,18 @@
   }
   
   body {
-    /* background: #007bff; */
-    background: linear-gradient(to right,#9d0b0b,#da2d2d,#eb8242,#f6da63);
+    background: url('/image/back2.svg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  }
+  .logo{
+    position:relative;
+    margin-top:2%;
+    margin-left: 2%;
+    width:15%;
+    height:15%;
   }
   
   .card-signin {
