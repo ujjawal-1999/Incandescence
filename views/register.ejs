@@ -16,13 +16,18 @@
 </head>
 
 <body>
+
     <% if(validate==0){ %>
-        <script type="text/javascript">
-            alert("Email ID not valid")
-        </script>
+    <script type="text/javascript">
+        alert("Email ID not valid")
+    </script>
     <% } %>
+    <div class="pull-right" style="height: 10px; width:10px;">
+            <img src="/image/logo.png">
+        </div>
     <div class="container">
         <div class="row">
+
             <div class="col-lg-10 col-xl-9 mx-auto">
                 <div class="card card-signin flex-row my-5">
                     <div class="card-img-left d-none d-md-flex">
@@ -46,7 +51,7 @@
                         </h5>
 
                         <form class="form-signin" method="POST" action="/register">
-                            
+
                             <div class="form-label-group">
                                 <input id="1" type="text" name="name" class="form-control" placeholder="Name" required
                                     autofocus>
@@ -73,8 +78,7 @@
 
                             <hr>
 
-                            <button class="btn btn-lg btn-grad btn-block text-uppercase"
-                                type="submit">Register</button>
+                            <button class="btn btn-lg btn-grad btn-block text-uppercase" type="submit">Register</button>
                             <a class="d-block text-center mt-2 small" href="/adminlogin">ADMIN access</a>
 
                         </form>
