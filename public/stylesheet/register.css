@@ -12,7 +12,13 @@ html, body {min-height: 100%;}
   background-size: cover;
   -o-background-size: cover;
   }
-  
+  .logo{
+    position:relative;
+    margin-top:2%;
+    margin-left: 2%;
+    width:15%;
+    height:15%;
+  }
   
   
   .card-signin {
