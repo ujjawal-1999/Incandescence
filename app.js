@@ -5,7 +5,7 @@ const shortid = require('shortid');
 
 shortid.characters('0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ$@');
 
-
+/*
 
 const { mongoose } = require('./connect')
 const { User } = require('./user.js')
@@ -18,7 +18,7 @@ if (typeof localStorage === "undefined" || localStorage === null) {
     var LocalStorage = require('node-localstorage').LocalStorage;
     localStorage = new LocalStorage('./scratch');
 }
-
+*/
 const msg91sms = require('msg91-lib').msg91SMS;
 const msg91SMS = new msg91sms('own_key', 'incand', 4, 91);
 
