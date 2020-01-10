@@ -1,245 +1,408 @@
-#menu{
+#menu {
     z-index: 3;
-    position:absolute;
-    top: 5vh;
+    position: absolute;
+    top: 3vh;
     left: 0vw;
 }
 
-#cld1c{
-   -webkit-animation: bounce both infinite 0s;
-   animation: bounce both infinite 0s;
+#cld1c {
+    -webkit-animation: bounce both infinite 4s 0s;
+    animation: bounce both infinite 4s 0s;
 }
 
-#cld2c{
-   -webkit-animation: both infinite 4s 0.2s;
-   animation: bounce both infinite 4s 0.2s;
+#cld2c {
+    -webkit-animation: both infinite 4s 0.2s;
+    animation: bounce both infinite 4s 0.2s;
 }
 
-#cld3c{
-   -webkit-animation: both infinite 4s 0.4s;
-   animation: bounce both infinite 4s 0.4s;
+#cld3c {
+    -webkit-animation: both infinite 4s 0.4s;
+    animation: bounce both infinite 4s 0.4s;
 }
 
-#cld4c{
-   -webkit-animation: both infinite 4s 0.6s;
-   animation: bounce both infinite 4s 0.6s;
+#cld4c {
+    -webkit-animation: both infinite 4s 0.6s;
+    animation: bounce both infinite 4s 0.6s;
 }
 
-#cld5c{
-   -webkit-animation: both infinite 4s 0.8s;
-   animation: bounce both infinite 4s 0.8s;
+#cld5c {
+    -webkit-animation: both infinite 4s 0.8s;
+    animation: bounce both infinite 4s 0.8s;
 }
 
-#cld6c{
-   -webkit-animation: both infinite 4s 1s;
-   animation: bounce both infinite 4s 1s;
+#cld6c {
+    -webkit-animation: both infinite 4s 1s;
+    animation: bounce both infinite 4s 1s;
 }
 
-#cld7c{
-   -webkit-animation: both infinite 4s 1s;
-   animation: bounce both infinite 4s 1s;
+#cld7c {
+    -webkit-animation: both infinite 4s 1s;
+    animation: bounce both infinite 4s 1s;
 }
 
-
-#cld1{
-    background-image: url(/image/cld.png);
-    height: 7vh;
-    width: 8vw;
+#cld1 {
+    background-image: url(/image/cloud.png);
     background-size: 100% 100%;
     z-index: 5;
-    position:absolute;
-    left:10vw;
-    top: 7vh;
+    position: absolute;
+    height: 9vh;
+    width: 11vw;
+    left: 46vw;
+    top: 3vh;
     visibility: hidden;
+    display: flex;
+    justify-content: center;
 }
 
-@keyframes cld1m{
-    from{top:7vh; left: 10vw; height: 7vh; width: 8vw; visibility: hidden;}
-    to{top:5vh; left: 20vw; height: 15vh; width: 23vw; visibility: visible;}
- }
-
-@keyframes cld1i{
-    from{top:5vh; left: 20vw; height: 15vh; width: 23vw; visibility: visible;}
-    to{top:7vh; left: 10vw; height: 7vh; width: 8vw; visibility: hidden;}
- }
-
- #cld2{
-    background-image: url(/image/cld2.png);
-    height: 8vh;
-    width: 6vw;
-    background-size: 100% 100%;
-    z-index: 5;
-    position:absolute;
-    left:28vw;
-    top: 8vh;
-    visibility: hidden;
+@keyframes cld1m {
+    from {
+        height: 9vh;
+        width: 11vw;
+        left: 46vw;
+        top: 3vh;
+        visibility: hidden;
+    }
+    to {
+        top: 10vh;
+        left: 20vw;
+        height: 15vh;
+        width: 23vw;
+        visibility: visible;
+    }
 }
 
-@keyframes cld2m{
-    from{top:8vh; left: 28vw; height: 8vh; width: 6vw; visibility: hidden;}
-    to{top:35vh; left: 10vw; height: 15vh; width: 23vw; visibility: visible;}
- }
+@keyframes cld1i {
+    from {
+        top: 10vh;
+        left: 20vw;
+        height: 15vh;
+        width: 23vw;
+        visibility: visible;
+    }
+    to {
+        height: 9vh;
+        width: 11vw;
+        left: 46vw;
+        top: 3vh;
+        visibility: hidden;
+    }
+}
 
-@keyframes cld2i{
-    from{top:35vh; left: 10vw; height: 15vh; width: 23vw; visibility: visible;}
-    to{top:8vh; left: 28vw; height: 8vh; width: 6vw; visibility: hidden;}
- }
-
- #cld3{
-    background-image: url(/image/cld.png);
-    height: 6vh;
-    width: 9vw;
+#cld2 {
+    background-image: url(/image/cloud.png);
     background-size: 100% 100%;
     z-index: 5;
-    position:absolute;
-    left:42vw;
-    top: 5vh;
+    position: absolute;
+    height: 10vh;
+    width: 10vw;
+    left: 54vw;
+    top: 4vh;
     visibility: hidden;
-    }
-@keyframes cld3m{
-    from{top:5vh; left: 42vw; height: 6vh; width: 9vw; visibility: hidden;}
-    to{top:65vh; left: 20vw; height: 15vh; width: 23vw; visibility: visible;}
-    }
+    display: flex;
+    justify-content: center;
+}
 
-@keyframes cld3i{
-    from{top:65vh; left: 20vw; height: 15vh; width: 23vw; visibility: visible;}
-    to{top:5vh; left: 42vw; height: 6vh; width: 9vw; visibility: hidden;}
+@keyframes cld2m {
+    from {
+        height: 10vh;
+        width: 10vw;
+        left: 54vw;
+        top: 4vh;
+        visibility: hidden;
     }
-    
+    to {
+        top: 40vh;
+        left: 10vw;
+        height: 15vh;
+        width: 23vw;
+        visibility: visible;
+    }
+}
 
- #cld4{
-    background-image: url(/image/cld2.png);
-    height: 6.5vh;
-    width: 8vw;
+@keyframes cld2i {
+    from {
+        top: 40vh;
+        left: 10vw;
+        height: 15vh;
+        width: 23vw;
+        visibility: visible;
+    }
+    to {
+        height: 10vh;
+        width: 10vw;
+        left: 54vw;
+        top: 4vh;
+        visibility: hidden;
+    }
+}
+
+#cld3 {
+    background-image: url(/image/cloud.png);
     background-size: 100% 100%;
     z-index: 5;
-    position:absolute;
-    left:55vw;
+    position: absolute;
+    height: 10vh;
+    width: 11vw;
+    left: 61vw;
+    top: 1vh;
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+@keyframes cld3m {
+    from {
+        height: 10vh;
+        width: 11vw;
+        left: 61vw;
+        top: 1vh;
+        visibility: hidden;
+    }
+    to {
+        top: 70vh;
+        left: 20vw;
+        height: 15vh;
+        width: 23vw;
+        visibility: visible;
+    }
+}
+
+@keyframes cld3i {
+    from {
+        top: 70vh;
+        left: 20vw;
+        height: 15vh;
+        width: 23vw;
+        visibility: visible;
+    }
+    to {
+        height: 10vh;
+        width: 11vw;
+        left: 61vw;
+        top: 1vh;
+        visibility: hidden;
+    }
+}
+
+#cld4 {
+    background-image: url(/image/cloud.png);
+    background-size: 100% 100%;
+    z-index: 5;
+    position: absolute;
+    height: 10vh;
+    width: 13vw;
+    left: 69vw;
+    top: 2vh;
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+@keyframes cld4m {
+    from {
+        height: 10vh;
+        width: 13vw;
+        left: 69vw;
+        top: 2vh;
+        visibility: hidden;
+    }
+    to {
+        top: 10vh;
+        left: 55vw;
+        height: 15vh;
+        width: 23vw;
+        visibility: visible;
+    }
+}
+
+@keyframes cld4i {
+    from {
+        top: 10vh;
+        left: 55vw;
+        height: 15vh;
+        width: 23vw;
+        visibility: visible;
+    }
+    to {
+        height: 10vh;
+        width: 13vw;
+        left: 69vw;
+        top: 2vh;
+        visibility: hidden;
+    }
+}
+
+#cld5 {
+    background-image: url(/image/cloud.png);
+    background-size: 100% 100%;
+    z-index: 5;
+    position: absolute;
+    height: 9vh;
+    width: 10vw;
+    left: 78vw;
     top: 6vh;
     visibility: hidden;
-    }
+    display: flex;
+    justify-content: center;
+}
 
-@keyframes cld4m{
-    from{top:6vh; left: 55vw; height: 6.5vh; width: 8vw; visibility: hidden;}
-    to{top:5vh; left: 55vw; height: 15vh; width: 23vw; visibility: visible;}
+@keyframes cld5m {
+    from {
+        height: 9vh;
+        width: 10vw;
+        left: 78vw;
+        top: 6vh;
+        visibility: hidden;
     }
-
-@keyframes cld4i{
-    from{top:5vh; left: 55vw; height: 15vh; width: 23vw; visibility: visible;}
-    to{top:6vh; left: 55vw; height: 6.5vh; width: 8vw; visibility: hidden;}
+    to {
+        top: 40vh;
+        left: 65vw;
+        height: 15vh;
+        width: 23vw;
+        visibility: visible;
     }
+}
 
- #cld5{
-    background-image: url(/image/cld.png);
-    height: 7vh;
-    width: 10vw;
+@keyframes cld5i {
+    from {
+        top: 40vh;
+        left: 65vw;
+        height: 15vh;
+        width: 23vw;
+        visibility: visible;
+    }
+    to {
+        height: 9vh;
+        width: 10vw;
+        left: 78vw;
+        top: 6vh;
+        visibility: hidden;
+    }
+}
+
+#cld6 {
+    background-image: url(/image/cloud.png);
     background-size: 100% 100%;
     z-index: 5;
-    position:absolute;
-    left:68vw;
-    top: 10vh;
+    position: absolute;
+    height: 10vh;
+    width: 12vw;
+    left: 85vw;
+    top: 3vh;
     visibility: hidden;
-    }
+    display: flex;
+    justify-content: center;
+}
 
-@keyframes cld5m{
-    from{top:10vh; left: 68vw; height: 7vh; width: 10vw; visibility: hidden;}
-    to{top:35vh; left: 65vw; height: 15vh; width: 23vw; visibility: visible;}
+@keyframes cld6m {
+    from {
+        height: 10vh;
+        width: 12vw;
+        left: 85vw;
+        top: 3vh;
+        visibility: hidden;
     }
-
-@keyframes cld5i{
-    from{top:35vh; left: 65vw; height: 15vh; width: 23vw; visibility: visible;}
-    to{top:10vh; left: 68vw; height: 7vh; width: 10vw; visibility: hidden;}
+    to {
+        top: 70vh;
+        left: 55vw;
+        height: 15vh;
+        width: 23vw;
+        visibility: visible;
     }
+}
 
- #cld6{
-    background-image: url(/image/cld2.png);
-    height: 6vh;
-    width: 9vw;
+@keyframes cld6i {
+    from {
+        top: 70vh;
+        left: 55vw;
+        height: 15vh;
+        width: 23vw;
+        visibility: visible;
+    }
+    to {
+        height: 10vh;
+        width: 12vw;
+        left: 85vw;
+        top: 3vh;
+        visibility: hidden;
+    }
+}
+
+#cld7 {
+    background-image: url(/image/cloud.png);
+    z-index: 5;
     background-size: 100% 100%;
+    visibility: hidden;
+    position: absolute;
+    height: 10vh;
+    width: 20vw;
+    left: 40vw;
+    top: 14vh;
+}
+
+#cld8 {
+    background-image: url(/image/cloud.png);
     z-index: 5;
-    position:absolute;
-    left:82vw;
-   top: 7vh;
-   visibility: hidden;
- }
- @keyframes cld6m{
-    from{top:7vh; left: 82vw; height: 6vh; width: 9vw; visibility: hidden;}
-    to{top:65vh; left: 55vw; height: 15vh; width: 23vw; visibility: visible;}
-    }
-
-@keyframes cld6i{
-    from{top:65vh; left: 55vw; height: 15vh; width: 23vw; visibility: visible;}
-    to{top:7vh; left: 82vw; height: 6vh; width: 9vw; visibility: hidden;}
-    }
-
-
-#cld7{
-    background-image: url(/image/cld2.png);
-   height: 10vh;
-   width: 20vw;
-   z-index: 5;
-   background-size: 100% 100%;
-   visibility: hidden;
-   position:absolute;
-   left:40vw;
-  top: 7vh;
+    background-size: 100% 100%;
+    visibility: visible;
+    position: absolute;
+    height: 5vh;
+    width: 10vw;
+    left: 5vw;
+    top: 14vh;
 }
 
-
-#cld8{
-    background-image: url(/image/cld2.png);
-   height: 5vh;
-   width: 10vw;
-   z-index: 5;
-   background-size: 100% 100%;
-   visibility: visible;
-   position:absolute;
-   left:5vw;
-  top: 5vh;
-}
-
-
-#cld9{
+#cld9 {
     z-index: 5;
-    background-image: url(/image/cld2.png);
-   height: 5vh;
-   width: 10vw;
-   background-size: 100% 100%;
-   visibility: visible;
-   position:absolute;
-   left:85vw;
-  top: 5vh;
+    background-image: url(/image/cloud.png);
+    background-size: 100% 100%;
+    visibility: visible;
+    position: absolute;
+    height: 5vh;
+    width: 10vw;
+    left: 85vw;
+    top: 14vh;
 }
 
-@keyframes cld{
-   from{transform: translateX(0px); opacity:0; visibility: hidden;}
-   to{transform: translateX(0px); opacity:1; visibility: visible;}
+@keyframes cld {
+    from {
+        opacity: 0;
+        visibility: hidden;
+    }
+    to {
+        opacity: 1;
+        visibility: visible;
+    }
 }
 
-@keyframes cldf{
-    from{transform: translateX(0px); opacity:1; visibility: visible;}
-    to{transform: translateX(0px); opacity:0; visibility: hidden;}
- }
-
-#menu a{ 
-   position: absolute;
-   top: 50%;
-   left:50%;
-   transform: translateX(-50%) translateY(-50%);
-   text-decoration: none;
-   font-size: 1vw;
-   color: black;
-   font-family: 'Carter One', cursive;     
-   font-weight: 700%; 
+@keyframes cldf {
+    from {
+        opacity: 1;
+        visibility: visible;
+    }
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
 }
 
-#menu p{ 
-   position: absolute;
-   top: 30%;
-   left:50%;
-   transform: translateX(-50%) translateY(-50%);
-   font-size: 3vh;
-   color: black;
-   font-family: 'Carter One', cursive;      
+#menu a {
+    position: relative;
+    top: 40%;
+    text-decoration: none;
+    font-size: 1vw;
+    color: black;
+    font-family: 'Carter One', cursive;
+    font-weight: 900;
 }
 
+#menu p {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    font-weight: 900;
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 1.5vh;
+    color: black;
+    font-family: 'Carter One', cursive;
+}

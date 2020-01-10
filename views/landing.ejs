@@ -2,156 +2,167 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <title>Incandescence</title>
-  <link rel="stylesheet" type="text/css" href="stylesheet/loader.css">
-  <link rel="stylesheet" type="text/css" href="stylesheet/style.css">
-  <link rel="stylesheet" type="text/css" href="stylesheet/fire.css">
-  <link rel="stylesheet" type="text/css" href="stylesheet/incand.css">
-  <link rel="stylesheet" type="text/css" href="stylesheet/menu.css">
-  <link rel="stylesheet" type="text/css" href="stylesheet/ferris.css">
-  <link rel="stylesheet" type="text/css" href="stylesheet/guitarg.css">
-
+    <title>Incandescence</title>
+    <link rel="stylesheet" type="text/css" href="stylesheet/loader.css">
+    <link rel="stylesheet" type="text/css" href="stylesheet/style.css">
+    <link rel="stylesheet" type="text/css" href="stylesheet/fire.css">
+    <link rel="stylesheet" type="text/css" href="stylesheet/incand.css">
+    <link rel="stylesheet" type="text/css" href="stylesheet/menu.css">
+    <link rel="stylesheet" type="text/css" href="stylesheet/ferris.css">
+    <link rel="stylesheet" type="text/css" href="stylesheet/guitarg.css">
 </head>
 
 <body id='body'>
-  <!-- loader -->
-  <div id='loader'>
-    <div id='flame' class="fireplace">
-      <div class="blur">
-        <div class="fireplace__flame_big"></div>
-        <img src="/image/baton.png" id="baton">
-      </div>
-      <main class="fireplace__spark"></main>
-      <main class="fireplace__spark"></main>
-      <main class="fireplace__spark"></main>
-      <main class="fireplace__spark"></main>
-    </div>
-  </div>
-
-  <div>
-    <div id='background'></div>
-    <div id="mountain"></div>
-    <div id="cloud"></div>
-  </div>
-
-  <div class="tentContainer">
-    <img src="/image/t1.png" id="tent1" />
-    <img src="/image/t2.png" id="tent2" />
-    <img src="/image/plank.png" id="plank">
-  </div>
-
-  <div id="musicBand">
-
-    <div id="guitarguy">
-      <div id="guitarguybd"></div>
-      <div id="guitarguyhnd"></div>
-      <div id="guitarguyhd"></div>
-      <div id="cap"></div>
+    <!-- loader -->
+    <div id='loader'>
+        <div id='mascot-baton'>
+            <div id='flame' class="fire_place">
+                <div class="blur_fire">
+                    <div class="big_flame"></div>
+                </div>
+                <div class="spark spark1">i</div>
+                <div class="spark spark2">n</div>
+                <div class="spark spark3">c</div>
+                <div class="spark spark4">a</div>
+                <div class="spark spark5">n</div>
+                <div class="spark spark6">d</div>
+                <div class="spark spark7">e</div>
+                <div class="spark spark8">s</div>
+                <div class="spark spark9">c</div>
+                <div class="spark spark10">e</div>
+                <div class="spark spark11">n</div>
+                <div class="spark spark12">c</div>
+                <div class="spark spark13">e</div>
+            </div>
+            <img src="/image/airawat-holding-torch.png" id="baton">
+        </div>
     </div>
 
-    <div id="musicControl" style="z-index: 2;">
+    <div>
+        <div id='background'></div>
+        <div id="mountain"></div>
+        <div id="cloud"></div>
+    </div>
 
-      <audio loop autoplay id="music1">
+    <div class="tentContainer">
+        <img src="/image/t1.png" id="tent1" />
+        <img src="/image/t2.png" id="tent2" />
+        <img src="/image/plank.png" id="plank">
+    </div>
+
+    <div id="musicBand">
+
+        <div id="guitarguy">
+            <div id="guitarguybd"></div>
+            <div id="guitarguyhnd"></div>
+            <div id="guitarguyhd"></div>
+            <div id="cap"></div>
+        </div>
+
+        <div id="musicControl" style="z-index: 2;">
+
+            <audio loop autoplay id="music1">
         <source src="music/guitar1.mp3" type="audio/mpeg" />
       </audio>
-      <audio loop id="music2">
+            <audio loop id="music2">
         <source src="music/guitar2.mp3" type="audio/mpeg" />
       </audio>
 
-      <img src="/image/drums.png" class="musicbtn" height="32" width="32" onclick="playMusic1()">
-      <br>
-      <img src="/image/button3.png" class="musicbtn" height="32" width="32" onclick="playMusic2()">
-      <br>
-      <img src="/image/pause.png" class="musicbtn" height="32" width="32" onclick="pauseMusic()">
-    </div>
-
-    <!-- credits: Kyle Wetton -->
-    <div id="fire">
-      <div class="fireplace">
-        <div class="blur">
-          <div class="fireplace__flame_big"></div>
+            <img src="/image/drums.png" class="musicbtn" height="32" width="32" onclick="playMusic1()">
+            <br>
+            <img src="/image/button3.png" class="musicbtn" height="32" width="32" onclick="playMusic2()">
+            <br>
+            <img src="/image/pause.png" class="musicbtn" height="32" width="32" onclick="pauseMusic()">
         </div>
-        <section class="fireplace__log"></section>
-        <section class="fireplace__log"></section>
-        <section class="fireplace__log"></section>
-        <section class="fireplace__log"></section>
-        <section class="fireplace__log"></section>
-        <section class="fireplace__log"></section>
-        <section class="fireplace__log"></section>
-        <main class="fireplace__spark"></main>
-        <main class="fireplace__spark"></main>
-        <main class="fireplace__spark"></main>
-        <main class="fireplace__spark"></main>
-        <div class="blur fix">
-          <div class="fireplace__flame"></div>
+
+        <!-- credits: Kyle Wetton -->
+        <div class="fireplace" id='fire'>
+            <div class="blur">
+                <div class="fireplace__flame_big"></div>
+            </div>
+            <section class="fireplace__log"></section>
+            <section class="fireplace__log"></section>
+            <section class="fireplace__log"></section>
+            <section class="fireplace__log"></section>
+            <section class="fireplace__log"></section>
+            <section class="fireplace__log"></section>
+            <section class="fireplace__log"></section>
+            <main class="fireplace__spark"></main>
+            <main class="fireplace__spark"></main>
+            <main class="fireplace__spark"></main>
+            <main class="fireplace__spark"></main>
+            <div class="blur fix">
+                <div class="fireplace__flame"></div>
+            </div>
+            <div class="fireplace__light"></div>
         </div>
-        <div class="fireplace__light"></div>
-      </div>
-    </div>
-  </div>
-
-  <div id="menu">
-
-    <div id="cld1c">
-      <div id="cld1">
-        <a href="/event" id="link1">Events</a>
-      </div>
     </div>
 
-    <div id="cld2c">
-      <div id="cld2">
-        <a href="/gallery" id="link2">Gallery</a>
-      </div>
+    <div id="menu">
+
+        <div id='logo'>
+        </div>
+
+        <div id="cld1c">
+            <div id="cld1">
+                <a href="/event" id="link1">Events</a>
+            </div>
+        </div>
+
+        <div id="cld2c">
+            <div id="cld2">
+                <a href="/gallery" id="link2">Gallery</a>
+            </div>
+        </div>
+
+        <div id="cld3c">
+            <div id="cld3">
+                <a href="/history" id="link3">History</a>
+            </div>
+        </div>
+
+        <div id="cld4c">
+            <div id="cld4">
+                <a href="/reachus" id="link4">Reach Us</a>
+            </div>
+        </div>
+
+        <div id="cld5c">
+            <div id="cld5">
+                <a href="/faq" id="link5">F.A.Q</a>
+            </div>
+        </div>
+
+        <div id="cld6c">
+            <div id="cld6">
+                <a href="/register" id="link6">Register</a>
+            </div>
+        </div>
+
+        <div id="cld7c">
+            <div id="cld7">
+                <p>Menu</p>
+            </div>
+        </div>
+
+        <div id="cld8c">
+            <div id="cld8">
+            </div>
+        </div>
+
+        <div id="cld9c">
+            <div id="cld9">
+            </div>
+        </div>
+
     </div>
 
-    <div id="cld3c">
-      <div id="cld3">
-        <a href="/history" id="link3">History</a>
-      </div>
-    </div>
-
-    <div id="cld4c">
-      <div id="cld4">
-        <a href="/reachus" id="link4">Reach Us</a>
-      </div>
-    </div>
-
-    <div id="cld5c">
-      <div id="cld5">
-        <a href="/faq" id="link5">F.A.Q</a>
-      </div>
-    </div>
-
-    <div id="cld6c">
-      <div id="cld6">
-        <a href="/register" id="link6">Register</a>
-      </div>
-    </div>
-
-    <div id="cld7c">
-      <div id="cld7">
-        <p>Carnival</p>
-      </div>
-    </div>
-
-    <div id="cld8c">
-      <div id="cld8">
-      </div>
-    </div>
-
-    <div id="cld9c">
-      <div id="cld9">
-      </div>
-    </div>
-
-  </div>
-
-  <!--credits lego mushroom.com -->
-  <div id="ferris">
-    <svg style="opacity:0;height:0;">
+    <!--credits lego mushroom.com -->
+    <div id="ferris">
+        <svg style="opacity:0;height:0;">
       <g id="myspace-icon">
         <path
           d="M23.156,10.582c2.893,0,5.239-2.371,5.239-5.291C28.396,2.368,26.049,0,23.156,0c-2.895,0-5.239,2.368-5.239,5.291C17.917,8.211,20.262,10.582,23.156,10.582z M23.156,12c-2.483,0-4.626,1.449-5.661,3.553c-0.013-2.544-2.058-4.603-4.58-4.603c-1.748,0-3.267,0.988-4.038,2.44v-0.925c0-1.771-1.424-3.21-3.179-3.21c-1.756,0-3.179,1.438-3.179,3.21v6.841h5.814v6.128h8.497V32H29.48V18.387C29.48,14.86,26.648,12,23.156,12z M5.698,8.543c1.454,0,2.632-1.189,2.632-2.658S7.152,3.227,5.698,3.227S3.064,4.416,3.064,5.885S4.244,8.543,5.698,8.543z M12.914,9.922c2.097,0,3.796-1.716,3.796-3.831c0-2.117-1.699-3.833-3.796-3.833c-2.095,0-3.794,1.716-3.794,3.833C9.12,8.206,10.819,9.922,12.914,9.922z">
@@ -186,8 +197,8 @@
         </path>
       </g>
     </svg>
-    <div class="ferris-wheel is-open" id="js-ferris-wheel">
-      <svg class="ferris-wheel--script-path" width="200px" height="200px" viewbox="0 0 731 560">
+        <div class="ferris-wheel is-open" id="js-ferris-wheel">
+            <svg class="ferris-wheel--script-path" width="200px" height="200px" viewbox="0 0 731 560">
         <defs>
           <path id="ferris-script" fill="none" stroke="#E30613" stroke-width="2" stroke-miterlimit="10"
             d="M-522.865,1384.396L57.03,347.583c0,0,67.789-114.568,90.385-152.757l0,0C187.87,123.386,264.57,75.175,352.53,75.175c130.094,0,235.555,105.461,235.555,235.556c0,105.606-69.498,194.983-165.256,224.886L-721.942,922.059">
@@ -197,326 +208,313 @@
           <textPath id="js-ferris-text" xlink:href="#ferris-script" startOffset="0"></textPath>
         </text>
       </svg>
-      <div class="ferris-wheel--core">
-        <div class="cabin n-0 n-facebook" id="">
-          <a href="">
+            <div class="ferris-wheel--core">
+                <div class="cabin n-0 n-facebook" id="">
+                    <a href="">
 
-            <div class="cabin--handle"></div>
-            <div class="cabin--core">
-              <div class="cabin--core2">
-                <div class="icon">
-                  <svg viewBox="0 0 24 24">
+                        <div class="cabin--handle"></div>
+                        <div class="cabin--core">
+                            <div class="cabin--core2">
+                                <div class="icon">
+                                    <svg viewBox="0 0 24 24">
                     <a href="https://www.instagram.com/incandescence.nits/">
                       <use xlink:href="#instagram-icon"></use>
                     </a>
                   </svg>
+                                </div>
+                                <div class="cabin--base"></div>
+                                <div class="human human-0" id=""></div>
+                                <div class="human human-1" id=""></div>
+                                <div class="human human-2" id=""></div>
+                            </div>
+                        </div>
+                    </a>
+
                 </div>
-                <div class="cabin--base"></div>
-                <div class="human human-0" id=""></div>
-                <div class="human human-1" id=""></div>
-                <div class="human human-2" id=""></div>
-              </div>
-            </div>
-          </a>
+                <div class="cabin n-1 n-facebook" id="">
+                    <a href="https://www.facebook.com/incandescence.nits">
 
-        </div>
-        <div class="cabin n-1 n-facebook" id="">
-          <a href="https://www.facebook.com/incandescence.nits">
-
-            <div class="cabin--handle"></div>
-            <div class="cabin--core">
-              <div class="cabin--core2">
-                <div class="icon">
-                  <svg viewBox="0 0 32 32">
+                        <div class="cabin--handle"></div>
+                        <div class="cabin--core">
+                            <div class="cabin--core2">
+                                <div class="icon">
+                                    <svg viewBox="0 0 32 32">
                     <use xlink:href="#facebook-icon"></use>
                   </svg>
+                                </div>
+                                <div class="cabin--base"></div>
+                                <div class="human human-0" id=""></div>
+                                <div class="human human-1" id=""></div>
+                                <div class="human human-2" id=""></div>
+                            </div>
+                        </div>
+                    </a>
                 </div>
-                <div class="cabin--base"></div>
-                <div class="human human-0" id=""></div>
-                <div class="human human-1" id=""></div>
-                <div class="human human-2" id=""></div>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="cabin n-2 n-youtube" id="">
-          <div class="cabin--handle"></div>
-          <div class="cabin--core">
-            <div class="cabin--core2">
-              <div class="icon">
-                <svg viewBox="0 0 32 32">
+                <div class="cabin n-2 n-youtube" id="">
+                    <div class="cabin--handle"></div>
+                    <div class="cabin--core">
+                        <div class="cabin--core2">
+                            <div class="icon">
+                                <svg viewBox="0 0 32 32">
                   <use xlink:href="#youtube-icon"></use>
                 </svg>
-              </div>
-              <div class="cabin--base"></div>
-              <div class="human human-0" id=""></div>
-              <div class="human human-1" id=""></div>
-            </div>
-          </div>
-        </div>
-        <div class="cabin n-3 n-youtube" id="">
-          <a href="mailto:incandescencenitsilchar@gmail.com">
-            <div class="cabin--handle"></div>
-            <div class="cabin--core">
-              <div class="cabin--core2">
-                <div class="icon">
-                  <svg viewBox="0 0 24 24">
+                            </div>
+                            <div class="cabin--base"></div>
+                            <div class="human human-0" id=""></div>
+                            <div class="human human-1" id=""></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cabin n-3 n-youtube" id="">
+                    <a href="mailto:incandescencenitsilchar@gmail.com">
+                        <div class="cabin--handle"></div>
+                        <div class="cabin--core">
+                            <div class="cabin--core2">
+                                <div class="icon">
+                                    <svg viewBox="0 0 24 24">
                     <use xlink:href="#gmail-icon"></use>
                   </svg>
+                                </div>
+                                <div class="cabin--base"></div>
+                                <div class="human human-0" id=""></div>
+                                <div class="human human-1" id=""></div>
+                                <div class="human human-2" id=""></div>
+                            </div>
+                        </div>
+                    </a>
                 </div>
-                <div class="cabin--base"></div>
-                <div class="human human-0" id=""></div>
-                <div class="human human-1" id=""></div>
-                <div class="human human-2" id=""></div>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="cabin n-4 n-facebook" id="">
-          <a href="https://www.instagram.com/incandescence.nits/">
-            <div class="cabin--handle"></div>
-            <div class="cabin--core">
+                <div class="cabin n-4 n-facebook" id="">
+                    <a href="https://www.instagram.com/incandescence.nits/">
+                        <div class="cabin--handle"></div>
+                        <div class="cabin--core">
 
-              <div class="cabin--core2">
-                <div class="icon">
-                  <svg viewBox="0 0 24 24">
+                            <div class="cabin--core2">
+                                <div class="icon">
+                                    <svg viewBox="0 0 24 24">
 
                     <use xlink:href="#instagram-icon"></use>
                   </svg>
-                </div>
-                <div class="cabin--base"></div>
-                <div class="human human-0" id=""></div>
-                <div class="human human-1" id=""></div>
-              </div>
-            </div>
-          </a>
+                                </div>
+                                <div class="cabin--base"></div>
+                                <div class="human human-0" id=""></div>
+                                <div class="human human-1" id=""></div>
+                            </div>
+                        </div>
+                    </a>
 
-        </div>
-        <div class="cabin n-5 n-facebook" id="">
-          <a href="https://www.facebook.com/incandescence.nits">
-            <div class="cabin--handle"></div>
-            <div class="cabin--core">
-              <div class="cabin--core2">
-                <div class="icon">
-                  <svg viewBox="0 0 32 32">
+                </div>
+                <div class="cabin n-5 n-facebook" id="">
+                    <a href="https://www.facebook.com/incandescence.nits">
+                        <div class="cabin--handle"></div>
+                        <div class="cabin--core">
+                            <div class="cabin--core2">
+                                <div class="icon">
+                                    <svg viewBox="0 0 32 32">
                     <use xlink:href="#facebook-icon"></use>
                   </svg>
+                                </div>
+                                <div class="cabin--base"></div>
+                                <div class="human human-0" id=""></div>
+                                <div class="human human-1" id=""></div>
+                                <div class="human human-2" id=""></div>
+                            </div>
+                        </div>
+                    </a>
                 </div>
-                <div class="cabin--base"></div>
-                <div class="human human-0" id=""></div>
-                <div class="human human-1" id=""></div>
-                <div class="human human-2" id=""></div>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="cabin n-6 n-youtube" id="">
-          <a href="">
-            <div class="cabin--handle"></div>
-            <div class="cabin--core">
-              <div class="cabin--core2">
-                <div class="icon">
-                  <svg viewBox="0 0 32 32">
+                <div class="cabin n-6 n-youtube" id="">
+                    <a href="">
+                        <div class="cabin--handle"></div>
+                        <div class="cabin--core">
+                            <div class="cabin--core2">
+                                <div class="icon">
+                                    <svg viewBox="0 0 32 32">
                     <use xlink:href="#youtube-icon"></use>
                   </svg>
+                                </div>
+                                <div class="cabin--base"></div>
+                                <div class="human human-0" id=""></div>
+                                <div class="human human-1" id=""></div>
+                            </div>
+                        </div>
+                    </a>
                 </div>
-                <div class="cabin--base"></div>
-                <div class="human human-0" id=""></div>
-                <div class="human human-1" id=""></div>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="cabin n-7 n-youtube" id="">
-          <a href="mailto:incandescencenitsilchar@gmail.com">
-            <div class="cabin--handle"></div>
-            <div class="cabin--core">
-              <div class="cabin--core2">
-                <div class="icon">
-                  <svg viewBox="0 0 24 24">
+                <div class="cabin n-7 n-youtube" id="">
+                    <a href="mailto:incandescencenitsilchar@gmail.com">
+                        <div class="cabin--handle"></div>
+                        <div class="cabin--core">
+                            <div class="cabin--core2">
+                                <div class="icon">
+                                    <svg viewBox="0 0 24 24">
                     <use xlink:href="#gmail-icon"></use>
                   </svg>
+                                </div>
+                                <div class="cabin--base"></div>
+                                <div class="human human-0" id=""></div>
+                                <div class="human human-1" id=""></div>
+                            </div>
+                        </div>
+                    </a>
                 </div>
-                <div class="cabin--base"></div>
-                <div class="human human-0" id=""></div>
-                <div class="human human-1" id=""></div>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="cabin n-8 n-facebook" id="">
-          <a href="https://www.instagram.com/incandescence.nits/">
-            <div class="cabin--handle"></div>
-            <div class="cabin--core">
+                <div class="cabin n-8 n-facebook" id="">
+                    <a href="https://www.instagram.com/incandescence.nits/">
+                        <div class="cabin--handle"></div>
+                        <div class="cabin--core">
 
-              <div class="cabin--core2">
-                <div class="icon">
-                  <svg viewBox="0 0 24 24">
+                            <div class="cabin--core2">
+                                <div class="icon">
+                                    <svg viewBox="0 0 24 24">
 
                     <use xlink:href="#instagram-icon"></use>
                   </svg>
+                                </div>
+                                <div class="cabin--base"></div>
+                                <div class="human human-0" id=""></div>
+                                <div class="human human-1" id=""></div>
+                            </div>
+                        </div>
+                    </a>
                 </div>
-                <div class="cabin--base"></div>
-                <div class="human human-0" id=""></div>
-                <div class="human human-1" id=""></div>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="cabin n-9 n-facebook" id="">
-          <a href="https://www.facebook.com/incandescence.nits">
-            <div class="cabin--handle"></div>
-            <div class="cabin--core">
-              <div class="cabin--core2">
-                <div class="icon">
-                  <svg viewBox="0 0 32 32">
+                <div class="cabin n-9 n-facebook" id="">
+                    <a href="https://www.facebook.com/incandescence.nits">
+                        <div class="cabin--handle"></div>
+                        <div class="cabin--core">
+                            <div class="cabin--core2">
+                                <div class="icon">
+                                    <svg viewBox="0 0 32 32">
                     <use xlink:href="#facebook-icon"></use>
 
                   </svg>
+                                </div>
+                                <div class="cabin--base"></div>
+                                <div class="human human-0" id=""></div>
+                                <div class="human human-1" id=""></div>
+                                <div class="human human-2" id=""></div>
+                            </div>
+                        </div>
+                    </a>
                 </div>
-                <div class="cabin--base"></div>
-                <div class="human human-0" id=""></div>
-                <div class="human human-1" id=""></div>
-                <div class="human human-2" id=""></div>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="cabin n-10 n-google-plus" id="">
-          <a href="">
-            <div class="cabin--handle"></div>
-            <div class="cabin--core">
-              <div class="cabin--core2">
-                <div class="icon">
-                  <svg viewBox="0 0 32 32">
+                <div class="cabin n-10 n-google-plus" id="">
+                    <a href="">
+                        <div class="cabin--handle"></div>
+                        <div class="cabin--core">
+                            <div class="cabin--core2">
+                                <div class="icon">
+                                    <svg viewBox="0 0 32 32">
                     <use xlink:href="#youtube-icon"></use>
                   </svg>
+                                </div>
+                                <div class="cabin--base"></div>
+                                <div class="human human-0" id=""></div>
+                                <div class="human human-1" id=""></div>
+                                <div class="human human-2" id=""></div>
+                            </div>
+                        </div>
+                    </a>
                 </div>
-                <div class="cabin--base"></div>
-                <div class="human human-0" id=""></div>
-                <div class="human human-1" id=""></div>
-                <div class="human human-2" id=""></div>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="cabin n-11 n-youtube" id="">
-          <a href="mailto:incandescencenitsilchar@gmail.com">
-            <div class="cabin--handle"></div>
-            <div class="cabin--core">
-              <div class="cabin--core2">
-                <div class="icon">
-                  <svg viewBox="0 0 24 24">
+                <div class="cabin n-11 n-youtube" id="">
+                    <a href="mailto:incandescencenitsilchar@gmail.com">
+                        <div class="cabin--handle"></div>
+                        <div class="cabin--core">
+                            <div class="cabin--core2">
+                                <div class="icon">
+                                    <svg viewBox="0 0 24 24">
                     <use xlink:href="#gmail-icon"></use>
                   </svg>
+                                </div>
+                                <div class="cabin--base"></div>
+                                <div class="human human-0" id=""></div>
+                                <div class="human human-1" id=""></div>
+                            </div>
+                        </div>
+                    </a>
                 </div>
-                <div class="cabin--base"></div>
-                <div class="human human-0" id=""></div>
-                <div class="human human-1" id=""></div>
-              </div>
+                <div class="ferris-wheel--circle1"></div>
+                <div class="ferris-wheel--circle2"></div>
+                <div class="ferris-wheel--spike n-0"></div>
+                <div class="ferris-wheel--spike n-1"></div>
+                <div class="ferris-wheel--spike n-2"></div>
+                <div class="ferris-wheel--spike n-3"></div>
+                <div class="ferris-wheel--spike n-4"></div>
+                <div class="ferris-wheel--spike n-5"></div>
+                <div class="ferris-wheel--spike n-6"></div>
+                <div class="ferris-wheel--spike n-7"></div>
+                <div class="ferris-wheel--spike n-8"></div>
+                <div class="ferris-wheel--spike n-9"></div>
+                <div class="ferris-wheel--spike n-10"></div>
+                <div class="ferris-wheel--spike n-11"></div>
+                <div class="ferris-wheel--spike n-12"></div>
+                <div class="ferris-wheel--spike n-13"></div>
+                <div class="ferris-wheel--spike n-14"></div>
+                <div class="ferris-wheel--spike n-15"></div>
+                <div class="ferris-wheel--spike n-16"></div>
+                <div class="ferris-wheel--spike n-17"></div>
+                <div class="ferris-wheel--spike n-18"></div>
+                <div class="ferris-wheel--spike n-19"></div>
+                <div class="ferris-wheel--spike n-20"></div>
+                <div class="ferris-wheel--spike n-21"></div>
+                <div class="ferris-wheel--spike n-22"></div>
+                <div class="ferris-wheel--spike n-23"></div>
+                <div class="ferris-wheel--spike s-0"></div>
+                <div class="ferris-wheel--spike s-1"></div>
+                <div class="ferris-wheel--spike s-2"></div>
+                <div class="ferris-wheel--spike s-3"></div>
+                <div class="ferris-wheel--spike s-4"></div>
+                <div class="ferris-wheel--spike s-5"></div>
+                <div class="ferris-wheel--spike s-6"></div>
+                <div class="ferris-wheel--spike s-7"></div>
+                <div class="ferris-wheel--spike s-8"></div>
+                <div class="ferris-wheel--spike s-9"></div>
+                <div class="ferris-wheel--spike s-10"></div>
+                <div class="ferris-wheel--spike s-11"></div>
+                <div class="ferris-wheel--spike s-12"></div>
+                <div class="ferris-wheel--spike s-13"></div>
+                <div class="ferris-wheel--spike s-14"></div>
+                <div class="ferris-wheel--spike s-15"></div>
+                <div class="ferris-wheel--spike s-16"></div>
+                <div class="ferris-wheel--spike s-17"></div>
+                <div class="ferris-wheel--spike s-18"></div>
+                <div class="ferris-wheel--spike s-19"></div>
+                <div class="ferris-wheel--spike s-20"></div>
+                <div class="ferris-wheel--spike s-21"></div>
+                <div class="ferris-wheel--spike s-22"></div>
+                <div class="ferris-wheel--spike s-23"></div>
             </div>
-          </a>
-        </div>
-        <div class="ferris-wheel--circle1"></div>
-        <div class="ferris-wheel--circle2"></div>
-        <div class="ferris-wheel--spike n-0"></div>
-        <div class="ferris-wheel--spike n-1"></div>
-        <div class="ferris-wheel--spike n-2"></div>
-        <div class="ferris-wheel--spike n-3"></div>
-        <div class="ferris-wheel--spike n-4"></div>
-        <div class="ferris-wheel--spike n-5"></div>
-        <div class="ferris-wheel--spike n-6"></div>
-        <div class="ferris-wheel--spike n-7"></div>
-        <div class="ferris-wheel--spike n-8"></div>
-        <div class="ferris-wheel--spike n-9"></div>
-        <div class="ferris-wheel--spike n-10"></div>
-        <div class="ferris-wheel--spike n-11"></div>
-        <div class="ferris-wheel--spike n-12"></div>
-        <div class="ferris-wheel--spike n-13"></div>
-        <div class="ferris-wheel--spike n-14"></div>
-        <div class="ferris-wheel--spike n-15"></div>
-        <div class="ferris-wheel--spike n-16"></div>
-        <div class="ferris-wheel--spike n-17"></div>
-        <div class="ferris-wheel--spike n-18"></div>
-        <div class="ferris-wheel--spike n-19"></div>
-        <div class="ferris-wheel--spike n-20"></div>
-        <div class="ferris-wheel--spike n-21"></div>
-        <div class="ferris-wheel--spike n-22"></div>
-        <div class="ferris-wheel--spike n-23"></div>
-        <div class="ferris-wheel--spike s-0"></div>
-        <div class="ferris-wheel--spike s-1"></div>
-        <div class="ferris-wheel--spike s-2"></div>
-        <div class="ferris-wheel--spike s-3"></div>
-        <div class="ferris-wheel--spike s-4"></div>
-        <div class="ferris-wheel--spike s-5"></div>
-        <div class="ferris-wheel--spike s-6"></div>
-        <div class="ferris-wheel--spike s-7"></div>
-        <div class="ferris-wheel--spike s-8"></div>
-        <div class="ferris-wheel--spike s-9"></div>
-        <div class="ferris-wheel--spike s-10"></div>
-        <div class="ferris-wheel--spike s-11"></div>
-        <div class="ferris-wheel--spike s-12"></div>
-        <div class="ferris-wheel--spike s-13"></div>
-        <div class="ferris-wheel--spike s-14"></div>
-        <div class="ferris-wheel--spike s-15"></div>
-        <div class="ferris-wheel--spike s-16"></div>
-        <div class="ferris-wheel--spike s-17"></div>
-        <div class="ferris-wheel--spike s-18"></div>
-        <div class="ferris-wheel--spike s-19"></div>
-        <div class="ferris-wheel--spike s-20"></div>
-        <div class="ferris-wheel--spike s-21"></div>
-        <div class="ferris-wheel--spike s-22"></div>
-        <div class="ferris-wheel--spike s-23"></div>
-      </div>
-      <div class="ferris-base">
-        <div class="ferris-base--center">
-          <div class="icon">
-            <svg viewBox="0 0 40 40">
+            <div class="ferris-base">
+                <div class="ferris-base--center">
+                    <div class="icon">
+                        <svg viewBox="0 0 40 40">
               <use xlink:href="#elephant-icon"></use>
             </svg>
-          </div>
+                    </div>
+                </div>
+                <div class="ferris-base--top"></div>
+                <div class="ferris-base--main"></div>
+                <div class="ferris-base--spike is-1"></div>
+                <div class="ferris-base--spike is-2"></div>
+                <div class="ferris-base--handle"></div>
+            </div>
         </div>
-        <div class="ferris-base--top"></div>
-        <div class="ferris-base--main"></div>
-        <div class="ferris-base--spike is-1"></div>
-        <div class="ferris-base--spike is-2"></div>
-        <div class="ferris-base--handle"></div>
-      </div>
     </div>
-  </div>
 
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-  <script src="js/incand.js"></script>
-  <script src="js/music.js"></script>
-  <script src="js/ferris.js"></script>
-  <script src="js/menu.js"></script>
-  <script src="js/resizer.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="js/incand.js"></script>
+    <script src="js/music.js"></script>
+    <script src="js/ferris.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/resizer.js"></script>
 
-  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-  <script type="text/javascript">
-
-    $(document).ready(function () {    
-      stopAnimation();
-      playAnimation();
-      resizer();
-      var fileref = document.createElement('link');
-      fileref.setAttribute("type","text/css");
-      fileref.setAttribute("href",'stylesheet/fire.css');
-      fileref.setAttribute("rel",'stylesheet');
-      document.getElementsByTagName('head')[0].appendChild(fileref); 
-
-      document.getElementById('loader').remove();
-    });
-  </script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            stopAnimation();
+            playAnimation();
+            resizer();
+            document.getElementById('loader').remove();
+        });
+    </script>
 
 </body>
 

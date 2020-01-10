@@ -17,8 +17,7 @@ function adaptMenu() {
         $('#cld7').css("animation", "cldf both 2s 0s");
         $('#cld8').css("animation", "cldf both 2s 0s");
         $('#cld9').css("animation", "cldf both 2s 0s");
-    }
-    else {
+    } else {
         $('#cld1').css("animation", "cldf both 2s 0s");
         $('#cld2').css("animation", "cldf both 2s 0s");
         $('#cld3').css("animation", "cldf both 2s 0s");
@@ -63,7 +62,7 @@ function expandMenu() {
     overlay.style.background = 'rgba(10,200,200,0.8)';
     overlay.id = 'overlay';
     document.getElementsByTagName('body')[0].appendChild(overlay);
-    $('#menu a').css('fontSize', '2.5vh');
+    $('#menu a').css('fontSize', '1.5vh');
     $('#cld1').css("animation", "cld1m both 2s 0.5s");
     $('#cld2').css("animation", "cld2m both 2s 0.5s");
     $('#cld3').css("animation", "cld3m both 2s 0.5s");

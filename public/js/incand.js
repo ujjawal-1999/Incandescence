@@ -14,7 +14,6 @@ function hideMenu() {
 }
 
 function fontChange() {
-
     // size of device screen
     var xsize = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
     var ysize = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
@@ -23,15 +22,14 @@ function fontChange() {
     if (xsize > ysize) {
         var textScaleX = Math.max(0.1, xsize / 1368);
         var textScaleY = Math.max(0.1, ysize / 685);
-        textScaleX = Math.min(textScaleX, textScaleY);
-        textScaleY = textScaleX;
-        document.getElementById('incand').style.transform = 'scale(' + textScaleX + ',' + textScaleY + ')';
-    }
-    else {
+        textScale = Math.min(textScaleX, textScaleY);
+        document.getElementById('incand').style.top = '3vh';
+        document.getElementById('incand').style.transform = 'scale(' + textScale + ',' + textScale + ')';
+    } else {
         var textScaleX = Math.max(0.1, (window.screen.width / 800));
         var textScaleY = Math.max(0.1, ysize / 685);
-        textScaleX = Math.min(textScaleX, textScaleY);
-        textScaleY = textScaleX;
+        // textScaleX = Math.min(textScaleX, textScaleY);
+        // textScaleY = textScaleX;
         document.getElementById('incand').style.transform = 'scale(' + textScaleX + ',' + textScaleY + ')';
 
         document.getElementById('incand').style.top = '' + 0.05 * ysize + 'px';
@@ -149,7 +147,6 @@ function fontChange() {
 }
 
 function animateText() {
-    hideMenu();
     hideText();
 
     var itext = document.createElement('div');
@@ -246,13 +243,10 @@ function animateText() {
 
     </div>`;
 
-    $('')
-
     document.getElementsByTagName('body')[0].appendChild(itext).onload = fontChange();
 }
 
 function hideText() {
-    adaptMenu();
     var elem = document.getElementById('itext');
     if (elem != null) elem.remove();
 }

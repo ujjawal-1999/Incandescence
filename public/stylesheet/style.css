@@ -1,80 +1,95 @@
-body{
-	margin: 0;
-	padding: 0;
-	/* overflow: scroll; */
+body {
+    margin: 0;
+    padding: 0;
+    /* overflow: scroll; */
 }
 
-#background{
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 1368px;
-	height: 700px;
-	background: url(../image/wolake.png) no-repeat;
-	z-index: -2;
-	background-size: cover;
+#background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1368px;
+    height: 700px;
+    background: url(../image/wolake.png) no-repeat;
+    z-index: -2;
+    background-size: cover;
 }
 
-#mountain{
-	position: absolute;
-	top: 30px;
-	left: 0px;
-	width: 1368px;
-	height: 700px;
-	background: url(../image/m1.png) no-repeat center;
-	background-size: cover;
+#logo {
+    background: url(../image/logo.png) no-repeat;
+    width: 20vw;
+    height: 8.5vh;
+    background-size: contain;
+    position: absolute;
+    top: 4vh;
+    left: 5vw;
+}
+
+#mountain {
+    position: absolute;
+    top: 30px;
+    left: 0px;
+    width: 1368px;
+    height: 700px;
+    background: url(../image/m1.png) no-repeat;
+    background-size: cover;
     z-index: 0;
 }
-#cloud{
-	position: absolute;
-	top: 0px;
-	left: 0px;
-	width: 1368px;
-	height: 350px;
-	background: url(../image/cloud1.png);
-	animation: animate 120s linear infinite;
-	z-index: -1;
+
+#cloud {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 1368px;
+    height: 350px;
+    background: url(../image/cloud1.png);
+    animation: animate 120s linear infinite;
+    z-index: -1;
 }
 
-#tent1{
-	position: absolute;
-	top: 308px;
-	left: 268px;
-	width: 165px;
-	height: 149px;
-	z-index: 1;
-}
-	
-#tent2{
-	position: absolute;
-	top: 338px;
-	left: 378px;
-	width: 185px;
-	height: 160px;
-	z-index: 1;
+#tent1 {
+    position: absolute;
+    top: 308px;
+    left: 268px;
+    width: 165px;
+    height: 149px;
+    z-index: 1;
 }
 
-#plank{
-	position: absolute;
-	top: 328px;
-	left: 588px;
-	width: 150px;
-	height: 250px;
-	transform: rotate(5deg);
-	z-index:2;
+#tent2 {
+    position: absolute;
+    top: 338px;
+    left: 378px;
+    width: 185px;
+    height: 160px;
+    z-index: 1;
 }
 
-#tentContainer{
-	transform: translate(0px,0px) scale(1,1);
+#plank {
+    position: absolute;
+    top: 328px;
+    left: 588px;
+    width: 150px;
+    height: 250px;
+    transform: rotate(5deg);
+    z-index: 2;
+}
+
+#tentContainer {
+    transform: translate(0px, 0px) scale(1, 1);
 }
 
 #musicControl {
-	position: absolute;
-	top: 500px;
-	left: 100px;
+    position: absolute;
+    top: 500px;
+    left: 100px;
 }
 
 @keyframes animate {
-	0% { background-position: 0px; }
-    100% { background-position: -2000px; }
+    0% {
+        background-position: 0px;
+    }
+    100% {
+        background-position: -2000px;
+    }
 }
