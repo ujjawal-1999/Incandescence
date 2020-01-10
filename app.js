@@ -6,6 +6,7 @@ const shortid = require('shortid');
 shortid.characters('0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ$@');
 
 
+
 const { mongoose } = require('./connect')
 const { User } = require('./user.js')
 var rzp = new Razorpay({
@@ -28,8 +29,11 @@ var app = express()
 
 app.set('view engine', 'ejs')
 app.use(express.static('public'))
-
-
+//--- http server code  begins--
+var http = require('http');
+var httpServer = http.createServer(app);
+httpServer.listen(80);
+// ends
 
 app.use(bodyParser.urlencoded({ extended: true }))
 
@@ -281,7 +285,7 @@ app.post('/check', (req, res) => {
 
 //End of post request
 
-
+/*
 
 app.listen(5000, () => {
     console.log('Connected to server')
@@ -290,7 +294,7 @@ app.listen(5000, () => {
 
 
 
-
+*/
 
 
 
