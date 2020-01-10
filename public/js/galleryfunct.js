@@ -36,40 +36,76 @@ function showstuff(m,myval) {
     
 }
 
+function scrolleffect(x){
+  if(x.matches){
+    $(document).on("scroll", function () {
+        if (isScrolledIntoView($elem, $window)) {
+            $elem.removeClass("opa");
+            $elem.addClass("enterleft");
+            
+        }
+    });
+  }
+  else{
+    $elem.removeClass("opa");
+    $elem.addClass("enterleft");
+  }
+}
+
+var $elem4 = $(".popuptext");
+function changepop(x){
+  if(x.matches){}
+  else{
+    $elem4.addClass("popuptext");
+    $elem4.addClass("popuptext1");
+  }
+}
+
 function rem(){
   $('.example:first').remove();
 }
 
-function testfn(move,id1,id2,id3) {
+function testfn(move,id1,id2,id3,x) {
   var nwid1=change_name(id1);
   var nwid2=change_name(id2);
   var nwid3=change_name(id3);
-  if(move==="left"){ 
-    $('<div class="example enterleft"><div class="clip"><div class="film eve" id="'+id1+'"><img src="image/'+id1+'.jpg"><span class="popuptext" id="popup'+id1+'">'+nwid1+'</span></div></div><div class="clip"><div class="film eve" id="'+id2+'"><img src="image/'+id2+'.jpg"><span class="popuptext" id="popup'+id2+'">'+nwid2+'</span></div></div><div class="clip"><div class="film eve" id="'+id3+'"><img src="image/'+id3+'.jpg"><span class="popuptext" id="popup'+id3+'">'+nwid3+'</span></div></div></div>').appendTo('.cover');
+  if(x.matches){ 
+    if(move==="left"){ 
+      $('<div class="example enterleft"><div class="clip"><div class="film eve" id="'+id1+'"><img src="image/'+id1+'.jpg"><span class="popuptext" id="popup'+id1+'">'+nwid1+'</span></div></div><div class="clip"><div class="film eve" id="'+id2+'"><img src="image/'+id2+'.jpg"><span class="popuptext" id="popup'+id2+'">'+nwid2+'</span></div></div><div class="clip"><div class="film eve" id="'+id3+'"><img src="image/'+id3+'.jpg"><span class="popuptext" id="popup'+id3+'">'+nwid3+'</span></div></div></div>').appendTo('.cover');
+    }
+    if(move==="right"){
+      $('<div class="example enterright"><div class="clip"><div class="film eve" id="'+id1+'"><img src="image/'+id1+'.jpg"><span class="popuptext" id="popup'+id1+'">'+nwid1+'</span></div></div><div class="clip"><div class="film eve" id="'+id2+'"><img src="image/'+id2+'.jpg"><span class="popuptext" id="popup'+id2+'">'+nwid2+'</span></div></div><div class="clip"><div class="film eve" id="'+id3+'"><img src="image/'+id3+'.jpg"><span class="popuptext" id="popup'+id3+'">'+nwid3+'</span></div></div></div>').appendTo('.cover');
+    }
+    setTimeout(function(){rem();}, 900);
   }
-  if(move==="right"){
-    $('<div class="example enterright"><div class="clip"><div class="film eve" id="'+id1+'"><img src="image/'+id1+'.jpg"><span class="popuptext" id="popup'+id1+'">'+nwid1+'</span></div></div><div class="clip"><div class="film eve" id="'+id2+'"><img src="image/'+id2+'.jpg"><span class="popuptext" id="popup'+id2+'">'+nwid2+'</span></div></div><div class="clip"><div class="film eve" id="'+id3+'"><img src="image/'+id3+'.jpg"><span class="popuptext" id="popup'+id3+'">'+nwid3+'</span></div></div></div>').appendTo('.cover');
+  else{
+    if(move==="left"){ 
+      $('<div class="example enterleft"><div class="clip"><div class="film eve" id="'+id1+'"><img src="image/'+id1+'.jpg"><span class="popuptext1" id="popup'+id1+'">'+nwid1+'</span></div></div><div class="clip"><div class="film eve" id="'+id2+'"><img src="image/'+id2+'.jpg"><span class="popuptext1" id="popup'+id2+'">'+nwid2+'</span></div></div><div class="clip"><div class="film eve" id="'+id3+'"><img src="image/'+id3+'.jpg"><span class="popuptext1" id="popup'+id3+'">'+nwid3+'</span></div></div></div>').appendTo('.cover');
+    }
+    if(move==="right"){
+      $('<div class="example enterright"><div class="clip"><div class="film eve" id="'+id1+'"><img src="image/'+id1+'.jpg"><span class="popuptext1" id="popup'+id1+'">'+nwid1+'</span></div></div><div class="clip"><div class="film eve" id="'+id2+'"><img src="image/'+id2+'.jpg"><span class="popuptext1" id="popup'+id2+'">'+nwid2+'</span></div></div><div class="clip"><div class="film eve" id="'+id3+'"><img src="image/'+id3+'.jpg"><span class="popuptext1" id="popup'+id3+'">'+nwid3+'</span></div></div></div>').appendTo('.cover');
+    }
+    setTimeout(function(){rem();}, 900);
   }
-  setTimeout(function(){rem();}, 900);
 }
 
 
 $(document).ready(function(){
   var values={
     "Carpediem": ["1","2","3","4","5","6","7","8"],
-    "Deprador": ["1","2","3"],
+    "Deprador": ["1","2","3","4","5","6","7","8","9"],
     "Glitterati": ["1","2","3","4","5","6","7","8"],
     "Indie": ["1","2","3","4","5"],
-    "Nirvana": ["1","2"],
-    "Kavisanmillan":["1","2","3","4"],
+    "Nirvana": ["1","2","3","4","5"],
+    "Kavisanmillan":["1","2","3","4","5","6","7","8"],
     "Mrnits":["1","2","3","4","5","6","7"],
     "Nataraj":["1","2","3","4","5","6","7","8","9"],
     "Nitsmun":["1","2","3","4","5","6"],
-    "Promnight":["1","2","3"],
+    "Promnight":["1","2","3","4","5","6","7","8"],
     "Razzmatazz":["1","2","3","4","5","6","7"],
     "Sokratik":["1","2","3","4","5"],
     "Thundermarch":["1","2","3","4","5","6"],
-    "Whatthefood":["1"],
+    "Whatthefood":["1","2","3","4","5"],
     "Theend":["1"]
   }
   /*var events=["Nirvana","Glitterati","Thundermarch","Carpedieum","NITSMun"];
@@ -89,6 +125,13 @@ $(document).ready(function(){
 
   var lclick=0, rclick=0;
 
+  var x = window.matchMedia("(min-width: 1000px)");
+  scrolleffect(x);
+  x.addListener(scrolleffect);
+  changepop(x);
+  x.addListener(changepop);
+
+
   $("#left").click(function(){
     if(rclick==0) rclick=5;
     lclick=rclick-1;
@@ -100,35 +143,40 @@ $(document).ready(function(){
       setTimeout(
         function() 
         {
-          testfn("left","Carpediem","Deprador","Glitterati")
+          testfn("left","Carpediem","Deprador","Glitterati",x)
+          x.addListener(testfn)
         }, 100);
     }
     if(lclick===1){
       setTimeout(
         function() 
         {
-          testfn("left","Indie","Nirvana","Kavisanmillan")
+          testfn("left","Indie","Nirvana","Kavisanmillan",x)
+          x.addListener(testfn)
         }, 100);
     }
     if(lclick===2){
       setTimeout(
         function() 
         {
-          testfn("left","Mrnits","Nataraj","Nitsmun")
+          testfn("left","Mrnits","Nataraj","Nitsmun",x)
+          x.addListener(testfn)
         }, 100);
     }
     if(lclick===3){
       setTimeout(
         function() 
         {
-          testfn("left","Promnight","Razzmatazz","Sokratik")
+          testfn("left","Promnight","Razzmatazz","Sokratik",x)
+          x.addListener(testfn)
         }, 100);
     }
     if(lclick===4){
       setTimeout(
         function() 
         {
-          testfn("left","Thundermarch","Whatthefood","Theend")
+          testfn("left","Thundermarch","Whatthefood","Theend",x)
+          x.addListener(testfn)
         }, 100);
     }
 
@@ -145,68 +193,53 @@ $(document).ready(function(){
       setTimeout(
         function() 
         {
-          testfn("right","Carpediem","Deprador","Glitterati")
+          testfn("right","Carpediem","Deprador","Glitterati",x)
+          x.addListener(testfn)
         }, 100);
     }
     if(rclick===1){
       setTimeout(
         function() 
         {
-          testfn("right","Indie","Nirvana","Kavisanmillan")
+          testfn("right","Indie","Nirvana","Kavisanmillan",x)
+          x.addListener(testfn)
         }, 100);
     }
     if(rclick===2){
       setTimeout(
         function() 
         {
-          testfn("right","Mrnits","Nataraj","Nitsmun")
+          testfn("right","Mrnits","Nataraj","Nitsmun",x)
+          x.addListener(testfn)
         }, 100);
     }
     if(rclick===3){
       setTimeout(
         function() 
         {
-          testfn("right","Promnight","Razzmatazz","Sokratik")
+          testfn("right","Promnight","Razzmatazz","Sokratik",x)
+          x.addListener(testfn)
         }, 100);
     }
     if(rclick===4){
       setTimeout(
         function() 
         {
-          testfn("right","Thundermarch","Whatthefood","Theend")
+          testfn("right","Thundermarch","Whatthefood","Theend",x)
+          x.addListener(testfn)
         }, 100);
     }
 
 
   }); 
 
+ 
+
     
 });
 
-$(document).on("scroll", function () {
-    if (isScrolledIntoView($elem, $window)) {
-        $elem.removeClass("opa");
-        $elem.addClass("enterleft");
-        
-    }
-});
 
-/*$(document).on("scroll", function () {
-    if (isScrolledIntoView($elem1, $window)) {
-        $elem1.removeClass("opa");
-        $elem1.addClass("fadein");
-        $elem1.addClass("box");
-        
-    }
-});
 
-$(document).on("scroll", function () {
-    if (isScrolledIntoView($elem2, $window)) {
-        $elem2.removeClass("opa");
-        $elem2.addClass("clownani");
-        
-    }
-});*/
 
 $(document).on("mouseenter", "#Carpediem", function(e) {
     $(this).find("#popupCarpediem").addClass("show");

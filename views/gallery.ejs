@@ -9,9 +9,39 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <link rel="stylesheet" type="text/css" href="stylesheet/gallerystyle.css">
+    <link rel="stylesheet" type="text/css" href="stylesheet/gallerymenu.css">
+    <link rel="stylesheet" type="text/css" href="stylesheet/loader.css">
+    
 </head>
 
 <body>
+
+<div id='loader'>
+    <div id='mascot-baton'>
+        <div id='flame' class="fire_place">
+            <div class="blur_fire">
+                <div class="big_flame"></div>
+            </div>
+            <div class="spark spark1">i</div>
+            <div class="spark spark2">n</div>
+            <div class="spark spark3">c</div>
+            <div class="spark spark4">a</div>
+            <div class="spark spark5">n</div>
+            <div class="spark spark6">d</div>
+            <div class="spark spark7">e</div>
+            <div class="spark spark8">s</div>
+            <div class="spark spark9">c</div>
+            <div class="spark spark10">e</div>
+            <div class="spark spark11">n</div>
+            <div class="spark spark12">c</div>
+            <div class="spark spark13">e</div>
+        </div>
+        <img src="/image/airawat-holding-torch.png" id="baton">
+    </div>
+</div>
+
+
+
 <img src="image/logo.png" class="logo">
 <div class="heading">
 <h1>
@@ -26,8 +56,10 @@
 </span>
 </h1>
 </div>
-  <img src="image/incandescence.jpg" class="clown clownani">
-  <div id="carousel-example-generic" data-interval="2000" class="carousel slide fadein box" data-ride="carousel">
+
+<div class="upperpart">
+  <img src="image/Frame3.svg" class="frame">
+  <div id="carousel-example-generic" data-interval="2000" class="carousel slide fadein " data-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators"></ol>
     <!-- Wrapper for slides -->
@@ -42,6 +74,7 @@
     <span class="sr-only">Next</span>
   </a>
   </div>
+</div>
 
   <div id="right" style="text-align:center">
     <span class="dot"></span>
@@ -77,12 +110,88 @@
   </div>
   </div>
 
+<div id="menu">
+
+    <div id='logo'>
+    </div>
+
+    <div id="cld1c">
+        <div id="cld1">
+            <a href="/event" id="link1">Events</a>
+        </div>
+    </div>
+
+    <div id="cld2c">
+        <div id="cld2">
+            <a href="/gallery" id="link2">Gallery</a>
+        </div>
+    </div>
+
+    <div id="cld3c">
+        <div id="cld3">
+            <a href="/history" id="link3">History</a>
+        </div>
+    </div>
+
+    <div id="cld4c">
+        <div id="cld4">
+            <a href="/reachus" id="link4">Reach Us</a>
+        </div>
+    </div>
+
+    <div id="cld5c">
+        <div id="cld5">
+            <a href="/faq" id="link5">F.A.Q</a>
+        </div>
+    </div>
+
+    <div id="cld6c">
+        <div id="cld6">
+            <a href="/register" id="link6">Register</a>
+        </div>
+    </div>
+
+    <div id="cld7c">
+        <div id="cld7">
+            <p>Menu</p>
+        </div>
+    </div>
+
+    <div id="cld8c">
+        <div id="cld8">
+        </div>
+    </div>
+
+    <div id="cld9c">
+        <div id="cld9">
+        </div>
+    </div>
+
+</div>
+
+
 
 <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <script src="js/galleryfunct.js"></script>
+<script src="js/menu.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        document.getElementById('loader').remove();
+        adaptMenu();
+    });
+</script>
 
+<script>
+    var $window = $(window);
+    
+    $(document).ready(function() {
+      var y = window.matchMedia("(min-width: 1000px)");
+      start(y);
+      y.addListener(start);
+    });
+</script>
 
 
 

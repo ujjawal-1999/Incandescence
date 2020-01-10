@@ -1,5 +1,5 @@
 var menuClicked = 0;
-
+var menuAdjust = 1;
 function adaptMenu() {
     if (menuAdjust == 0 || menuClicked == 1) return;
 
