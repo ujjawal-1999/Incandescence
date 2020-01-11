@@ -7,6 +7,20 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: "Papyrus";
+    src: url("../../font/Papyrus.ttf") format("ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Century Gothic";
+    src: url("../../font/CenturyGothic.ttf") format("ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
 #logo {
     background: url(../../image/menu/logo.png) no-repeat;
     width: 20vw;
@@ -411,7 +425,7 @@
     text-decoration: none;
     font-size: 1.1vw;
     color: black;
-    font-family: 'Ananda Neptouch 2', cursive;
+    font-family: 'Ananda Neptouch 2', 'Cursive';
     font-weight: bolder;
 }
 
@@ -427,13 +441,11 @@
 }
 
 @keyframes bounce {
-    0% {
+    0%,
+    100% {
         transform: translateY(-5px)
     }
     50% {
         transform: translateY(10px)
-    }
-    100% {
-        transform: translateY(-5px)
     }
 }
