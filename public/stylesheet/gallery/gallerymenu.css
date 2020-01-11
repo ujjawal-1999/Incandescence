@@ -54,7 +54,7 @@
 }
 
 #cld1 {
-    background-image: url(/image/mask/mask1.png);
+    background-image: url(/image/gallery/mask/mask1.png);
     background-size: 100% 100%;
     z-index: 5;
     position: absolute;
@@ -102,7 +102,7 @@
 }
 
 #cld2 {
-    background-image: url(/image/mask/mask2.png);
+    background-image: url(/image/gallery/mask/mask2.png);
     background-size: 100% 100%;
     z-index: 5;
     position: absolute;
@@ -150,7 +150,7 @@
 }
 
 #cld3 {
-    background-image: url(/image/mask/mask3.png);
+    background-image: url(/image/gallery/mask/mask3.png);
     background-size: 100% 100%;
     z-index: 5;
     position: absolute;
@@ -198,7 +198,7 @@
 }
 
 #cld4 {
-    background-image: url(/image/mask/mask4.png);
+    background-image: url(/image/gallery/mask/mask4.png);
     background-size: 100% 100%;
     z-index: 5;
     position: absolute;
@@ -246,7 +246,7 @@
 }
 
 #cld5 {
-    background-image: url(/image/mask/mask5.png);
+    background-image: url(/image/gallery/mask/mask5.png);
     background-size: 100% 100%;
     z-index: 5;
     position: absolute;
@@ -294,7 +294,7 @@
 }
 
 #cld6 {
-    background-image: url(/image/mask/mask6.png);
+    background-image: url(/image/gallery/mask/mask6.png);
     background-size: 100% 100%;
     z-index: 5;
     position: absolute;
@@ -342,7 +342,7 @@
 }
 
 #cld7 {
-    background-image: url(/image/mask/mask7.png);
+    background-image: url(/image/gallery/mask/mask7.png);
     z-index: 5;
     background-size: 100% 100%;
     visibility: hidden;
@@ -354,7 +354,7 @@
 }
 
 #cld8 {
-    background-image: url(/image/mask/mask8.png);
+    background-image: url(/image/gallery/mask/mask8.png);
     z-index: 5;
     background-size: 100% 100%;
     visibility: visible;
@@ -367,7 +367,7 @@
 
 #cld9 {
     z-index: 5;
-    background-image: url(/image/mask/mask9.png);
+    background-image: url(/image/gallery/mask/mask9.png);
     background-size: 100% 100%;
     visibility: visible;
     position: absolute;

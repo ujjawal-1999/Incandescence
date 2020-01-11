@@ -26,7 +26,7 @@ function showstuff(m,myval) {
     $( ".carousel-indicators" ).empty();
     $('<h1>'+vali+'</h1>').appendTo('.carousel-inner');
     setTimeout(function(){for(var i=0 ; i< m.length ; i++) {
-      string1="image/"+myval+"/"+m[i]+".jpg";
+      string1="image/gallery/"+myval+"/"+m[i]+".jpg";
       $('<div class="carousel-item"><img id="myimg" src="'+string1+'" class="d-block fadein"></div>').appendTo('.carousel-inner');
       $('<li data-target="#carousel-example-generic" data-slide-to="'+i+'"></li>').appendTo('.carousel-indicators')
     }
@@ -71,19 +71,19 @@ function testfn(move,id1,id2,id3,x) {
   var nwid3=change_name(id3);
   if(x.matches){ 
     if(move==="left"){ 
-      $('<div class="example enterleft"><div class="clip"><div class="film eve" id="'+id1+'"><img src="image/'+id1+'.jpg"><span class="popuptext" id="popup'+id1+'">'+nwid1+'</span></div></div><div class="clip"><div class="film eve" id="'+id2+'"><img src="image/'+id2+'.jpg"><span class="popuptext" id="popup'+id2+'">'+nwid2+'</span></div></div><div class="clip"><div class="film eve" id="'+id3+'"><img src="image/'+id3+'.jpg"><span class="popuptext" id="popup'+id3+'">'+nwid3+'</span></div></div></div>').appendTo('.cover');
+      $('<div class="example enterleft"><div class="clip"><div class="film eve" id="'+id1+'"><img src="image/gallery/'+id1+'.jpg"><span class="popuptext" id="popup'+id1+'">'+nwid1+'</span></div></div><div class="clip"><div class="film eve" id="'+id2+'"><img src="image/gallery/'+id2+'.jpg"><span class="popuptext" id="popup'+id2+'">'+nwid2+'</span></div></div><div class="clip"><div class="film eve" id="'+id3+'"><img src="image/gallery/'+id3+'.jpg"><span class="popuptext" id="popup'+id3+'">'+nwid3+'</span></div></div></div>').appendTo('.cover');
     }
     if(move==="right"){
-      $('<div class="example enterright"><div class="clip"><div class="film eve" id="'+id1+'"><img src="image/'+id1+'.jpg"><span class="popuptext" id="popup'+id1+'">'+nwid1+'</span></div></div><div class="clip"><div class="film eve" id="'+id2+'"><img src="image/'+id2+'.jpg"><span class="popuptext" id="popup'+id2+'">'+nwid2+'</span></div></div><div class="clip"><div class="film eve" id="'+id3+'"><img src="image/'+id3+'.jpg"><span class="popuptext" id="popup'+id3+'">'+nwid3+'</span></div></div></div>').appendTo('.cover');
+      $('<div class="example enterright"><div class="clip"><div class="film eve" id="'+id1+'"><img src="image/gallery/'+id1+'.jpg"><span class="popuptext" id="popup'+id1+'">'+nwid1+'</span></div></div><div class="clip"><div class="film eve" id="'+id2+'"><img src="image/gallery/'+id2+'.jpg"><span class="popuptext" id="popup'+id2+'">'+nwid2+'</span></div></div><div class="clip"><div class="film eve" id="'+id3+'"><img src="image/gallery/'+id3+'.jpg"><span class="popuptext" id="popup'+id3+'">'+nwid3+'</span></div></div></div>').appendTo('.cover');
     }
     setTimeout(function(){rem();}, 900);
   }
   else{
     if(move==="left"){ 
-      $('<div class="example enterleft"><div class="clip"><div class="film eve" id="'+id1+'"><img src="image/'+id1+'.jpg"><span class="popuptext1" id="popup'+id1+'">'+nwid1+'</span></div></div><div class="clip"><div class="film eve" id="'+id2+'"><img src="image/'+id2+'.jpg"><span class="popuptext1" id="popup'+id2+'">'+nwid2+'</span></div></div><div class="clip"><div class="film eve" id="'+id3+'"><img src="image/'+id3+'.jpg"><span class="popuptext1" id="popup'+id3+'">'+nwid3+'</span></div></div></div>').appendTo('.cover');
+      $('<div class="example enterleft"><div class="clip"><div class="film eve" id="'+id1+'"><img src="image/gallery/'+id1+'.jpg"><span class="popuptext1" id="popup'+id1+'">'+nwid1+'</span></div></div><div class="clip"><div class="film eve" id="'+id2+'"><img src="image/gallery/'+id2+'.jpg"><span class="popuptext1" id="popup'+id2+'">'+nwid2+'</span></div></div><div class="clip"><div class="film eve" id="'+id3+'"><img src="image/gallery/'+id3+'.jpg"><span class="popuptext1" id="popup'+id3+'">'+nwid3+'</span></div></div></div>').appendTo('.cover');
     }
     if(move==="right"){
-      $('<div class="example enterright"><div class="clip"><div class="film eve" id="'+id1+'"><img src="image/'+id1+'.jpg"><span class="popuptext1" id="popup'+id1+'">'+nwid1+'</span></div></div><div class="clip"><div class="film eve" id="'+id2+'"><img src="image/'+id2+'.jpg"><span class="popuptext1" id="popup'+id2+'">'+nwid2+'</span></div></div><div class="clip"><div class="film eve" id="'+id3+'"><img src="image/'+id3+'.jpg"><span class="popuptext1" id="popup'+id3+'">'+nwid3+'</span></div></div></div>').appendTo('.cover');
+      $('<div class="example enterright"><div class="clip"><div class="film eve" id="'+id1+'"><img src="image/gallery/'+id1+'.jpg"><span class="popuptext1" id="popup'+id1+'">'+nwid1+'</span></div></div><div class="clip"><div class="film eve" id="'+id2+'"><img src="image/gallery/'+id2+'.jpg"><span class="popuptext1" id="popup'+id2+'">'+nwid2+'</span></div></div><div class="clip"><div class="film eve" id="'+id3+'"><img src="image/gallery/'+id3+'.jpg"><span class="popuptext1" id="popup'+id3+'">'+nwid3+'</span></div></div></div>').appendTo('.cover');
     }
     setTimeout(function(){rem();}, 900);
   }
