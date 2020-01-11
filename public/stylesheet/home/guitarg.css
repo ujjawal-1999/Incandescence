@@ -1,0 +1,83 @@
+#guitarguy {
+    position: absolute;
+    top: 385px;
+    left: 110px;
+    height: 170px;
+    width: 170px;
+    z-index: 2;
+}
+
+#cap {
+    height: 13%;
+    width: 23%;
+    position: absolute;
+    top: 1%;
+    left: 23%;
+    background-image: url(../../image/home/cap3.png);
+    background-size: 100%;
+    -webkit-animation: headmove 2s linear both infinite;
+    animation: headmove 2s linear both infinite;
+}
+
+#guitarguyhd {
+    height: 23%;
+    width: 23%;
+    position: absolute;
+    top: 1%;
+    left: 20%;
+    background-image: url(../../image/home/ghead.png);
+    background-size: 100%;
+    -webkit-animation: headmove 2s linear both infinite;
+    animation: headmove 2s linear both infinite;
+}
+
+#guitarguyhnd {
+    height: 15%;
+    width: 30%;
+    position: absolute;
+    top: 30%;
+    background-image: url(../../image/home/ghand.png);
+    background-size: 100%;
+    -webkit-animation: handmove 2s linear both infinite;
+    animation: handmove 2s linear both infinite;
+    transform-origin: 10% 90%;
+}
+
+#guitarguybd {
+    height: 100%;
+    width: 90%;
+    position: absolute;
+    top: 15%;
+    background-image: url(../../image/home/guitarbd.png);
+    background-size: 100%;
+}
+
+@keyframes headmove {
+    0% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(10%);
+    }
+    75% {
+        transform: translateY(-5%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes handmove {
+    0% {
+        transform: rotateZ(0);
+    }
+    25% {
+        transform: rotateZ(40deg);
+    }
+    75% {
+        transform: rotateZ(-40deg);
+    }
+    100% {
+        transform: rotateZ(0);
+    }
+}

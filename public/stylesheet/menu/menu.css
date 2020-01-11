@@ -1,0 +1,439 @@
+/* @font-face kit by Fonts2u (https://fonts2u.com) */
+
+@font-face {
+    font-family: "Ananda Neptouch 2";
+    src: url("../../font/Ananda_Neptouch_2.eot") format("eot"), url("../../font/Ananda_Neptouch_2.woff") format("font/woff"), url("../../font/Ananda_Neptouch_2.ttf") format("truetype"), url("../../font/Ananda_Neptouch_2.svg#AnandaNeptouch2") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+#logo {
+    background: url(../../image/menu/logo.png) no-repeat;
+    width: 20vw;
+    height: 8.5vh;
+    background-size: contain;
+    position: absolute;
+    top: 4vh;
+    left: 5vw;
+}
+
+#menu {
+    z-index: 3;
+    position: absolute;
+    top: 3vh;
+    left: 0vw;
+}
+
+#cld1c {
+    -webkit-animation: bounce both infinite 4s 0s;
+    animation: bounce both infinite 4s 0s;
+}
+
+#cld2c {
+    -webkit-animation: both infinite 4s 0.2s;
+    animation: bounce both infinite 4s 0.2s;
+}
+
+#cld3c {
+    -webkit-animation: both infinite 4s 0.4s;
+    animation: bounce both infinite 4s 0.4s;
+}
+
+#cld4c {
+    -webkit-animation: both infinite 4s 0.6s;
+    animation: bounce both infinite 4s 0.6s;
+}
+
+#cld5c {
+    -webkit-animation: both infinite 4s 0.8s;
+    animation: bounce both infinite 4s 0.8s;
+}
+
+#cld6c {
+    -webkit-animation: both infinite 4s 1s;
+    animation: bounce both infinite 4s 1s;
+}
+
+#cld7c {
+    -webkit-animation: both infinite 4s 1s;
+    animation: bounce both infinite 4s 1s;
+}
+
+#cld1 {
+    background-image: url(../../image/menu/cloud.png);
+    background-size: 100% 100%;
+    z-index: 5;
+    position: absolute;
+    height: 9vh;
+    width: 11vw;
+    left: 46vw;
+    top: 3vh;
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+@keyframes cld1m {
+    from {
+        height: 9vh;
+        width: 11vw;
+        left: 46vw;
+        top: 3vh;
+        visibility: hidden;
+    }
+    to {
+        top: 10vh;
+        left: 20vw;
+        height: 15vh;
+        width: 23vw;
+        visibility: visible;
+    }
+}
+
+@keyframes cld1i {
+    from {
+        top: 10vh;
+        left: 20vw;
+        height: 15vh;
+        width: 23vw;
+        visibility: visible;
+    }
+    to {
+        height: 9vh;
+        width: 11vw;
+        left: 46vw;
+        top: 3vh;
+        visibility: hidden;
+    }
+}
+
+#cld2 {
+    background-image: url(../../image/menu/cloud.png);
+    background-size: 100% 100%;
+    z-index: 5;
+    position: absolute;
+    height: 10vh;
+    width: 10vw;
+    left: 54vw;
+    top: 4vh;
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+@keyframes cld2m {
+    from {
+        height: 10vh;
+        width: 10vw;
+        left: 54vw;
+        top: 4vh;
+        visibility: hidden;
+    }
+    to {
+        top: 40vh;
+        left: 10vw;
+        height: 15vh;
+        width: 23vw;
+        visibility: visible;
+    }
+}
+
+@keyframes cld2i {
+    from {
+        top: 40vh;
+        left: 10vw;
+        height: 15vh;
+        width: 23vw;
+        visibility: visible;
+    }
+    to {
+        height: 10vh;
+        width: 10vw;
+        left: 54vw;
+        top: 4vh;
+        visibility: hidden;
+    }
+}
+
+#cld3 {
+    background-image: url(../../image/menu/cloud.png);
+    background-size: 100% 100%;
+    z-index: 5;
+    position: absolute;
+    height: 10vh;
+    width: 11vw;
+    left: 61vw;
+    top: 1vh;
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+@keyframes cld3m {
+    from {
+        height: 10vh;
+        width: 11vw;
+        left: 61vw;
+        top: 1vh;
+        visibility: hidden;
+    }
+    to {
+        top: 70vh;
+        left: 20vw;
+        height: 15vh;
+        width: 23vw;
+        visibility: visible;
+    }
+}
+
+@keyframes cld3i {
+    from {
+        top: 70vh;
+        left: 20vw;
+        height: 15vh;
+        width: 23vw;
+        visibility: visible;
+    }
+    to {
+        height: 10vh;
+        width: 11vw;
+        left: 61vw;
+        top: 1vh;
+        visibility: hidden;
+    }
+}
+
+#cld4 {
+    background-image: url(../../image/menu/cloud.png);
+    background-size: 100% 100%;
+    z-index: 5;
+    position: absolute;
+    height: 10vh;
+    width: 13vw;
+    left: 69vw;
+    top: 2vh;
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+@keyframes cld4m {
+    from {
+        height: 10vh;
+        width: 13vw;
+        left: 69vw;
+        top: 2vh;
+        visibility: hidden;
+    }
+    to {
+        top: 10vh;
+        left: 55vw;
+        height: 15vh;
+        width: 23vw;
+        visibility: visible;
+    }
+}
+
+@keyframes cld4i {
+    from {
+        top: 10vh;
+        left: 55vw;
+        height: 15vh;
+        width: 23vw;
+        visibility: visible;
+    }
+    to {
+        height: 10vh;
+        width: 13vw;
+        left: 69vw;
+        top: 2vh;
+        visibility: hidden;
+    }
+}
+
+#cld5 {
+    background-image: url(../../image/menu/cloud.png);
+    background-size: 100% 100%;
+    z-index: 5;
+    position: absolute;
+    height: 9vh;
+    width: 10vw;
+    left: 78vw;
+    top: 6vh;
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+@keyframes cld5m {
+    from {
+        height: 9vh;
+        width: 10vw;
+        left: 78vw;
+        top: 6vh;
+        visibility: hidden;
+    }
+    to {
+        top: 40vh;
+        left: 65vw;
+        height: 15vh;
+        width: 23vw;
+        visibility: visible;
+    }
+}
+
+@keyframes cld5i {
+    from {
+        top: 40vh;
+        left: 65vw;
+        height: 15vh;
+        width: 23vw;
+        visibility: visible;
+    }
+    to {
+        height: 9vh;
+        width: 10vw;
+        left: 78vw;
+        top: 6vh;
+        visibility: hidden;
+    }
+}
+
+#cld6 {
+    background-image: url(../../image/menu/cloud.png);
+    background-size: 100% 100%;
+    z-index: 5;
+    position: absolute;
+    height: 10vh;
+    width: 12vw;
+    left: 85vw;
+    top: 3vh;
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+@keyframes cld6m {
+    from {
+        height: 10vh;
+        width: 12vw;
+        left: 85vw;
+        top: 3vh;
+        visibility: hidden;
+    }
+    to {
+        top: 70vh;
+        left: 55vw;
+        height: 15vh;
+        width: 23vw;
+        visibility: visible;
+    }
+}
+
+@keyframes cld6i {
+    from {
+        top: 70vh;
+        left: 55vw;
+        height: 15vh;
+        width: 23vw;
+        visibility: visible;
+    }
+    to {
+        height: 10vh;
+        width: 12vw;
+        left: 85vw;
+        top: 3vh;
+        visibility: hidden;
+    }
+}
+
+#cld7 {
+    background-image: url(../../image/menu/cloud.png);
+    z-index: 5;
+    background-size: 100% 100%;
+    visibility: hidden;
+    position: absolute;
+    height: 10vh;
+    width: 20vw;
+    left: 40vw;
+    top: 14vh;
+}
+
+#cld8 {
+    background-image: url(../../image/menu/cloud.png);
+    z-index: 5;
+    background-size: 100% 100%;
+    visibility: visible;
+    position: absolute;
+    height: 5vh;
+    width: 10vw;
+    left: 5vw;
+    top: 14vh;
+}
+
+#cld9 {
+    z-index: 5;
+    background-image: url(../../image/menu/cloud.png);
+    background-size: 100% 100%;
+    visibility: visible;
+    position: absolute;
+    height: 5vh;
+    width: 10vw;
+    left: 85vw;
+    top: 14vh;
+}
+
+@keyframes cld {
+    from {
+        opacity: 0;
+        visibility: hidden;
+    }
+    to {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+@keyframes cldf {
+    from {
+        opacity: 1;
+        visibility: visible;
+    }
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+#menu a {
+    position: relative;
+    top: 40%;
+    text-decoration: none;
+    font-size: 1.1vw;
+    color: black;
+    font-family: 'Ananda Neptouch 2', cursive;
+    font-weight: bolder;
+}
+
+#menu p {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    font-weight: 900;
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 1.8vh;
+    color: black;
+    font-family: 'Ananda Neptouch 2', cursive;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(-5px)
+    }
+    50% {
+        transform: translateY(10px)
+    }
+    100% {
+        transform: translateY(-5px)
+    }
+}

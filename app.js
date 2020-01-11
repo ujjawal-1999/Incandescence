@@ -74,7 +74,7 @@ app.get('/database', (req, res) => {
 })
 
 app.get('/', (req, res) => {
-    res.render('landing')
+    res.render('home')
 })
 
 app.get('/register', (req, res) => {
