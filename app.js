@@ -33,7 +33,7 @@ app.use(express.static('public'))
 var http = require('http');
 var httpServer = http.createServer(app);
 httpServer.listen(80);
-// ends
+// // ends
 
 app.use(bodyParser.urlencoded({ extended: true }))
 
@@ -286,17 +286,6 @@ app.post('/check', (req, res) => {
 // End of post request
 
 
-app.listen(5000, () => {
-    console.log('Connected to server')
-})
-
-
-
-
-
-
-
-
-
-
-
+// app.listen(5000, () => {
+    // console.log('Connected to server')
+// })

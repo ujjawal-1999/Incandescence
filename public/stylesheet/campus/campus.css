@@ -1,4 +1,6 @@
+
 h1 {
+    font-family: "Ananda Neptouch 2";
     padding: .5rem 1.25rem;
     border-radius: 10rem;
     background-color: #0cf;
@@ -7,14 +9,26 @@ h1 {
     text-align: center;
 }
 
+.container h1 {
+
+}
+
+div #navbar a {
+    letter-spacing: 0px;
+}
+
+p {
+    font-family: "Century Gothic";
+
+}
+
 .button {
     display: inline-block;
     padding: .75rem 1.25rem;
     border-radius: 10rem;
     color: #fff;
     text-transform: uppercase;
-    font-size: 1rem;
-    letter-spacing: .15rem;
+    font-size: 1.2rem;
     transition: all .3s;
     position: relative;
     overflow: hidden;
@@ -55,20 +69,47 @@ h1 {
     width: 100%;
 }
 
+#Responsibilities h1 span {
+    color: black;
+    font-family: "Ananda Neptouch 2";
+    border-radius: 10rem;
+    font-size: 50px;
+    background-color: #0cf;
+    justify-content: center;
+    text-align: center;
+
+}
 
 /* optional reset for presentation */
 
 * {
-    font-family: "Century Gothic";
     text-decoration: none;
     font-size: 20px;
 }
 
 .container {
     padding-top: 50px;
-    margin: 0 auto;
+    margin: auto auto;
     width: 100%;
+    justify-content: center;
+    align-items: center;
+    line-height: 35px;
+    letter-spacing: 0px;
+    font-size: 18px;
+}
+
+#about {
+    padding-left: 50px;
+}
+
+#apply {
     text-align: center;
+}
+
+.container a button {
+    justify-content: center;
+    align-items: center;
+    margin-left: 0px;
 }
 
 hr {
@@ -78,12 +119,9 @@ hr {
     margin-top: 0rem;
 }
 
-h1 {
-    font-family: 'Papyrus';
-}
 
 #middle-button {
-    margin-left: 50%;
+    margin-left: 0px;
 }
 
 .home {
@@ -97,6 +135,12 @@ h1 {
     background-size: cover;
 }
 
+.anchor{
+
+  height: 115px; /*same height as header*/
+  margin-top: -115px; /*same height as header*/
+  }
+
 #wings {
     padding-top: 6px;
     margin-left: 55px;
@@ -109,6 +153,7 @@ h1 {
 }
 
 #navbar {
+    font-family: "Papyrus";
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -124,6 +169,11 @@ h1 {
     top: 0;
     width: 100%;
 }
+
+.sticky + #about {
+    padding-top: 200px;
+}
+
 
 image {
     display: inline;
@@ -149,25 +199,31 @@ image {
 #about {
     background-color: #e4f9ff;
     padding-bottom: 30px;
+
 }
 
 #Representative {
     background-color: #e4f9ff;
     padding-bottom: 30px;
+
 }
 
 #Responsibilities {
     background-color: #e4f9ff;
     padding-bottom: 30px;
+
 }
 
 #apply {
     background-color: #e4f9ff;
     padding-bottom: 30px;
+
+
 }
 
 #contact {
     background-color: #e4f9ff;
+
 }
 
 @keyframes run {
@@ -193,7 +249,7 @@ image {
 .flip-card {
     background-color: transparent;
     width: 300px;
-    height: 350px;
+    height: 340px;
     border: 1px solid #f1f1f1;
     perspective: 1000px;
     /* Remove this if you don't want the 3D effect */
@@ -244,8 +300,9 @@ image {
 
 .flip-card-front img {
     width: 300px;
-    height: 350px;
+    height: 340px;
     border-radius: 10px;
+    object-fit: cover;
 }
 
 
@@ -259,7 +316,13 @@ image {
 }
 
 .flip-card-back h3 {
+    font-family: "Papyrus";
     margin-top: 20px;
+}
+
+.flip-card-back p {
+    font-size: 22px;
+    font-family: "Ananda Neptouch 2";
 }
 
 .fa {
@@ -276,4 +339,25 @@ image {
 .fa:hover {
     color: dodgerblue;
     background-color: beige;
+}
+
+
+ul li {
+
+    list-style: none;
+
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="container"] h1 {
+    font-size: 30px;
+  }
+
+
+ #navbar {
+    display: none;
+ }
+
+
 }
