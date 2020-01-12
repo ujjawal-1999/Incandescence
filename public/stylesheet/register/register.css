@@ -3,7 +3,7 @@
   --input-padding-y: .75rem;
 }
   body {
-    background: url('/image/back2.svg') no-repeat center center fixed;
+    background: url('/image/gallery/back2.svg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
