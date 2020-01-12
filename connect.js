@@ -3,3 +3,4 @@ mongoose.connect('mongodb://localhost:27017/User',{ useNewUrlParser: true, useUn
 useCreateIndex: true })
 module.exports={mongoose}
 
+

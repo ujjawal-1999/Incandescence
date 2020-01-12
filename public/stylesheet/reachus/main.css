@@ -7,6 +7,7 @@
 /* =================================== */
 /*  Basic Style 
 /* =================================== */
+
 svg{
   height: 2100px;
   width: 500%;
@@ -191,7 +192,7 @@ h4,
       display: none; } }
 
 .banner-area {
-  background: url(../img/head.png) no-repeat center;
+  background: url(../../image/reachus/img/head.png) no-repeat center;
   background-position: right;
   min-height: 700px;
   min-width: 1530px; }

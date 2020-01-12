@@ -201,7 +201,10 @@ main {
   width: 100%;
 }
 
-
+.board{
+   font-size: 3.5em;
+    height: 350px;
+}
 
 #rod {
      animation: animate 3s  infinite;
@@ -213,6 +216,7 @@ main {
 #to {
      animation: animate 3s 1s infinite;
   padding-left: 40px;
+  padding-top: 30px;
   position: relative;
   color: #111;
 }
@@ -222,6 +226,7 @@ main {
   padding: 0px;
   position: relative;
    padding-left: 20px;
+   padding-top: 30px;
   color: #111;
 }
 
@@ -246,4 +251,12 @@ main {
 }
 
 //==================END=================//
+
+/*@media (max-width: 600px) {
+  .board{
+   font-size: 1.5em;
+   height: 150px;
+}
+
+}*/
 

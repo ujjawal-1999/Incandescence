@@ -8,7 +8,7 @@
 }
 
 #logo {
-    background: url(../img/logo.png) no-repeat;
+    background: url(../../image/menu/logo.png) no-repeat;
     width: 20vw;
     height: 8.5vh;
     background-size: contain;
@@ -20,7 +20,7 @@
 #menu {
     z-index: 3;
     position: absolute;
-    top: 3vh;
+    top: 2vh;
     left: 0vw;
 }
 
@@ -60,14 +60,14 @@
 }
 
 #cld1 {
-    background-image : url(img/cloud.png);
+    background-image : url(../../image/reachus/img/cloud3.png);
     background-size: 100% 100%;
     z-index: 1;
     position: absolute;
     height: 9vh;
     width: 11vw;
     left: 46vw;
-    top: 3vh;
+    top: 2vh;
     visibility: hidden;
     display: flex;
     justify-content: center;
@@ -78,7 +78,7 @@
         height: 9vh;
         width: 11vw;
         left: 46vw;
-        top: 3vh;
+        top: 2vh;
         visibility: hidden;
     }
     to {
@@ -102,13 +102,13 @@
         height: 9vh;
         width: 11vw;
         left: 46vw;
-        top: 3vh;
+        top: 2vh;
         visibility: hidden;
     }
 }
 
 #cld2 {
-    background-image: url(img/cloud.png);
+    background-image: url(../../image/reachus/img/cloud3.png);
     background-size: 100% 100%;
     z-index: 5;
     position: absolute;
@@ -156,7 +156,7 @@
 }
 
 #cld3 {
-    background-image: url(img/cloud.png);
+    background-image: url(../../image/reachus/img/cloud3.png);
     background-size: 100% 100%;
     z-index: 5;
     position: absolute;
@@ -204,7 +204,7 @@
 }
 
 #cld4 {
-    background-mage: url(img/cloud.png);
+    background-image: url(../../image/reachus/img/cloud3.png);
     background-size: 100% 100%;
     z-index: 5;
     position: absolute;
@@ -252,14 +252,14 @@
 }
 
 #cld5 {
-    background-image: url(img/cloud.png);
+    background-image: url(../../image/reachus/img/cloud3.png);
     background-size: 100% 100%;
     z-index: 5;
     position: absolute;
     height: 9vh;
     width: 10vw;
     left: 78vw;
-    top: 6vh;
+    top: 3.5vh;
     visibility: hidden;
     display: flex;
     justify-content: center;
@@ -300,14 +300,14 @@
 }
 
 #cld6 {
-    background-image: url(img/cloud.png);
+    background-image: url(../../image/reachus/img/cloud3.png);
     background-size: 100% 100%;
     z-index: 5;
     position: absolute;
     height: 10vh;
     width: 12vw;
     left: 85vw;
-    top: 3vh;
+    top: 2vh;
     visibility: hidden;
     display: flex;
     justify-content: center;
@@ -318,7 +318,7 @@
         height: 10vh;
         width: 12vw;
         left: 85vw;
-        top: 3vh;
+        top: 2vh;
         visibility: hidden;
     }
     to {
@@ -342,13 +342,13 @@
         height: 10vh;
         width: 12vw;
         left: 85vw;
-        top: 3vh;
+        top: 2vh;
         visibility: hidden;
     }
 }
 
 #cld7 {
-    background-image: url(img/cloud.png);
+    background-image: url(../../image/reachus/img/cloud3.png);
     z-index: 5;
     background-size: 100% 100%;
     visibility: hidden;
@@ -360,7 +360,7 @@
 }
 
 #cld8 {
-    background-image: url(img/cloud.png);
+    background-image: url(../../image/reachus/img/cloud3.png);
     z-index: 5;
     background-size: 100% 100%;
     visibility: visible;
@@ -373,7 +373,7 @@
 
 #cld9 {
     z-index: 5;
-    background-image: url(img/cloud.png);
+    background-image: url(../../image/reachus/img/cloud3.png);
     background-size: 100% 100%;
     visibility: visible;
     position: absolute;
