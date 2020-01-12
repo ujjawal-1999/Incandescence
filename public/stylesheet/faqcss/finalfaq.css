@@ -128,7 +128,28 @@ h1 {
 
 }
 
-.flip>.front,
+.flip>.front{
+
+ 
+    display: flex;
+    color: white;
+    width: inherit;
+    background-size: cover !important;
+    background-position: center !important;
+    height: 300px;
+    padding: 1em 2em;
+    /*background:rgb(210,31,60);*/
+    background: linear-gradient(#452A18, #EC3913);
+    border-radius: 10px;
+     /*background-image: url(/image/faq/bgf.png);*/
+     font-family: 'Lato', sans-serif;
+     align-items: center;
+
+
+      /*line-height: 40px;*/
+     /*padding-top: 30%;*/
+}
+
 .flip>.back {
     display: flex;
     color: white;
@@ -137,7 +158,7 @@ h1 {
     background-position: center !important;
     height: 300px;
     padding: 1em 2em;
-    background: #313131;
+    background: rgb(66,13,9);
     border-radius: 10px;
      /*background-image: url(/image/faq/bgf.png);*/
      font-family: 'Lato', sans-serif;
