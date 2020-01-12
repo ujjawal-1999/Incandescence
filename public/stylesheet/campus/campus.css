@@ -1,8 +1,6 @@
-body {
-}
-
 
 h1 {
+    font-family: "Ananda Neptouch 2";
     padding: .5rem 1.25rem;
     border-radius: 10rem;
     background-color: #0cf;
@@ -11,14 +9,26 @@ h1 {
     text-align: center;
 }
 
+.container h1 {
+
+}
+
+div #navbar a {
+    letter-spacing: 0px;
+}
+
+p {
+    font-family: "Century Gothic";
+
+}
+
 .button {
     display: inline-block;
     padding: .75rem 1.25rem;
     border-radius: 10rem;
     color: #fff;
     text-transform: uppercase;
-    font-size: 1rem;
-    letter-spacing: .15rem;
+    font-size: 1.2rem;
     transition: all .3s;
     position: relative;
     overflow: hidden;
@@ -59,11 +69,20 @@ h1 {
     width: 100%;
 }
 
+#Responsibilities h1 span {
+    color: black;
+    font-family: "Ananda Neptouch 2";
+    border-radius: 10rem;
+    font-size: 50px;
+    background-color: #0cf;
+    justify-content: center;
+    text-align: center;
+
+}
 
 /* optional reset for presentation */
 
 * {
-    font-family: "Century Gothic";
     text-decoration: none;
     font-size: 20px;
 }
@@ -74,12 +93,21 @@ h1 {
     width: 100%;
     justify-content: center;
     align-items: center;
+    line-height: 35px;
+    letter-spacing: 0px;
+    font-size: 18px;
+}
+
+#about {
+    padding-left: 50px;
+}
+
+#apply {
     text-align: center;
 }
 
 .container a button {
     justify-content: center;
-    text-align: center;
     align-items: center;
     margin-left: 0px;
 }
@@ -91,9 +119,6 @@ hr {
     margin-top: 0rem;
 }
 
-h1 {
-    font-family: 'Papyrus';
-}
 
 #middle-button {
     margin-left: 0px;
@@ -128,6 +153,7 @@ h1 {
 }
 
 #navbar {
+    font-family: "Papyrus";
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -290,11 +316,13 @@ image {
 }
 
 .flip-card-back h3 {
+    font-family: "Papyrus";
     margin-top: 20px;
 }
 
 .flip-card-back p {
     font-size: 22px;
+    font-family: "Ananda Neptouch 2";
 }
 
 .fa {
