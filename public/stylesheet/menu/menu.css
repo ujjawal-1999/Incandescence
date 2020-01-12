@@ -9,14 +9,14 @@
 
 @font-face {
     font-family: "Papyrus";
-    src: url("../../font/Papyrus.ttf") format("ttf");
+    src: url("../../font/Papyrus.ttf") format("ttf"),url("../../font/Papyrus.eot") format("eot"),url("../../font/Papyrus.woff") format("font/woff"),url("../../font/Papyrus.svg") format("svg");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Century Gothic";
-    src: url("../../font/CenturyGothic.ttf") format("ttf");
+    src: url("../../font/CenturyGothic.ttf") format("ttf"),url("../../font/CenturyGothic.eot") format("eot"),url("../../font/CenturyGothic.woff") format("font/woff"),url("../../font/CenturyGothic.svg") format("svg");
     font-weight: normal;
     font-style: normal;
 }
