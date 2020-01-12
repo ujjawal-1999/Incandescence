@@ -223,7 +223,7 @@ image {
 .flip-card {
     background-color: transparent;
     width: 300px;
-    height: 350px;
+    height: 340px;
     border: 1px solid #f1f1f1;
     perspective: 1000px;
     /* Remove this if you don't want the 3D effect */
@@ -274,8 +274,9 @@ image {
 
 .flip-card-front img {
     width: 300px;
-    height: 350px;
+    height: 340px;
     border-radius: 10px;
+    object-fit: cover;
 }
 
 
@@ -290,6 +291,10 @@ image {
 
 .flip-card-back h3 {
     margin-top: 20px;
+}
+
+.flip-card-back p {
+    font-size: 22px;
 }
 
 .fa {
