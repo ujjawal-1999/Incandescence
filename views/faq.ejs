@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>FAQ : Incandescence 2020</title>
     <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="stylesheet/faqcss/finalfaq.css" type="text/css">
     <link rel="stylesheet" type="text/css" href="stylesheet/loader/loader.css" type="text/css">
     <link rel="stylesheet" type="text/css" href="stylesheet/menu/menu.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="stylesheet/faqcss/faqmenu.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="stylesheet/faqcss/finalfaq.css" type="text/css">
 
 </head>
 
@@ -69,7 +70,7 @@
 
         <div id="cld4c">
             <div id="cld4">
-                <a href="/reachus" id="link4">Reach Us</a>
+                <a href="/campus" id="link4">CA</a>
             </div>
         </div>
 
@@ -244,30 +245,19 @@
 
         </div>
     </center>
-
-
-
-
-
-
-
-
-
-
-
-
-
 </body>
 
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="js/menu/menu.js"></script>
 <script type="text/javascript">
-    $(document).ready(function() {
-        adaptMenu();
-        window.addEventListener("resize", adaptMenu);
+    window.addEventListener('load', function() {
+        $(window).resize(function(e) {
+            adaptMenu();
+        });
         document.getElementById('loader').remove();
     });
+    adaptMenu();
 </script>
 
 

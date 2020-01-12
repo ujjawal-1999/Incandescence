@@ -7,7 +7,9 @@ function playAnimation() {
     $('#cap').css("animation", "headmove 2s linear both infinite");
     $('#guitarguyhd').css("animation", "headmove 2s linear both infinite");
     $('#guitarguyhnd').css("animation", "handmove 2s linear both infinite");
-    if ($('.ferris-wheel--core').css("animation-duration") != '30s') ferrisControl();
+
+    $ferris = $(".ferris-wheel--core");
+    if ($ferris.css('-webkit-animation-play-state') == 'paused') ferrisControl();
     animateText();
 }
 
@@ -18,7 +20,9 @@ function stopAnimation() {
     $('#cap').css("-webkit-animation", "none");
     $('#guitarguyhd').css("-webkit-animation", "none");
     $('#guitarguyhnd').css("-webkit-animation", "none");
-    if ($('.ferris-wheel--core').css("animation-duration") == '30s') ferrisControl();
+
+    $ferris = $(".ferris-wheel--core");
+    if ($ferris.css('-webkit-animation-play-state') == 'running') ferrisControl();
     hideText();
 }
 
