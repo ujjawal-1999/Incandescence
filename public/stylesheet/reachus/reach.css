@@ -1,0 +1,525 @@
+#road {
+    background-image: url(../../image/reachus/img/road.png);
+    height: 1000px;
+    width: 1920px;
+    position: absolute;
+    top: 400px;
+    right: 5%;
+}
+
+.car {
+    background-image: url(../../image/reachus/img/bus.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: rotateY(180deg);
+    height: 300px;
+    width: 400px;
+    position: absolute;
+    top: 900px;
+    left: 830px;
+    animation: car 2s both;
+}
+
+#carj {
+    background-image: url(../../image/reachus/img/bus.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: rotateY(180deg);
+    height: 300px;
+    width: 400px;
+    position: absolute;
+    top: 900px;
+    left: 830px;
+    transform: translateX(350px) rotateY(180deg) translateY(0px) scale(0.8);
+}
+
+.carj {
+    background-image: url(../../image/reachus/img/bus.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: rotateY(180deg);
+    height: 300px;
+    width: 400px;
+    position: absolute;
+    top: 900px;
+    left: 830px;
+    animation: carr 2s both;
+}
+
+.sign1 {
+    box-sizing: border-box;
+    background-image: url(../../image/reachus/img/sign1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    top: 140%;
+    left: 78%;
+    color: solid black;
+    font-size: 22px;
+    font-family: 'Paytone One', sans-serif;
+    text-align: center;
+    padding-top: 50px;
+    padding-right: 50px;
+    animation: sign 1s both;
+    font-weight: 600;
+}
+
+.sign1r {
+    box-sizing: border-box;
+    background-image: url(../../image/reachus/img/sign1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    top: 140%;
+    left: 78%;
+    color: solid black;
+    font-size: 22px;
+    font-family: 'Paytone One', sans-serif;
+    text-align: center;
+    padding-top: 50px;
+    padding-right: 50px;
+    animation: signr 1s both;
+    font-weight: 600;
+}
+
+#plane {
+    box-sizing: border-box;
+    background-image: url(../../image/reachus/img/plane.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    animation: plane 4s both linear infinite;
+}
+
+#pc {
+    position: absolute;
+    top: 300px;
+    left: 20px;
+    height: 200px;
+    width: 200px;
+    animation: pc 4s both ease infinite;
+}
+
+#sign2 {
+    box-sizing: border-box;
+    background-image: url(../../image/reachus/img/signl.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 170px;
+    width: 150px;
+    position: absolute;
+    bottom: 0%;
+    left: 5%;
+    color: solid black;
+    font-size: 14px;
+    font-weight: 900;
+    font-family: 'Paytone One', sans-serif;
+    text-align: center;
+    padding-top: 20px;
+    padding-right: 10px;
+}
+
+#sign22 {
+    box-sizing: border-box;
+    background-image: url(../../image/reachus/img/sign.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 250px;
+    width: 250px;
+    position: absolute;
+    bottom: -33%;
+    left: 15%;
+    color: solid black;
+    font-size: 14px;
+    font-weight: 900;
+    font-family: 'Paytone One', sans-serif;
+    text-align: center;
+    padding-top: 50px;
+    padding-right: 15px;
+    animation: signn 1s 0.5s both;
+}
+
+#sign23 {
+    box-sizing: border-box;
+    background-image: url(../../image/reachus/img/cloud3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 160px;
+    width: 230px;
+    position: absolute;
+    bottom: 40%;
+    left: 35%;
+    color: solid black;
+    font-size: 14px;
+    font-weight: 900;
+    font-family: 'Paytone One', sans-serif;
+    text-align: center;
+    padding-top: 50px;
+    padding-right: 15px;
+    animation: 1s 0.5s both;
+}
+
+#sign24 {
+    box-sizing: border-box;
+    background-image: url(../../image/reachus/img/cloud3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 130px;
+    width: 180px;
+    position: absolute;
+    bottom: 28%;
+    left: 0%;
+    color: solid black;
+    font-size: 14px;
+    font-weight: 900;
+    font-family: 'Paytone One', sans-serif;
+    text-align: center;
+    padding-top: 50px;
+    padding-right: 15px;
+    animation: 1s 0.5s both;
+}
+
+#sign3 {
+    box-sizing: border-box;
+    background-image: url(../../image/reachus/img/sgn.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 230px;
+    position: absolute;
+    bottom: -25%;
+    right: 10%;
+    color: solid black;
+    font-size: 22px;
+    font-weight: 600;
+    font-family: 'Paytone One', sans-serif;
+    text-align: center;
+    padding-top: 40px;
+    animation: signn 1s 1s both;
+}
+
+@keyframes sign {
+    from {
+        transform: translateY(0);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(-100%);
+        opacity: 1;
+    }
+}
+
+@keyframes signn {
+    from {
+        transform: translateY(0);
+        opacity: 0.5;
+    }
+    to {
+        transform: translateY(-100%);
+        opacity: 1;
+    }
+}
+
+#station {
+    box-sizing: border-box;
+    background-image: url(../../image/reachus/img/station.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 220px;
+    width: 240px;
+    position: absolute;
+    bottom: 2%;
+    right: 35%;
+}
+
+#trainj {
+    box-sizing: border-box;
+    background-image: url(../../image/reachus/img/train.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    bottom: -15%;
+    right: 25%;
+    transform: translateX(600px);
+    animation: train both linear 5s infinite;
+}
+
+.trainj {
+    box-sizing: border-box;
+    background-image: url(../../image/reachus/img/train.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    top: 24%;
+    right: 25%;
+    transform: translateX(0px);
+}
+
+.train {
+    box-sizing: border-box;
+    background-image: url(../../image/reachus/img/train.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    top: 24%;
+    right: 25%;
+    animation: train both linear 3s;
+}
+
+@keyframes plane {
+    0% {
+        transform: translateX(-30px) scale(0.6);
+    }
+    80% {
+        transform: translateX(570px) scale(1);
+    }
+    100% {
+        transform: translateX(570px) scale(1);
+    }
+}
+
+@keyframes pc {
+    0% {
+        transform: translateY(100px);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    80% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes car {
+    from {
+        transform: translateX(350px) rotateY(180deg) translateY(0px) scale(0.8);
+    }
+    to {
+        transform: translateX(0) rotateY(180deg) translateY(230px) scale(1);
+    }
+}
+
+@keyframes carr {
+    from {
+        transform: translateX(0) rotateY(180deg) translateY(230px) scale(1);
+    }
+    to {
+        transform: translateX(350px) rotateY(180deg) translateY(0px) scale(0.8);
+    }
+}
+
+@keyframes sign {
+    from {
+        transform: translateY(200px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes signr {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(200px);
+    }
+}
+
+@keyframes train {
+    0% {
+        transform: translateX(600px);
+    }
+    78% {
+        transform: translateX(-190px);
+    }
+    100% {
+        transform: translateX(-190px);
+    }
+}
+
+@media (max-width: 411px) {
+    #station {
+        box-sizing: border-box;
+        background-image: url(../../image/reachus/img/station.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 200px;
+        width: 200px;
+        position: absolute;
+        top: 25%;
+        left: 30%;
+    }
+    #sign3 {
+        box-sizing: border-box;
+        background-image: url(../../image/reachus/img/sign.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 150px;
+        width: 150px;
+        position: absolute;
+        top: 27%;
+        left: 5%;
+        z-index: 1;
+        color: solid black;
+        font-size: 22px;
+        font-weight: 200;
+        font-family: 'Paytone One', sans-serif;
+        text-align: center;
+        padding-top: 20px;
+    }
+    #carj {
+        background-image: url(../../image/reachus/img/bus.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        transform: rotateY(180deg);
+        height: 300px;
+        width: 400px;
+        position: absolute;
+        top: 1200px;
+        left: 10px;
+    }
+    .sign1 {
+        box-sizing: border-box;
+        background-image: url(../../image/reachus/img/sign.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 200px;
+        width: 200px;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        color: solid black;
+        font-size: 22px;
+        font-family: 'Paytone One', sans-serif;
+        text-align: center;
+        padding-top: 50px;
+        animation: sign 1s both;
+    }
+    .sign1r {
+        box-sizing: border-box;
+        background-image: url(../../image/reachus/img/sign.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 200px;
+        width: 200px;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        color: solid black;
+        font-size: 22px;
+        font-family: 'Paytone One', sans-serif;
+        text-align: center;
+        padding-top: 50px;
+        animation: signr 1s both;
+    }
+}
+
+@media (min-width: 412px)and(max-width: 768px) {
+    #station {
+        box-sizing: border-box;
+        background-image: url(../../image/reachus/img/station.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 200px;
+        width: 200px;
+        position: absolute;
+        top: 25%;
+        left: 30%;
+    }
+    #sign3 {
+        box-sizing: border-box;
+        background-image: url(../../image/reachus/img/sign.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 150px;
+        width: 150px;
+        position: absolute;
+        top: 27%;
+        left: 5%;
+        z-index: 1;
+        color: solid black;
+        font-size: 22px;
+        font-weight: 200;
+        font-family: 'Paytone One', sans-serif;
+        text-align: center;
+        padding-top: 20px;
+    }
+    #carj {
+        background-image: url(../../image/reachus/img/bus.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        transform: rotateY(180deg);
+        height: 300px;
+        width: 400px;
+        position: absolute;
+        top: 1200px;
+        left: 10px;
+    }
+    .sign1 {
+        box-sizing: border-box;
+        background-image: url(../../image/reachus/img/sign.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 200px;
+        width: 200px;
+        position: absolute;
+        top: 40%;
+        left: 10%;
+        color: solid black;
+        font-size: 22px;
+        font-family: 'Paytone One', sans-serif;
+        text-align: center;
+        padding-top: 50px;
+        animation: sign 1s both;
+    }
+    .sign1r {
+        box-sizing: border-box;
+        background-image: url(../../image/reachus/img/sign.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 200px;
+        width: 200px;
+        position: absolute;
+        top: 40%;
+        left: 10%;
+        color: solid black;
+        font-size: 22px;
+        font-family: 'Paytone One', sans-serif;
+        text-align: center;
+        padding-top: 50px;
+        animation: signr 1s both;
+    }
+    #sign2 {
+        box-sizing: border-box;
+        background-image: url(../../image/reachus/img/sign.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        top: 20%;
+        left: 15%;
+        color: solid black;
+        font-size: 12px;
+        font-weight: 300;
+        font-family: 'Paytone One', sans-serif;
+        text-align: center;
+        padding-top: 20px;
+    }
+}
