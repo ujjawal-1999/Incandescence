@@ -1,3 +1,7 @@
+body {
+}
+
+
 h1 {
     padding: .5rem 1.25rem;
     border-radius: 10rem;
@@ -66,9 +70,18 @@ h1 {
 
 .container {
     padding-top: 50px;
-    margin: 0 auto;
+    margin: auto auto;
     width: 100%;
+    justify-content: center;
+    align-items: center;
     text-align: center;
+}
+
+.container a button {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-left: 0px;
 }
 
 hr {
@@ -83,7 +96,7 @@ h1 {
 }
 
 #middle-button {
-    margin-left: 50%;
+    margin-left: 0px;
 }
 
 .home {
@@ -96,6 +109,12 @@ h1 {
     /* Do not repeat the image */
     background-size: cover;
 }
+
+.anchor{
+
+  height: 115px; /*same height as header*/
+  margin-top: -115px; /*same height as header*/
+  }
 
 #wings {
     padding-top: 6px;
@@ -125,6 +144,11 @@ h1 {
     width: 100%;
 }
 
+.sticky + #about {
+    padding-top: 200px;
+}
+
+
 image {
     display: inline;
     flex-wrap: row wrap;
@@ -149,25 +173,31 @@ image {
 #about {
     background-color: #e4f9ff;
     padding-bottom: 30px;
+
 }
 
 #Representative {
     background-color: #e4f9ff;
     padding-bottom: 30px;
+
 }
 
 #Responsibilities {
     background-color: #e4f9ff;
     padding-bottom: 30px;
+
 }
 
 #apply {
     background-color: #e4f9ff;
     padding-bottom: 30px;
+
+
 }
 
 #contact {
     background-color: #e4f9ff;
+
 }
 
 @keyframes run {
@@ -276,4 +306,25 @@ image {
 .fa:hover {
     color: dodgerblue;
     background-color: beige;
+}
+
+
+ul li {
+
+    list-style: none;
+
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="container"] h1 {
+    font-size: 30px;
+  }
+
+
+ #navbar {
+    display: none;
+ }
+
+
 }

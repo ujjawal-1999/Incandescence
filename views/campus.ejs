@@ -10,10 +10,105 @@
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="stylesheet/loader/loader.css">
+    <link rel="stylesheet" type="text/css" href="stylesheet/menu/menu.css">
 
 </head>
 
 <body>
+
+      <!-- loader -->
+    <div id='loader'>
+        <div id='mascot-baton'>
+            <div id='flame' class="fire_place">
+                <div class="blur_fire">
+                    <div class="big_flame"></div>
+                </div>
+                <div class="spark spark1">I</div>
+                <div class="spark spark2">n</div>
+                <div class="spark spark3">c</div>
+                <div class="spark spark4">a</div>
+                <div class="spark spark5">n</div>
+                <div class="spark spark6">d</div>
+                <div class="spark spark7">e</div>
+                <div class="spark spark8">s</div>
+                <div class="spark spark9">c</div>
+                <div class="spark spark10">e</div>
+                <div class="spark spark11">n</div>
+                <div class="spark spark12">c</div>
+                <div class="spark spark13">e</div>
+            </div>
+            <img src="image/loader/airawat-holding-torch.png" id="baton">
+        </div>
+    </div>
+
+        <!-- menu -->
+    <div id="menu">
+
+        <a href='/'>
+            <div id='logo'>
+            </div>
+        </a>
+
+        <div id="cld1c">
+            <div id="cld1">
+                <a href="/event" id="link1">Events</a>
+            </div>
+        </div>
+
+        <div id="cld2c">
+            <div id="cld2">
+                <a href="/gallery" id="link2">Gallery</a>
+            </div>
+        </div>
+
+        <div id="cld3c">
+            <div id="cld3">
+                <a href="/history" id="link3">History</a>
+            </div>
+        </div>
+
+        <div id="cld4c">
+            <div id="cld4">
+                <a href="/reachus" id="link4">Reach Us</a>
+            </div>
+        </div>
+
+        <div id="cld5c">
+            <div id="cld5">
+                <a href="/faq" id="link5">F.A.Q</a>
+            </div>
+        </div>
+
+        <div id="cld6c">
+            <div id="cld6">
+                <a href="/register" id="link6">Register</a>
+            </div>
+        </div>
+
+        <div id="cld7c">
+            <div id="cld7">
+                <p>Menu</p>
+            </div>
+        </div>
+
+        <div id="cld8c">
+            <div id="cld8">
+            </div>
+        </div>
+
+        <div id="cld9c">
+            <div id="cld9">
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
 
     <div class="container">
         <h1>CAMPUS AMBASSADOR</h1>
@@ -42,7 +137,7 @@
 
 
 
-    <div class="container" id="about">
+    <div class="container"  id="about">
         <h1 class="text-center">About Us</h1>
         <br>
         <p>
@@ -55,6 +150,8 @@
 
         </p>
     </div><br><br><br>
+
+   
 
     <div class="container" id="Representative">
         <h1 class="text-center">Why College Representative?</h1>
@@ -185,9 +282,21 @@
             </div>
         </div>
     </div><br><br><br>
-</body>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <script type="text/javascript" src="js/campus/campus.js"></script>
+     <script type="text/javascript"  src="js/menu/menu.js"></script>
+
+    <script type="text/javascript">
+        document.getElementById('loader').remove();
+        $(document).ready(function() {
+                adaptMenu();
+        });
+
+    </script>
+
+
+</body>
+
 
 </html>
