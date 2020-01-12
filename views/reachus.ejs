@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js" style=" background: linear-gradient(to bottom, #FE985A, #f5af19) ;height:2065px ;width:1600px; overflow-x: hidden; ">
+<html lang="zxx" class="no-js" style=" background: linear-gradient(to bottom, #FE985A, #f5af19) ;height:2065px ;width:1600px; overflow-x: hidden; ">
 
 <head>
     <!-- Mobile Specific Meta -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <!-- Favicon -->
-    <link rel="shortcut icon" href="/image/reachus/img/i.png" />
+    <link rel="shortcut icon" href="img/i.png" />
     <!-- Author Meta -->
 
     <meta name="description" content="" />
@@ -15,8 +15,6 @@
     <meta charset="UTF-8" />
     <!-- Site Title -->
     <meta charset="utf-8">
-
-    <link rel="stylesheet" type="text/css" href="GlowingTheTextPart3.css">
     <title>Reach Us</title>
 
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:900|Roboto:400,400i,500,700" rel="stylesheet" />
@@ -25,17 +23,19 @@
       =============================================
     -->
 
-    <link rel="stylesheet" type="text/css" href="stylesheet/reachus/css/font-awesome.min.css" />
-    <link rel="stylesheet" type="text/css" href="stylesheet/reachus/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/themify-icons/0.1.2/css/themify-icons.css" />
+    <link rel="stylesheet" type="text/css" href="stylesheet/reachus/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="stylesheet/reachus/bootstrap.css" />
     <link rel="stylesheet" type="text/css" href="stylesheet/loader/loader.css" />
     <link rel="stylesheet" type="text/css" href="stylesheet/menu/menu.css" />
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/themify-icons/0.1.2/stylesheet/reachus/css/themify-icons.css" />
-    <link rel="stylesheet" type="text/css" href="stylesheet/reachus/css/main.css" />
-    <link rel="stylesheet" type="text/css" href="stylesheet/reachus/css/reach.css" />
-    <link rel="stylesheet" type="text/css" href="stylesheet/reachus/css/reach_us.css" />
+    <link rel="stylesheet" type="text/css" href="stylesheet/reachus/main.css" />
+    <link rel="stylesheet" type="text/css" href="stylesheet/reachus/reach_us.css" />
+    <link rel="stylesheet" type="text/css" href="stylesheet/reachus/reach.css" />
 </head>
 
 <body style="background-image: url(/image/reachus/img/bg3.jpg) ;">
+
+
 
     <!-- loader -->
     <div id='loader'>
@@ -124,6 +124,8 @@
 
     </div>
 
+
+
     <div style=" background:linear-gradient(to bottom, #FE985A, #FF2061) ;height:2065px ;width:1600px;
 position: absolute; top: 700px; z-index: -1;"></div>
     <div id="road"></div>
@@ -175,11 +177,66 @@ position: absolute; top: 700px; z-index: -1;"></div>
     <!-- ================ ROAD TO INCAND  Area ================= -->
 
     <!-- partial:index.partial.html -->
-    <div class="wire"></div>
+    <div class="wire" style="
+	position: absolute;
+	top: 800px;
+	left: 500px;
+  height: 200px;
+  width: 3px;
+  
+  background-color: black;
+  -webkit-transform-origin: 50% 0%;
+          transform-origin: 50% 0%;
+  -webkit-transform: rotate(20deg);
+          transform: rotate(20deg);
+  -webkit-animation: swing ease-in-out 2.5s infinite;
+          animation: swing ease-in-out 2.5s infinite;
+"></div>
 
-    <div class="board">
-        <p id="rod">Road </p>
-        <p id="to">To</p>
+
+
+
+    <p id="pin" style="  
+	background-image: url(/image/reachus/img/pin2.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	transform: rotateY(180deg);
+	height: 100px;
+	width: 100px;
+	position: absolute;
+	top: 710px;
+	left: 433px;"></p>
+
+
+    <div class="board" style="	
+position: absolute;
+	top: 1000px;
+	left: 250px;
+  background-image: url(/image/reachus/img/board.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 300px;
+
+  /*display: block;*/
+  font-variant:small-caps;
+ 
+  padding: 1em 2.5em;
+ /* box-shadow: 0 2px 15px #555;*/
+ 
+  color: white;
+
+  font-size: 3.5em;
+  -webkit-transform-origin: 50% -200px;
+          transform-origin: 50% -200px;
+  margin: 0 auto;
+  -webkit-transform: rotate(20deg);
+          transform: rotate(20deg);
+  -webkit-animation: swing ease-in-out 2.5s infinite;
+          animation: swing ease-in-out 2.5s infinite;
+">
+
+        <p id="rod">Road <br><br></p>
+        <p id="to">To &nbsp; --> <br><br></p>
         <p id="ind">Incandescence</p>
     </div>
     <!-- ================ END ROAD TO INCAND  Area ================= -->
@@ -201,7 +258,7 @@ position: absolute; top: 700px; z-index: -1;"></div>
     <!-- ================ End contact-page Area ================= -->
 
     <!-- ================ start footer Area ================= -->
-    <footer class="footer-area section-gap">
+    <!-- <footer class="footer-area section-gap">
         <div class="container">
             <div class="row">
 
@@ -235,12 +292,12 @@ position: absolute; top: 700px; z-index: -1;"></div>
                     </script> All Rights Reserved | Incandescence
                 </p>
                 <div class="col-lg-4 col-md-12 footer-social">
-                    <image/reachus/img src="/image/reachus/img/fbb.png">
+                    <img src="img/fbb.png">
 
                 </div>
             </div>
         </div>
-    </footer>
+    </footer> -->
     <!-- ================ End footer Area ================= -->
     <!-- ================reachus html====================== -->
     <div id="carj"></div>
@@ -260,17 +317,10 @@ position: absolute; top: 700px; z-index: -1;"></div>
 
 
     <script src="js/reachus/vendor/jquery-2.2.4.min.js"></script>
-
     <script src="js/reachus/vendor/bootstrap.min.js"></script>
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
-
     <script src="js/reachus/jquery.sticky.js"></script>
-
-
     <script src="js/reachus/reach.js"></script>
-
-
-
     <script src="js/reachus/main.js"></script>
     <script src="js/menu/menu.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
