@@ -60,6 +60,7 @@ function adaptMenu() {
 }
 
 function collapseMenu() {
+    $('#menu').css('z-index', '2');
     $('#menu a').css("fontSize", "1.1em");
     $('#cld1').css("animation", "cld1i both 2s 0.5s");
     $('#cld2').css("animation", "cld2i both 2s 0.5s");
@@ -91,7 +92,7 @@ function expandMenu() {
     overlay.style.left = '0px';
     overlay.style.width = '100%';
     overlay.style.height = '100%';
-    overlay.style.zIndex = '2';
+    overlay.style.zIndex = '100';
     overlay.style.background = '#f99245';
     overlay.id = 'overlay';
     document.getElementsByTagName('body')[0].appendChild(overlay);
@@ -102,6 +103,9 @@ function expandMenu() {
     $('#cld4').css("animation", "cld4m both 2s 0.5s");
     $('#cld5').css("animation", "cld5m both 2s 0.5s");
     $('#cld6').css("animation", "cld6m both 2s 0.5s");
+
+    $('#menu').css('z-index', '101');
+    $('#menu a').css("fontSize", "1.2em");
 
     var closeMenu = document.createElement('div');
     closeMenu.style.position = 'fixed';
@@ -121,6 +125,5 @@ function expandMenu() {
     closeMenu.id = 'closeMenu';
     closeMenu.addEventListener('click', collapseMenu);
     document.getElementsByTagName('body')[0].appendChild(closeMenu);
-    $('#menu a').css("fontSize", "1.2em");
 }
 document.getElementById('cld7').addEventListener('click', expandMenu);
