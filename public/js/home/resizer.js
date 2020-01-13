@@ -19,12 +19,14 @@ function resizer() {
         document.getElementById('background').style.height = '' + ysize + 'px';
         document.getElementById('mountain').style.height = '' + 0.9 * ysize + 'px';
         document.getElementById('mountain').style.top = '' + ysize * 20 / 685 + 'px';
-        document.getElementById('cloud').style.height = '' + 0.5 * ysize + 'px';
 
         // miscellanous
         document.getElementById('mountain').style.top = '' + ysize * 20 / 685 + 'px';
         if (ysize < 700) document.getElementById('mountain').style.top = (730 - ysize) * 0.6 + 'px';
-        if (ysize < 600) document.getElementById('mountain').style.top = (730 - ysize) * 0.02 + 'px';
+        if (ysize < 600) {
+            document.getElementById('cloud').style.height = '' + 0.6 * ysize + 'px';
+            document.getElementById('mountain').style.top = (730 - ysize) * 0.02 + 'px';
+        }
 
 
         /* ferrisWheel */
