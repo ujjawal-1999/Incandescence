@@ -19,6 +19,7 @@
     height: 350px;
     margin-top: -75px;
     margin-left: -101px;
+    transform: scale(0.8);
 }
 
 #baton {

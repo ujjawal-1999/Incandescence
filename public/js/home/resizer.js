@@ -9,11 +9,6 @@ function resizer() {
     if (xsize > ysize) {
         // alert(xsize+" landscape "+ysize);
 
-        // logo
-        document.getElementById('logo').style.top = '4vh';
-        document.getElementById('logo').style.width = '20vw';
-        document.getElementById('logo').style.height = '8.5vh';
-
         /* background */
         // width
         document.getElementById('background').style.width = '' + xsize + 'px';
@@ -29,6 +24,7 @@ function resizer() {
         // miscellanous
         document.getElementById('mountain').style.top = '' + ysize * 20 / 685 + 'px';
         if (ysize < 700) document.getElementById('mountain').style.top = (730 - ysize) * 0.6 + 'px';
+        if (ysize < 600) document.getElementById('mountain').style.top = (730 - ysize) * 0.02 + 'px';
 
 
         /* ferrisWheel */
@@ -112,12 +108,6 @@ function resizer() {
         var xsize = window.screen.width;
         var ysize = window.screen.height;
         // alert(xsize+" :mobile: "+ysize);
-
-        // logo
-        document.getElementById('logo').style.top = '0vh';
-        document.getElementById('logo').style.width = '90vw';
-        document.getElementById('logo').style.height = '' + 90 * 8.5 / 20 + 'vw';
-
 
         /* background */
         // width
