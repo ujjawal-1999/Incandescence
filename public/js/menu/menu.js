@@ -60,6 +60,7 @@ function adaptMenu() {
 }
 
 function collapseMenu() {
+    $('#menu a').css("fontSize", "1.1em");
     $('#cld1').css("animation", "cld1i both 2s 0.5s");
     $('#cld2').css("animation", "cld2i both 2s 0.5s");
     $('#cld3').css("animation", "cld3i both 2s 0.5s");
@@ -73,6 +74,7 @@ function collapseMenu() {
     $('#cld8').css("animation", "cld both 2s 0s");
     $('#cld9').css("animation", "cld both 2s 0s");
     menuClicked = 0;
+    adaptMenu();
 }
 
 function expandMenu() {
@@ -85,10 +87,12 @@ function expandMenu() {
     // create overlay for displaying menu item
     var overlay = document.createElement('div');
     overlay.style.position = 'fixed';
+    overlay.style.top = '0px';
+    overlay.style.left = '0px';
     overlay.style.width = '100%';
     overlay.style.height = '100%';
     overlay.style.zIndex = '2';
-    overlay.style.background = 'rgba(10,200,200,0.8)';
+    overlay.style.background = '#f99245';
     overlay.id = 'overlay';
     document.getElementsByTagName('body')[0].appendChild(overlay);
     $('#menu a').css('fontSize', '1.5vh');
@@ -111,11 +115,12 @@ function expandMenu() {
     closeMenu.style.lineHeight = '50px';
     closeMenu.style.fontWeight = 'bold';
     closeMenu.style.color = 'red';
-    closeMenu.style.zIndex = '6';
+    closeMenu.style.zIndex = '104';
     closeMenu.style.top = '47vh';
     closeMenu.style.left = '48vw';
     closeMenu.id = 'closeMenu';
     closeMenu.addEventListener('click', collapseMenu);
     document.getElementsByTagName('body')[0].appendChild(closeMenu);
+    $('#menu a').css("fontSize", "1.2em");
 }
 document.getElementById('cld7').addEventListener('click', expandMenu);

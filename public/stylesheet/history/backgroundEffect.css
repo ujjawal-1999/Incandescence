@@ -1,0 +1,68 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:700);
+
+/* A pure CSS Experiment by Adrien Bachmann */
+
+body {
+    font-family: 'Roboto';
+    text-align: center;
+}
+
+
+/*body h1 {
+  font-size: 50px;
+  margin-top: 200px;
+}*/
+
+#backgroundEffect div {
+    background-size: 200%;
+    background-position: 0 50%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    pointer-events: none;
+    z-index: 2;
+    visibility: hidden;
+}
+
+
+/*body #picture {
+  background-image: url("http://finda.photo/image/10216/thumbnail/original");
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+}*/
+
+#backgroundEffect #layer1 {
+    background: repeating-linear-gradient(90deg, rgba(236, 240, 241, 0), rgba(236, 240, 241, 0.6), rgba(236, 240, 241, 0));
+    animation: layer1 10s linear infinite alternate;
+}
+
+#backgroundEffect #layer2 {
+    background: repeating-linear-gradient(90deg, rgba(236, 240, 241, 0), rgba(236, 240, 241, 0.6), rgba(236, 240, 241, 0));
+    animation: layer2 15s linear infinite alternate;
+}
+
+@keyframes layer1 {
+    0% {
+        background-position: 1000px 0;
+    }
+    50% {
+        background-position: 500px 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
+
+@keyframes layer2 {
+    0% {
+        background-position: 0 0%;
+    }
+    50% {
+        background-position: 500px 0%;
+    }
+    100% {
+        background-position: 1000px 0;
+    }
+}
