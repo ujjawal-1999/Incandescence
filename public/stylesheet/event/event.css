@@ -132,6 +132,10 @@
      background-image: url(/image/Events/CarnivalOfBites.png)
  }
  
+ .back2 {
+     background-image: url(/image/Events/carpediem.png)
+ }
+ 
  .back3 {
      background-image: url(/image/Events/DepradorTicket.png)
  }
@@ -156,12 +160,20 @@
      background-image: url(/image/Events/MUN.png)
  }
  
+ .back9 {
+     background-image: url(/image/Events/nirvana.png)
+ }
+ 
  .back10 {
      background-image: url(/image/Events/prom.png)
  }
  
  .back11 {
      background-image: url(/image/Events/razzmatazz.png)
+ }
+ 
+ .back12 {
+     background-image: url(/image/Events/sokrarik.png)
  }
  
  .back13 {
@@ -276,7 +288,8 @@
      top: 5vh;
      left: 15.7vw;
      z-index: 2;
-     background: url(/image/Events/banner5.png) no-repeat;
+     background: no-repeat;
+     background: url(/image/Events/banner5.png);
      background-size: contain;
      background-position: top center;
      width: 71vw;
@@ -289,7 +302,8 @@
      top: 5vh;
      left: 15.7vw;
      z-index: 2;
-     background: url(/image/Events/banner5.png) no-repeat;
+     background: url(/image/Events/banner5.png);
+     background: no-repeat;
      background-size: contain;
      background-position: top center;
      width: 71vw;
@@ -300,7 +314,7 @@
  .modal-content {
      position: fixed;
      top: 20vh;
-     left: 33vw;
+     left: 20vw;
      width: 33vw;
      height: 63vh;
      overflow-y: scroll;
@@ -347,27 +361,6 @@
      width: 150px;
      transition: 0.3s ease-out;
  }
- /*Content in modal*/
- /* .modal-content {
-      background-image: linear-gradient(#eb8242, #f6da63);
-      margin: 15% auto;
-      padding: 10px;
-      height: 100%;
-      width: 100%; 
-      border-radius: 10px;
-      overflow-y: auto;
-    }*/
- /* copy this */
- /* .modal-content {
-      background: url("scroll.png") no-repeat ;
-      margin: 0 auto 15% 25%;
-      padding:0;
-      height: 100%;
-      width: 100%;
-      border-radius: 10px;
-      opacity: 1;
-      overflow-y: auto;
-    }*/
  
  .text {
      font-family: 'Century Gothic', sans-serif;
@@ -522,7 +515,49 @@
  }
  /* Media queries - Responsive timeline on screens less than 600px wide */
  
- @media screen and (max-width: 600px) {
+ @media screen and (max-width: 900px) and (max-height: 3000px) {
+     svg {
+         position: relative;
+         top: 10vh;
+     }
+     hr {
+         position: relative;
+         top: 3vh;
+         left: -5vw;
+     }
+     .time {
+         position: relative;
+         top: 9vh;
+         left: 5vw;
+     }
+     .modalLeft {
+         position: fixed;
+         background: url(/image/Events/banner2.png) no-repeat;
+         background-size: contain;
+         height: 94vh;
+         width: 99vw;
+         left: 15vw;
+         top: 5vh;
+     }
+     .modalRight {
+         position: fixed;
+         background: url(/image/Events/banner2.png) no-repeat;
+         background-size: contain;
+         height: 94vh;
+         width: 99vw;
+         left: 15vw;
+         top: 5vh;
+     }
+     .modal-content {
+         position: relative;
+         top: 10vh;
+         height: 70vh;
+         width: 42vw;
+         left: -4vw;
+     }
+ }
+ 
+ @media screen and (max-width: 599px) {
      body {
          background: url(/image/Events/cover11.png) no-repeat;
          background-size: cover;
@@ -666,13 +701,13 @@
          width: 20vw;
      }
  }
- /*responsive for all widths and full screen heigths*/
+ /*responsive for all widths and full screen heigths
  
  @media (min-width:600px) and (max-width: 700px) {
      .modal-content {
-         height: 50vh;
+         height: 70vh;
      }
- }
+ }*/
  
  @media screen and (max-width: 569px) {
      .modal-content {

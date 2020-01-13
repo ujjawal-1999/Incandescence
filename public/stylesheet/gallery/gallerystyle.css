@@ -6,7 +6,7 @@ body {
 @font-face {
     font-family: 'starella';
     src: url('/font/starella.ttf');
-    src: url('/font/starella.ttf').format('truetype');
+    src: url('/font/starella.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -14,7 +14,7 @@ body {
 @font-face {
     font-family: 'blackch';
     src: url('/font/blackch.ttf');
-    src: url('/font/blackch.ttf').format('truetype');
+    src: url('/font/blackch.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -22,13 +22,14 @@ body {
 @font-face {
     font-family: 'aurella';
     src: url('/font/Aurella.ttf');
-    src: url('/font/Aurella.ttf').format('truetype');
+    src: url('/font/Aurella.ttf') format('truetype');
     font-weight: 70px;
     font-style: normal;
 }
 
 body {
-    background-image: url("/image/gallery/back2.svg");
+    background: url("/image/gallery/back2.svg");
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     padding-bottom: 10%;
@@ -721,7 +722,6 @@ i {
     }
     .frame {
         width: 60%;
-        height: %: ;
         display: block;
         margin: auto;
     }
