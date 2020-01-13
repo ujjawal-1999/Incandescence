@@ -703,14 +703,17 @@
             })
         </script>
         <script src="js/menu/menu.js"></script>
+        <script src="js/event/resizer.js"></script>
         <script type="text/javascript">
             window.addEventListener('load', function() {
                 $(window).resize(function(e) {
                     adaptMenu();
+                    resizer();
                 });
                 document.getElementById('loader').remove();
             });
             adaptMenu();
+            resizer();
         </script>
 </body>
 
