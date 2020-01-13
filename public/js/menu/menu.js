@@ -105,7 +105,7 @@ function expandMenu() {
     $('#cld6').css("animation", "cld6m both 2s 0.5s");
 
     $('#menu').css('z-index', '101');
-    $('#menu a').css("fontSize", "1.2em");
+    $('#menu a').css("font-size", "2vh");
 
     var closeMenu = document.createElement('div');
     closeMenu.style.position = 'fixed';
