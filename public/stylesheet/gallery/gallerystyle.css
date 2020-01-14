@@ -599,7 +599,7 @@ i {
     }
 }
 
-@media only screen and (max-width: 415px) and (min-width: 400px) {
+@media only screen and (max-width: 425px) and (min-width: 400px) {
     .carousel-inner>h1 {
         font-size: 2vw;
     }
