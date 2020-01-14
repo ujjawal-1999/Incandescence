@@ -597,7 +597,11 @@ h1 span span:nth-child(7) {
     }
 }
 
+<<<<<<< HEAD
 @media only screen and (max-width: 450px) and (min-width: 400px) {
+=======
+@media only screen and (max-width: 425px) and (min-width: 400px) {
+>>>>>>> gallery changes done
     .carousel-inner>h1 {
         font-size: 2vw;
     }
