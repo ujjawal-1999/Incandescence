@@ -298,6 +298,7 @@ app.post('/check', (req, res) => {
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 // app.listen(5000, () => {
 //     console.log('Connected to server')
 // })
@@ -307,3 +308,8 @@ app.listen(5000, () => {
     console.log('Connected to server')
 })
 >>>>>>> gallery changes done
+=======
+// app.listen(5000, () => {
+//     console.log('Connected to server')
+// })
+>>>>>>> live mode payment gateway checked on local host
