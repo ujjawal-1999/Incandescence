@@ -1,28 +1,16 @@
 function resizer() {
     var xsize = document.documentElement.clientWidth;
     var ysize = document.documentElement.clientHeight;
-    if (xsize > ysize) {
-        $(".modalLeft").css("background", "url(/image/Events/banner5.png)");
-        $(".modalRight").css("background", "url(/image/Events/banner5.png)");
-        $(".modalLeft").css("background-repeat", "no-repeat");
-        $(".modalRight").css("background-repeat", "no-repeat");
-        $(".modalLeft").css("background-size", "contain");
-        $(".modalRight").css("background-size", "contain");
-        $(".modal-content").css("left", "" + ((xsize / 70) + 5) + 'vw');
-        $(".modal-content").css("width", "" + ((xsize / 100) + 20) + 'vw');
-
-        // $(".modal-content").css("top","10vh");
-        // $(".modal-content").css("height","60vh");
-
-    } else {
-        $(".modalLeft").css("background", "url(/image/Events/banner2.png)");
-        $(".modalRight").css("background", "url(/image/Events/banner2.png)");
-        $(".modalLeft").css("background-repeat", "no-repeat");
-        $(".modalRight").css("background-repeat", "no-repeat");
-        $(".modalLeft").css("background-size", "contain");
-        $(".modalRight").css("background-size", "contain");
-        $(".modal-content").css("top", "12vh");
-        $(".modal-content").css("height", "70vh");
+    // document.querySelector('.svg-background').style.transform = 'scale(' + (xsize * 70 / (100 * 200)) + ',' + (ysize * 95 / (100 * 200)) + ')';
+    // document.getElementById('svg').style.transform = ;
+    // document.querySelector('.svg-background').style.display = 'fixed';
+    // document.querySelector('.svg-background').style.top = '50vh';
+    // document.querySelector('.svg-background').style.left = '50vw';
+    var a = document.querySelectorAll('.svg-background');
+    for (var j = 0; j <= 15; j++) {
+        a[j].style.transform = 'scale(' + (xsize * 70 / (100 * 200)) + ',' + (ysize * 95 / (100 * 200)) + ')';
+        a[j].style.display = 'fixed';
+        a[j].style.top = '50vh';
+        a[j].style.left = '50vw';
     }
-
 }

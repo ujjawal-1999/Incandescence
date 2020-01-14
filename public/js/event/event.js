@@ -54,104 +54,102 @@ var span16 = document.getElementById("close16");
 
 // When the user clicks on the button, open the modal
 btn1.onclick = function() {
-  modal1.style.display = "block";
+    modal1.style.display = "block";
 }
 btn2.onclick = function() {
-  modal2.style.display = "block";
+    modal2.style.display = "block";
 }
 btn3.onclick = function() {
-  modal3.style.display = "block";
+    modal3.style.display = "block";
 }
 btn4.onclick = function() {
-  modal4.style.display = "block";
+    modal4.style.display = "block";
 }
 btn5.onclick = function() {
-  modal5.style.display = "block";
+    modal5.style.display = "block";
 }
 btn6.onclick = function() {
-  modal6.style.display = "block";
+    modal6.style.display = "block";
 }
 btn7.onclick = function() {
-  modal7.style.display = "block";
+    modal7.style.display = "block";
 }
 btn8.onclick = function() {
-  modal8.style.display = "block";
+    modal8.style.display = "block";
 }
 btn9.onclick = function() {
-  modal9.style.display = "block";
+    modal9.style.display = "block";
 }
 btn10.onclick = function() {
-  modal10.style.display = "block";
+    modal10.style.display = "block";
 }
 btn11.onclick = function() {
-  modal11.style.display = "block";
+    modal11.style.display = "block";
 }
 btn12.onclick = function() {
-  modal12.style.display = "block";
+    modal12.style.display = "block";
 }
 btn13.onclick = function() {
-  modal13.style.display = "block";
+    modal13.style.display = "block";
 }
 btn14.onclick = function() {
-  modal14.style.display = "block";
+    modal14.style.display = "block";
 }
 btn15.onclick = function() {
-  modal15.style.display = "block";
+    modal15.style.display = "block";
 }
 btn16.onclick = function() {
-  modal16.style.display = "block";
+    modal16.style.display = "block";
 }
 
 
 
 //when user clicks x, close the module
-span1.onclick = function(){
-  modal1.style.display = "none";
+span1.onclick = function() {
+    modal1.style.display = "none";
 }
-span2.onclick = function(){
-  modal2.style.display = "none";
+span2.onclick = function() {
+    modal2.style.display = "none";
 }
-span3.onclick = function(){
-  modal3.style.display = "none";
+span3.onclick = function() {
+    modal3.style.display = "none";
 }
-span4.onclick = function(){
-  modal4.style.display = "none";
+span4.onclick = function() {
+    modal4.style.display = "none";
 }
-span5.onclick = function(){
-  modal5.style.display = "none";
+span5.onclick = function() {
+    modal5.style.display = "none";
 }
-span6.onclick = function(){
-  modal6.style.display = "none";
+span6.onclick = function() {
+    modal6.style.display = "none";
 }
-span7.onclick = function(){
-  modal7.style.display = "none";
+span7.onclick = function() {
+    modal7.style.display = "none";
 }
-span8.onclick = function(){
-  modal8.style.display = "none";
+span8.onclick = function() {
+    modal8.style.display = "none";
 }
-span9.onclick = function(){
-  modal9.style.display = "none";
+span9.onclick = function() {
+    modal9.style.display = "none";
 }
-span10.onclick = function(){
-  modal10.style.display = "none";
+span10.onclick = function() {
+    modal10.style.display = "none";
 }
-span11.onclick = function(){
-  modal11.style.display = "none";
+span11.onclick = function() {
+    modal11.style.display = "none";
 }
-span12.onclick = function(){
-  modal12.style.display = "none";
+span12.onclick = function() {
+    modal12.style.display = "none";
 }
-span13.onclick = function(){
-  modal13.style.display = "none";
+span13.onclick = function() {
+    modal13.style.display = "none";
 }
-span14.onclick = function(){
-  modal14.style.display = "none";
+span14.onclick = function() {
+    modal14.style.display = "none";
 }
-span15.onclick = function(){
-  modal15.style.display = "none";
+span15.onclick = function() {
+    modal15.style.display = "none";
 }
-span16.onclick = function(){
-  modal16.style.display = "none";
+span16.onclick = function() {
+    modal16.style.display = "none";
 }
-
-
