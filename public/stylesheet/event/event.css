@@ -11,6 +11,16 @@
  }
  /*canvas animation*/
  
+ .people {
+     color: black;
+     font-weight: bold;
+ }
+ 
+ .special {
+     color: ;
+     font-style: italic;
+ }
+ 
  #bubble {
      width: 200%;
      height: 200%;
@@ -31,7 +41,7 @@
      /*background-image: linear-gradient(right, #eb8242, #9d0b0b);*/
      background-image: linear-gradient(right, #E70843);
      position: relative;
-     top: -75px;
+     top: 30vh;
      left: 33px;
  }
  /* smooth-scrolling*/
@@ -47,7 +57,7 @@
      position: relative;
      max-width: 1200px;
      margin: 0 auto;
-     top: -80px;
+     top: 30vh;
  }
  /* Title */
  
@@ -57,9 +67,11 @@
      font: 10.5em 'Montserrat';
      /*width: 860px;*/
      width: 100%;
-     height: 250px;
+     height: 24vh;
      margin: 0 auto;
      float: center;
+     position: absolute;
+     top: 15vh;
  }
  
  .text-copy {
@@ -210,10 +222,12 @@
  }
  
  .t1 {
-     color: yellow;
+     color: #e5ff00;
      font-family: 'Papyrus', sans-serif;
-     font-size: 1.2em;
+     font-size: 1.5em;
      text-align: center;
+     line-height: 30px;
+     font-weight: 600;
  }
  
  .t2 {
@@ -246,87 +260,34 @@
  .button:hover {
      width: 50%;
  }
- /*Modal box*/
- /* .modal {
-      display: none; 
-      flex-wrap: wrap;
-      position: fixed; 
-      z-index: 2;
-      left:25%;
-      top: 0;
-      width: 50%; 
-      height: 50vh; 
-      animation: fadeIn ease 10s;
-      -webkit-animation: fadeIn ease 2s;
-      -moz-animation: fadeIn ease 2s;
-      -o-animation: fadeIn ease 2s;
-      -ms-animation: fadeIn ease 2s;
-      
-    }*/
- /*.modal {
-      display: none; 
-      flex-wrap: wrap;
-      position: fixed; 
-      z-index: 2;
-      left:0;
-      top: 0;
-      width: 100%;
-      height: 100%; 
-      overflow: auto; 
-      background-color: rgb(0,0,0); 
-      background-color: rgba(0,0,0,0.4);
-      animation: fadeIn ease 10s;
-      -webkit-animation: fadeIn ease 2s;
-      -moz-animation: fadeIn ease 2s;
-      -o-animation: fadeIn ease 2s;
-      -ms-animation: fadeIn ease 2s;
-      
-    }*/
  
- .modalLeft {
-     position: fixed;
-     top: 5vh;
-     left: 15.7vw;
-     z-index: 2;
-     background: no-repeat;
-     background: url(/image/Events/banner5.png);
-     background-size: contain;
-     background-position: top center;
-     width: 71vw;
-     height: 97vh;
-     display: none;
+ .background {
+     color: linear-gradient(red, brown);
  }
  
- .modalRight {
+ .modal {
      position: fixed;
-     top: 5vh;
-     left: 15.7vw;
+     top: 2.5vh;
+     left: 15vw;
+     width: 70vw;
+     height: 95vh;
      z-index: 2;
-     background: url(/image/Events/banner5.png);
-     background: no-repeat;
-     background-size: contain;
-     background-position: top center;
-     width: 71vw;
-     height: 97vh;
      display: none;
  }
  
  .modal-content {
+     display: flex;
      position: fixed;
-     top: 20vh;
-     left: 20vw;
-     width: 33vw;
-     height: 63vh;
+     top: 15vh;
+     left: 26vw;
+     width: 45vw;
+     height: 70vh;
      overflow-y: scroll;
      color: white;
  }
  /*responsive modal */
  
- .modalLeft>* {
-     flex: 1 1 250px;
- }
- 
- .modalRight>* {
+ .modal>* {
      flex: 1 1 250px;
  }
  /* Incand logo*/
@@ -348,27 +309,31 @@
  
  img {
      height: 150px;
-     width: 130px;
-     float: left;
+     width: 150px;
      padding: 12px 12px 12px;
-     display: inline-block;
-     vertical-align: middle;
-     border-radius: 15%;
+     border-radius: 50%;
+     float: left;
  }
  
  img:hover {
-     height: 150px;
-     width: 150px;
-     transition: 0.3s ease-out;
+     height: 250px;
+     width: 250px;
+     transition: 0.3s ease-in-out;
+ }
+ 
+ .large-image {
+     width: 175px;
+     height: 175px;
+     justify-self: center;
  }
  
  .text {
-     font-family: 'Century Gothic', sans-serif;
-     font-size: 20px;
+     font-family: 'Century Gothic', Arial, Helvetica, sans-serif;
+     font-size: 16px;
      z-index: 5;
      padding: 2vh 2vw 27vh 5vw;
      position: relative;
-     line-height: 30px;
+     line-height: 25px;
  }
  /* The Close Button */
  
@@ -443,7 +408,8 @@
      margin-left: -16px;
      font-weight: normal;
      font-style: normal;
-     color: #6b1317;
+     /* color: #6b1317; */
+     color: #E70843;
      text-shadow: 3px 3px 3px #9d0b0b;
      font-size: 70px;
      text-decoration: inherit;
@@ -464,41 +430,11 @@
  .container.left::after {
      margin-right: -70px;
  }
- /*.left::after{
-     left: 111%;
- }*/
  /* Place the container to the right */
  
  .right {
      left: 50%;
  }
- /* Add arrows to the left container (pointing right) */
- /* .left::before {
-     content: " ";
-     height: 0;
-     position: absolute;
-     top: 22px;
-     width: 0;
-     z-index: 1;
-     right: 40px;
-     border: medium solid #f6da63;
-     border-width: 10px 0 10px 10px;
-     border-color: transparent transparent transparent #f6da63;
- }
- Add arrows to the right container (pointing left) 
- 
- .right::before {
-     content: " ";
-     height: 0;
-     position: absolute;
-     top: 22px;
-     width: 0;
-     z-index: 1;
-     left: 40px;
-     border: medium solid #f6da63;
-     border-width: 10px 10px 10px 0;
-     border-color: transparent #f6da63 transparent transparent;
- }*/
  /* Fix the circle for containers on the right side */
  
  .right::after {
@@ -514,48 +450,6 @@
      /*border-radius: 6px;*/
  }
  /* Media queries - Responsive timeline on screens less than 600px wide */
- 
- @media screen and (max-width: 900px) and (max-height: 3000px) {
-     svg {
-         position: relative;
-         top: 10vh;
-     }
-     hr {
-         position: relative;
-         top: 3vh;
-         left: -5vw;
-     }
-     .time {
-         position: relative;
-         top: 9vh;
-         left: 5vw;
-     }
-     .modalLeft {
-         position: fixed;
-         background: url(/image/Events/banner2.png) no-repeat;
-         background-size: contain;
-         height: 94vh;
-         width: 99vw;
-         left: 15vw;
-         top: 5vh;
-     }
-     .modalRight {
-         position: fixed;
-         background: url(/image/Events/banner2.png) no-repeat;
-         background-size: contain;
-         height: 94vh;
-         width: 99vw;
-         left: 15vw;
-         top: 5vh;
-     }
-     .modal-content {
-         position: relative;
-         top: 10vh;
-         height: 70vh;
-         width: 42vw;
-         left: -4vw;
-     }
- }
  
  @media screen and (max-width: 599px) {
      body {
@@ -596,39 +490,9 @@
      .right {
          left: 0%;
      }
-     .modalLeft {
-         position: fixed;
-         background-attachment: fixed;
-         left: 22vw;
-         top: 2vh;
-         background: url(/image/Events/banner2.png) no-repeat;
-         background-size: contain;
-         height: 94vh;
-         width: 99vw;
-         display: none;
-     }
-     .modalRight {
-         position: fixed;
-         background-attachment: fixed;
-         left: 22vw;
-         top: 2vh;
-         background: url(/image/Events/banner2.png) no-repeat;
-         background-size: contain;
-         height: 94vh;
-         width: 99vw;
-         display: none;
-     }
      .modalicon {
          height: 90px;
          width: 90px;
-     }
-     .modal-content {
-         position: fixed;
-         top: 15vh;
-         left: 28vw;
-         width: 34vw;
-         height: 70vh;
-         overflow-y: scroll;
      }
      .text {
          font-family: 'Century Gothic', sans-serif;
@@ -659,108 +523,8 @@
  }
  /*responsive for all heights and full screen widths*/
  
- @media screen and (max-height:390px) {
-     .modal-content {
-         width: 22vw;
-         left: 38vw;
-     }
- }
- 
- @media screen and (min-height:391px) and (max-height:479px) {
-     .modal-content {
-         width: 25vw;
-         left: 36vw;
-     }
- }
- 
- @media screen and (min-height:480px) and (max-height:520px) {
-     .modal-content {
-         width: 27vw;
-         left: 36vw;
-     }
- }
- /*responsive for diff heights and diff screen widths*/
- 
- @media screen and (max-height:585px) and (max-width: 599px) {
-     .modal-content {
-         width: 25vw;
-         left: 28vw;
-         height: 60vh;
-     }
- }
- 
- @media screen and (max-height:490px) and (max-width: 520px) {
-     .modal-content {
-         width: 25vw;
-         overflow-x: hidden;
-     }
- }
- 
- @media screen and (max-width: 444px) and (max-height:490px) {
-     .modal-content {
-         width: 20vw;
-     }
- }
- /*responsive for all widths and full screen heigths
- 
- @media (min-width:600px) and (max-width: 700px) {
-     .modal-content {
-         height: 70vh;
-     }
- }*/
- 
- @media screen and (max-width: 569px) {
-     .modal-content {
-         left: 30vw
-     }
- }
- 
- @media screen and (max-width: 506px) {
-     .modal-content {
-         left: 35vw;
-     }
- }
- 
  @media screen and (max-width: 444px) {
-     .modal-content {
-         width: 43vw;
-         left: 32vw;
-     }
      .close {
          top: 0vh;
-     }
- }
- 
- @media screen and (max-width: 400px) {
-     .modalLeft {
-         left: 11vw;
-     }
-     .modalRight {
-         left: 11vw;
-     }
-     .modal-content {
-         left: 28vw;
-         width: 45vw;
-         overflow-x: hidden;
-     }
- }
- 
- @media screen and (max-width: 350px) {
-     .modal-content {
-         width: 53vw;
-     }
- }
- 
- @media screen and (max-width: 315px) {
-     .modal-content {
-         width: 50vw;
-         left: 35vw;
-     }
- }
- 
- @media screen and (max-width: 290px) {
-     .modal-content {
-         width: 55vw;
-         height: 48vh;
      }
  }
