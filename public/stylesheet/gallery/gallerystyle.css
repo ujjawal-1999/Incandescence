@@ -598,7 +598,11 @@ h1 span span:nth-child(7) {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 @media only screen and (max-width: 450px) and (min-width: 400px) {
+=======
+@media only screen and (max-width: 425px) and (min-width: 400px) {
+>>>>>>> gallery changes done
 =======
 @media only screen and (max-width: 425px) and (min-width: 400px) {
 >>>>>>> gallery changes done
