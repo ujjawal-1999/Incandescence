@@ -600,6 +600,7 @@ h1 span span:nth-child(7) {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 @media only screen and (max-width: 450px) and (min-width: 400px) {
 =======
 @media only screen and (max-width: 425px) and (min-width: 400px) {
@@ -610,6 +611,9 @@ h1 span span:nth-child(7) {
 =======
 @media only screen and (max-width: 450px) and (min-width: 400px) {
 >>>>>>> merge conflicts
+=======
+@media only screen and (max-width: 450px) and (min-width: 400px) {
+>>>>>>> af49466f7e16c34bcde943133428c4d795f68864
     .carousel-inner>h1 {
         font-size: 2vw;
     }
