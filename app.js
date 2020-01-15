@@ -30,11 +30,12 @@ var app = express()
 app.set('view engine', 'ejs')
 app.use(express.static('public'))
 //--- http server code  begins--
+/*
 var http = require('http');
 var httpServer = http.createServer(app);
 httpServer.listen(5000);
 // // ends
-
+*/
 app.use(bodyParser.urlencoded({ extended: true }))
 
 //Seeding
@@ -286,6 +287,6 @@ app.post('/check', (req, res) => {
 // End of post request
 
 
-// app.listen(5000, () => {
-    // console.log('Connected to server')
-// })
+ app.listen(5000, () => {
+     console.log('Connected to server')
+ })
