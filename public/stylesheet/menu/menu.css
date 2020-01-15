@@ -24,8 +24,9 @@
 #logo {
     background: url(../../image/menu/logo.png) no-repeat;
     width: 20vw;
-    height: 8.5vh;
+    height: 8.5vh !important;
     background-size: contain;
+    background-position: center;
     position: absolute;
     top: 4vh;
     left: 5vw;
@@ -432,7 +433,7 @@
 
 #menu a:hover {
     transform-origin: 50% 50%;
-    transform: scale(1, 1.2);
+    transform: scale(1, 1.05);
 }
 
 #menu p {

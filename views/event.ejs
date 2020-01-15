@@ -4,23 +4,22 @@
 <head>
     <!-- add icon link -->
     <link rel="icon" href="/image/i.png" type="image/png">
-    <title>Event</title>
+    <title>Events</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" href="stylesheet/loader/loader.css">
-    <link rel="stylesheet" type="text/css" href="stylesheet/event/eventloader.css">
     <link rel="stylesheet" type="text/css" href="stylesheet/menu/menu.css">
     <link rel="stylesheet" type="text/css" href="stylesheet/event/eventmenu.css">
     <link rel="stylesheet" type="text/css" href="stylesheet/event/event.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Long+Cang&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700i" rel="stylesheet">
-
-    <!-- <link href="//db.onlinewebfonts.com/c/f2290c98f910964eaae0cec522098b8e?family=Ananda+Neptouch+2" rel="stylesheet" type="text/css"/>-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link rel='stylesheet' type="text/css" href='stylesheet/footer/footer.css'>
     <style>
+        * {
+            scrollbar-color: #EBD62C transparent;
+            scrollbar-width: thin;
+        }
+        
          ::-webkit-scrollbar {
             width: 10px;
             height: 3px;
@@ -77,7 +76,7 @@
 
         <div id="cld1c">
             <div id="cld1">
-                <a href="/" id="link1">Home</a>
+                <a href="/event" id="link1">Events</a>
             </div>
         </div>
 
@@ -95,19 +94,19 @@
 
         <div id="cld4c">
             <div id="cld4">
-                <a href="/campus" id="link4">Campus Rep</a>
+                <a href="/register" id="link4">Tickets</a>
             </div>
         </div>
 
         <div id="cld5c">
             <div id="cld5">
-                <a href="/faq" id="link5">F.A.Q</a>
+                <a href="/munhome" id="link5">NITS MUN</a>
             </div>
         </div>
 
         <div id="cld6c">
             <div id="cld6">
-                <a href="/register" id="link6">Register</a>
+                <a href="http://www.razzmatazznits.com" id="link6">Razzmatazz</a>
             </div>
         </div>
 
@@ -129,12 +128,10 @@
 
     </div>
 
+
     <br>
     <canvas id="bubble"></canvas>
 
-    <!--title of the page
-        
-      <span> <a href="#"><img id="logo" src="/image/nlogo.png" style="display: block;"></a></span>-->
     <svg id="top" viewBox="0 0 980 300 ">
             <symbol id="s-text">
             <text text-anchor="end" x="70%" y="70%">Events...</text>
@@ -639,125 +636,65 @@
             </div>
         </div>
 
+    </div>
+    <!--Scroll up button-->
+    <a href="#top "><i class='fas fa-chevron-circle-up' id="scrollup " style="font-size:48px;color:#9d0b0b;margin-top: 25vh; background: white; border-radius: 50%; "></i></a>
 
-        <!--Scroll up button-->
-        <a href="#top"><i class='fas fa-chevron-circle-up' id="scrollup" style="font-size:48px;color:#9d0b0b;margin-bottom: 20px; background: white; border-radius: 50%;"></i></a>
 
+    <footer class="footer-distributed">
 
-        <!--Footer
-        <div class="footer">
-            <h1 style="background-color: #9d0b0b; margin: -15px; padding: 15px;">
-                <marquee direction="left">Incandescence</marquee>
-            </h1>
-        </div>-->
-        <script type="text/javascript" src="js/event/event.js"></script>
-        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-        <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.3/jquery-ui.js"></script>
+        <div class="footer-left">
+            <a href='/'><img src='/image/menu/logo.png' style="width: 100%;"></a>
+        </div>
 
-        <script>
-            AOS.init({
-                offset: 120,
-                duration: 800
+        <div class="footer-center">
+            <h3>Quick Links</h3>
+            <ul style="list-style:none;" class="footer-links">
+                <li><a href="/faq">FAQ</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Reach Us</a></li>
+                <li><a href="/register">Register</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-right">
+            <div class="footer-links">
+                <a href="#">
+                    <h3>Campus Ambassador</i>
+                    </h3>
+                </a>
+            </div>
+            <div class="footer-icons">
+                <a href="https://www.facebook.com/incandescence.nits"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com/incandnits?lang=en"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.youtube.com/channel/UCb_0C06vYP674tyu50o7-Fg"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.instagram.com/incandescence.nits/"><i class="fab fa-instagram"></i></a>
+                <a href="mailto:incandescencenitsilchar@gmail.com"><i class="fa fa-envelope"></i></a>
+            </div>
+        </div>
+
+    </footer>
+
+    <script type="text/javascript " src="js/event/event.js "></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js "></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.3/jquery-ui.js "></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script src="js/menu/menu.js "></script>
+    <script src="js/event/resizer.js "></script>
+    <script type="text/javascript ">
+        window.addEventListener('load', function() {
+            $(window).resize(function(e) {
+                adaptMenu();
+                resizer();
             });
-        </script>
 
-        <script>
-            var w = window.innerWidth,
-                h = window.innerHeight,
-                canvas = document.getElementById('bubble'),
-                ctx = canvas.getContext('2d'),
-                rate = 60,
-                arc = 100,
-                time,
-                count,
-                size = 7,
-                speed = 20,
-                lights = new Array,
-                colors = ['#d59254', '#ffffff', '#1f2839', '#cf7693'];
-
-            canvas.setAttribute('width', w);
-            canvas.setAttribute('height', h);
-
-            function init() {
-                time = 0;
-                count = 0;
-
-                for (var i = 0; i < arc; i++) {
-                    lights[i] = {
-                        x: Math.ceil(Math.random() * w),
-                        y: Math.ceil(Math.random() * h),
-                        toX: Math.random() * 5 + 1,
-                        toY: Math.random() * 5 + 1,
-                        c: colors[Math.floor(Math.random() * colors.length)],
-                        size: Math.random() * size
-                    }
-                }
-            }
-
-            function bubble() {
-                ctx.clearRect(0, 0, w, h);
-
-                for (var i = 0; i < arc; i++) {
-                    var li = lights[i];
-
-                    ctx.beginPath();
-                    ctx.arc(li.x, li.y, li.size, 0, Math.PI * 2, false);
-                    ctx.fillStyle = li.c;
-                    ctx.fill();
-
-                    li.x = li.x + li.toX * (time * 0.05);
-                    li.y = li.y + li.toY * (time * 0.05);
-
-                    if (li.x > w) {
-                        li.x = 0;
-                    }
-                    if (li.y > h) {
-                        li.y = 0;
-                    }
-                    if (li.x < 0) {
-                        li.x = w;
-                    }
-                    if (li.y < 0) {
-                        li.y = h;
-                    }
-                }
-                if (time < speed) {
-                    time++;
-                }
-                timerID = setTimeout(bubble, 1000 / rate);
-            }
-            init();
-            bubble();
-
-
-            var animation = 'easeOutCubic';
-            delay = 60;
-
-            $(document).on('click', '.button', function() {
-                var i = 0;
-                $('#bubble').fadeIn();
-
-            })
-
-            $(document).on('click', '.close', function() {
-                var i = 0;
-                $('#bubble').fadeOut();
-            })
-        </script>
-        <script src="js/menu/menu.js"></script>
-        <script src="js/event/resizer.js"></script>
-        <script type="text/javascript">
-            window.addEventListener('load', function() {
-                $(window).resize(function(e) {
-                    adaptMenu();
-                    resizer();
-                });
-                document.getElementById('loader').remove();
-            });
-            adaptMenu();
-            resizer();
-        </script>
+            background();
+            document.getElementById('loader').remove();
+        });
+        adaptMenu();
+        resizer();
+    </script>
 </body>
 
 </html>

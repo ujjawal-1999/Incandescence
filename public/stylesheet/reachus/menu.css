@@ -60,7 +60,7 @@
 }
 
 #cld1 {
-    background-image : url(../../image/reachus/img/cloud3.png);
+    background-image: url(../../image/menu/frame.png);
     background-size: 100% 100%;
     z-index: 1;
     position: absolute;
@@ -108,14 +108,14 @@
 }
 
 #cld2 {
-    background-image: url(../../image/reachus/img/cloud3.png);
+    background-image: url(../../image/menu/frame.png);
     background-size: 100% 100%;
     z-index: 5;
     position: absolute;
     height: 10vh;
     width: 10vw;
     left: 54vw;
-    top: 4vh;
+    top: 2.2vh;
     visibility: hidden;
     display: flex;
     justify-content: center;
@@ -156,7 +156,7 @@
 }
 
 #cld3 {
-    background-image: url(../../image/reachus/img/cloud3.png);
+    background-image: url(../../image/menu/frame.png);
     background-size: 100% 100%;
     z-index: 5;
     position: absolute;
@@ -204,7 +204,7 @@
 }
 
 #cld4 {
-    background-image: url(../../image/reachus/img/cloud3.png);
+    background-image: url(../../image/menu/frame.png);
     background-size: 100% 100%;
     z-index: 5;
     position: absolute;
@@ -252,7 +252,7 @@
 }
 
 #cld5 {
-    background-image: url(../../image/reachus/img/cloud3.png);
+    background-image: url(../../image/menu/frame.png);
     background-size: 100% 100%;
     z-index: 5;
     position: absolute;
@@ -300,7 +300,7 @@
 }
 
 #cld6 {
-    background-image: url(../../image/reachus/img/cloud3.png);
+    background-image: url(../../image/menu/frame.png);
     background-size: 100% 100%;
     z-index: 5;
     position: absolute;
@@ -348,7 +348,7 @@
 }
 
 #cld7 {
-    background-image: url(../../image/reachus/img/cloud3.png);
+    background-image: url(../../image/menu/frame.png);
     z-index: 5;
     background-size: 100% 100%;
     visibility: hidden;
@@ -360,7 +360,7 @@
 }
 
 #cld8 {
-    background-image: url(../../image/reachus/img/cloud3.png);
+    background-image: url(../../image/menu/frame.png);
     z-index: 5;
     background-size: 100% 100%;
     visibility: visible;
@@ -373,7 +373,7 @@
 
 #cld9 {
     z-index: 5;
-    background-image: url(../../image/reachus/img/cloud3.png);
+    background-image: url(../../image/menu/frame.png);
     background-size: 100% 100%;
     visibility: visible;
     position: absolute;
@@ -413,6 +413,10 @@
     color: black;
     font-family: 'Ananda Neptouch 2', cursive;
     font-weight: bolder;
+}
+
+#menu a:hover {
+    font-size: 1.5vw;
 }
 
 #menu p {
