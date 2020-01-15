@@ -32,7 +32,6 @@ body {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    padding-bottom: 10%;
     overflow-x: hidden;
 }
 
@@ -413,7 +412,6 @@ h1 span span:nth-child(7) {
     margin-top: 40%;
     font-size: 1.4vw;
     left: -2%;
-    margin-left: ;
 }
 
 .popuptext1 {
@@ -429,7 +427,6 @@ h1 span span:nth-child(7) {
     margin-top: 40%;
     font-size: 2vw;
     left: -3%;
-    margin-left: ;
 }
 
 
@@ -491,7 +488,10 @@ h1 span span:nth-child(7) {
     align-items: center;
 }
 
-i {
+#right i,
+#left i,
+#cover i,
+#upperpart i {
     position: absolute;
     border: solid white;
     border-width: 0 5px 5px 0;
@@ -557,8 +557,6 @@ i {
     }
     .frame {
         width: 42%;
-        height: ;
-        display: block;
         margin: auto;
     }
     .heading {
@@ -599,7 +597,7 @@ i {
     }
 }
 
-@media only screen and (max-width: 415px) and (min-width: 400px) {
+@media only screen and (max-width: 450px) and (min-width: 400px) {
     .carousel-inner>h1 {
         font-size: 2vw;
     }
@@ -611,8 +609,6 @@ i {
     }
     .frame {
         width: 42%;
-        height: ;
-        display: block;
         margin: auto;
     }
     #carousel-example-generic {
@@ -645,8 +641,6 @@ i {
     }
     .frame {
         width: 42%;
-        height: ;
-        display: block;
         margin: auto;
     }
     .example {
@@ -691,8 +685,6 @@ i {
     }
     .frame {
         width: 42%;
-        height: ;
-        display: block;
         margin: auto;
     }
     .example {

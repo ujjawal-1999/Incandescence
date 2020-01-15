@@ -20,18 +20,18 @@ $(function() {
         }
     });
 
-    if ($('select')) {
-        $('select').niceSelect();
-    }
+    // if ($('select')) {
+    //     $('select').niceSelect();
+    // }
 
-    $('.testi-slider').owlCarousel({
-        items: 1,
-        loop: true,
-        autoplay: true,
-        margin: 30,
-        nav: true,
-        navText: ["<img src='img/prev.png'>", "<img src='img/next.png'>"]
-    });
+    // $('.testi-slider').owlCarousel({
+    //     items: 1,
+    //     loop: true,
+    //     autoplay: true,
+    //     margin: 30,
+    //     nav: true,
+    //     navText: ["<img src='img/prev.png'>", "<img src='img/next.png'>"]
+    // });
 
     // Select all links with hashes
     $('.navbar-nav a[href*="#"]')
@@ -172,7 +172,7 @@ $(function() {
         }
     }
 
-    $(document).ready(function() {
-        $('#mc_embed_signup').find('form').ajaxChimp();
-    });
+    // $(document).ready(function() {
+    //     $('#mc_embed_signup').find('form').ajaxChimp();
+    // });
 });
