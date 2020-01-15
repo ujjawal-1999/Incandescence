@@ -1,0 +1,89 @@
+.footer-distributed {
+    background: linear-gradient(transparent, rgb(73, 24, 33));
+    width: 100%;
+    text-align: center;
+    font: 16px 'Century Gothic', 'sans-serif';
+    padding: 35px 50px 0px 50px;
+    text-transform: uppercase;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.footer-distributed .footer-left {
+    margin-top: 5vh;
+    width: 20%;
+}
+
+.footer-distributed h3 {
+    /* color: hsl(29, 92%, 29%); */
+    color: rgb(2, 29, 87);
+    font-weight: bold;
+    font-size: 18px;
+    font-family: 'Roboto Slab', 'Roboto';
+    text-align: center;
+    margin: 0;
+}
+
+.footer-distributed .footer-links {
+    /* color: #002561; */
+    color: rgb(255, 102, 0);
+    margin: 20px 0 12px;
+    font-weight: 900;
+    padding: 0;
+}
+
+.footer-distributed a {
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer-distributed .footer-center {
+    width: 40%;
+}
+
+.footer-distributed .footer-right {
+    width: 20%;
+}
+
+.footer-distributed .footer-icons a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    border-radius: 2px;
+    font-size: 20px;
+    /* color: #002561; */
+    color: yellow;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 3px;
+    margin-bottom: 5px;
+}
+
+@media (max-width: 600px) {
+    .footer-distributed {
+        font: bold 14px 'Century Gothic', sans-serif;
+    }
+    .footer-distributed .footer-left,
+    .footer-distributed .footer-center,
+    .footer-distributed .footer-right {
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    .footer-distributed .footer-center i {
+        margin-left: 0;
+    }
+    .main {
+        line-height: normal;
+        font-size: auto;
+    }
+}

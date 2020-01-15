@@ -1,129 +1,110 @@
 /* @import url('https://fonts.googleapis.com/css?family=Bad+Script'); */
+
+
 /* cyrillic */
+
 @font-face {
-  font-family: 'Bad Script';
-  font-style: normal;
-  font-weight: 400;
-  src: local("Bad Script Regular"), local("BadScript-Regular"), url(https://fonts.gstatic.com/s/badscript/v8/6NUT8F6PJgbFWQn47_x7pO8kzO1A.woff2) format("woff2");
-  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+    font-family: 'Bad Script';
+    font-style: normal;
+    font-weight: 400;
+    src: local("Bad Script Regular"), local("BadScript-Regular"), url(https://fonts.gstatic.com/s/badscript/v8/6NUT8F6PJgbFWQn47_x7pO8kzO1A.woff2) format("woff2");
+    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
+
+
 /* latin */
+
 @font-face {
-  font-family: 'Bad Script';
-  font-style: normal;
-  font-weight: 400;
-  src: local("Bad Script Regular"), local("BadScript-Regular"), url(https://fonts.gstatic.com/s/badscript/v8/6NUT8F6PJgbFWQn47_x7pOskzA.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    font-family: 'Bad Script';
+    font-style: normal;
+    font-weight: 400;
+    src: local("Bad Script Regular"), local("BadScript-Regular"), url(https://fonts.gstatic.com/s/badscript/v8/6NUT8F6PJgbFWQn47_x7pOskzA.woff2) format("woff2");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
-/*body {
- 
- background-repeat:repeat-x;
- background-size: contain;
-  height: 750px;
-  font-family: "Roboto", sans-serif;
-  font-size: 14px;
-  font-weight: 300;
-  line-height: 1.625em;
-  position: relative;
-  z-index: -2; }
-*/
 
 h1 {
-  margin: 0;
-  padding: 0;
-  color: #111;
-  font-size: 7em;
-  position: absolute;
-  right: 0%;
-  top: -120px;
+    margin: 0;
+    padding: 0;
+    color: #111;
+    font-size: 7em;
+    position: absolute;
+    right: 0%;
+    top: -120px;
 }
 
 h1 span {
-  display: table-cell;
-  margin: 0;
-  padding: 0;
-  animation: animate 2s linear infinite;
+    display: table-cell;
+    margin: 0;
+    padding: 0;
+    animation: animate 2s linear infinite;
 }
 
+
 /* No Space in "h1 span" and "nth-child" */
+
 h1 span:nth-child(1) {
-  animation-delay: 0s;
+    animation-delay: 0s;
 }
 
 h1 span:nth-child(2) {
-  animation-delay: 0.25s;
+    animation-delay: 0.25s;
 }
 
 h1 span:nth-child(3) {
-  animation-delay: 0.5s;
+    animation-delay: 0.5s;
 }
 
 h1 span:nth-child(4) {
-  animation-delay: 0.75s;
+    animation-delay: 0.75s;
 }
 
 h1 span:nth-child(5) {
-  animation-delay: 1s;
+    animation-delay: 1s;
 }
 
 h1 span:nth-child(6) {
-  animation-delay: 1.25s;
+    animation-delay: 1.25s;
 }
 
 h1 span:nth-child(7) {
-  animation-delay: 1.5s;
+    animation-delay: 1.5s;
 }
 
 h1 span:nth-child(8) {
-  animation-delay: 1.75s;
+    animation-delay: 1.75s;
 }
 
 @keyframes animate {
-  0%, 100% {
-    color: #fff;
-    filter: blur(2px);
-    /* Try box-shadow */
-    text-shadow: 0 0 10px #FEC959, 0 0 20px #FEC959, 0 0 40px #FEC959, 0 0 80px #FEC959, 0 0 120px #FEC959, 0 0 200px #FEC959, 0 0 300px #FEC959, 0 0 400px #FEC959;
-  }
-  5%, 95% {
-    color: #111;
-    filter: blur(0px);
-    text-shadow: 0 0 10px none;
-  }
+    0%,
+    100% {
+        color: #fff;
+        filter: blur(2px);
+        /* Try box-shadow */
+        text-shadow: 0 0 10px #FEC959, 0 0 20px #FEC959, 0 0 40px #FEC959, 0 0 80px #FEC959, 0 0 120px #FEC959, 0 0 200px #FEC959, 0 0 300px #FEC959, 0 0 400px #FEC959;
+    }
+    5%,
+    95% {
+        color: #111;
+        filter: blur(0px);
+        text-shadow: 0 0 10px none;
+    }
 }
 
-
-
-
-//==================END=================//
-
-/*   wire height and board Math.abs(transform-origin-y) should be same */
-
-
-/*#pin{
-  background-image: url(../img/pin.png);
-  position: absolute;
-    top: 900px;
-  left: 100px;
-  height: 100px;
-  width: 100px;
-  background-size: cover;
-}*/
 .wire {
-	position: absolute;
-	top: 1000px;
-	left: 250px;
-  height: 200px;
-  width: 3px;
-  
-  background-color: black;
-  -webkit-transform-origin: 50% 0%;
-          transform-origin: 50% 0%;
-  -webkit-transform: rotate(20deg);
-          transform: rotate(20deg);
-  -webkit-animation: swing ease-in-out 2.5s infinite;
-          animation: swing ease-in-out 2.5s infinite;
+    position: absolute;
+    top: 1000px;
+    left: 250px;
+    height: 200px;
+    width: 3px;
+    background-color: black;
+    -webkit-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+    -webkit-transform: rotate(20deg);
+    transform: rotate(20deg);
+    -webkit-animation: swing ease-in-out 2.5s infinite;
+    animation: swing ease-in-out 2.5s infinite;
 }
+
 
 /*.board {
 	position: absolute;
@@ -151,7 +132,6 @@ h1 span:nth-child(8) {
 */
 
 
-
 /*@-webkit-keyframes swing {
   0% {
     -webkit-transform: rotate(20deg);
@@ -171,92 +151,74 @@ h1 span:nth-child(8) {
 }
 */
 
-
-
 @keyframes swing {
-  0% {
-    -webkit-transform: rotate(20deg);
-            transform: rotate(20deg);
-    /*box-shadow: 4px 2px 15px #555;*/
-  }
-  50% {
-    -webkit-transform: rotate(-20deg);
-            transform: rotate(-20deg);
-    /*box-shadow: -4px 2px 15px #555;*/
-  }
-  100% {
-    -webkit-transform: rotate(20deg);
-            transform: rotate(20deg);
-   /* box-shadow: 4px 2px 15px #555;*/
-  }
+    0% {
+        -webkit-transform: rotate(20deg);
+        transform: rotate(20deg);
+        /*box-shadow: 4px 2px 15px #555;*/
+    }
+    50% {
+        -webkit-transform: rotate(-20deg);
+        transform: rotate(-20deg);
+        /*box-shadow: -4px 2px 15px #555;*/
+    }
+    100% {
+        -webkit-transform: rotate(20deg);
+        transform: rotate(20deg);
+        /* box-shadow: 4px 2px 15px #555;*/
+    }
 }
 
 //===========================ROAD TO INCAND============================//
 main {
-  background: #000;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 700px;
-  width: 100%;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+    width: 100%;
 }
 
-.board{
-   font-size: 3.5em;
+.board {
+    font-size: 3.5em;
     height: 350px;
 }
 
 #rod {
-     animation: animate 3s  infinite;
-  padding: 0px;
-  position: relative;
-  color: #111;
+    animation: animate 3s infinite;
+    padding: 0px;
+    position: relative;
+    color: #111;
 }
 
 #to {
-     animation: animate 3s 1s infinite;
-  padding-left: 40px;
-  padding-top: 30px;
-  position: relative;
-  color: #111;
+    animation: animate 3s 1s infinite;
+    padding-left: 40px;
+    padding-top: 30px;
+    position: relative;
+    color: #111;
 }
 
 #ind {
-     animation: animate 3s 2s infinite;
-  padding: 0px;
-  position: relative;
-   padding-left: 20px;
-   padding-top: 30px;
-  color: #111;
+    animation: animate 3s 2s infinite;
+    padding: 0px;
+    position: relative;
+    padding-left: 20px;
+    padding-top: 30px;
+    color: #111;
 }
 
 @keyframes animate {
-  0%, 100%{
-    color: #fff;
-    filter: blur(1px);
-    text-shadow: 0 0 10px #f9ca56,
-      0 0 20px #f9ca56,
-      0 0 40px #f9ca56,
-      0 0 80px #f9ca56,
-      0 0 120px #f9ca56,
-      0 0 200px #f9ca56,
-      0 0 300px #f9ca56,
-      0 0 400px #f9ca56;
-  }
-   40%, 80%{
-    color: #111;
-    filter: blur(0px);
-    text-shadow: none;
-  } 
+    0%,
+    100% {
+        color: #fff;
+        /* filter: blur(1px); */
+        /* text-shadow: 0 0 10px #f9ca56, 0 0 20px #f9ca56, 0 0 40px #f9ca56, 0 0 80px #f9ca56, 0 0 120px #f9ca56, 0 0 200px #f9ca56, 0 0 300px #f9ca56, 0 0 400px #f9ca56; */
+    }
+    40%,
+    80% {
+        color: #111;
+        /* filter: blur(0px);
+        text-shadow: none; */
+    }
 }
-
-//==================END=================//
-
-/*@media (max-width: 600px) {
-  .board{
-   font-size: 1.5em;
-   height: 150px;
-}
-
-}*/
-
