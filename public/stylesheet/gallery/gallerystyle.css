@@ -597,25 +597,9 @@ h1 span span:nth-child(7) {
     }
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-@media only screen and (max-width: 450px) and (min-width: 400px) {
-=======
-@media only screen and (max-width: 425px) and (min-width: 400px) {
->>>>>>> gallery changes done
-=======
-@media only screen and (max-width: 425px) and (min-width: 400px) {
->>>>>>> gallery changes done
-=======
-@media only screen and (max-width: 450px) and (min-width: 400px) {
->>>>>>> merge conflicts
-=======
-@media only screen and (max-width: 450px) and (min-width: 400px) {
->>>>>>> af49466f7e16c34bcde943133428c4d795f68864
+@media only screen and (max-width: 580px) and (min-width: 400px) {
     .carousel-inner>h1 {
-        font-size: 2vw;
+        font-size: 5vw;
     }
     .upperpart {
         width: 65rem;
@@ -637,6 +621,12 @@ h1 span span:nth-child(7) {
         width: 80%;
         margin-bottom: -14rem;
         z-index: 1;
+    }
+}
+@media only screen and (max-width: 580px) and (min-width: 500px) {
+    .upperpart {
+        margin-left: -55%;
+        margin-top: -40%;
     }
 }
 
@@ -718,9 +708,9 @@ h1 span span:nth-child(7) {
     }
 }
 
-@media only screen and (min-width: 700px) and (max-width: 1024px) {
+@media only screen and (min-width: 590px) and (max-width: 1024px) {
     .carousel-inner>h1 {
-        font-size: 2vw;
+        font-size: 5vw;
     }
     .upperpart {
         width: 150rem;
@@ -730,6 +720,7 @@ h1 span span:nth-child(7) {
     }
     .frame {
         width: 60%;
+        height: %:;
         display: block;
         margin: auto;
     }
@@ -764,6 +755,23 @@ h1 span span:nth-child(7) {
     }
     .popuptext1 {
         width: 174px;
+    }
+}
+@media only screen and (min-width: 590px) and (max-width: 690px) {
+    .upperpart {
+        width: 100rem;
+        height: 40rem;
+        margin-left: -85%;
+        margin-top: -7%;
+    }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 900px) {
+    .upperpart {
+        width: 150rem;
+        height: 56rem;
+        margin-left: -100%;
+        margin-top: -7%;
     }
 }
 
