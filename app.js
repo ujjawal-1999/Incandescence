@@ -10,7 +10,7 @@ shortid.characters('0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWX
 const { mongoose } = require('./connect')
 const { User } = require('./user.js')
 var rzp = new Razorpay({
-    key_id: 'own_key',// need to change in payment.ejs
+    key_id: 'own_key', // need to change in payment.ejs
     key_secret: 'own_secret'
 })
 
@@ -29,8 +29,7 @@ var app = express()
 
 app.set('view engine', 'ejs')
 app.use(express.static('public'))
-//--- http server code  begins--
-
+    //--- http server code  begins--
 var http = require('http');
 var httpServer = http.createServer(app);
 httpServer.listen(80);
@@ -51,6 +50,18 @@ app.use(bodyParser.urlencoded({ extended: true }))
 
 
 // start of get request
+app.get('/munhome', (req, res) => {
+    res.render('munhome')
+})
+app.get('/mungallery', (req, res) => {
+    res.render('mungallery')
+})
+app.get('/munteam', (req, res) => {
+    res.render('munteam')
+})
+app.get('/munregistration', (req, res) => {
+    res.render('munregistration')
+})
 app.get('/gallery', (req, res) => {
     res.render('gallery')
 })
@@ -74,7 +85,7 @@ app.get('/reachus', (req, res) => {
     res.render('reachus')
 })
 app.get('/database', (req, res) => {
-    var name = req.query.name|| "NO ONE"
+    var name = req.query.name || "NO ONE"
     res.render('database', { customer: name })
 })
 
@@ -99,7 +110,7 @@ app.get('/payment', (req, res) => {
     localStorage.setItem('name', name)
     localStorage.setItem('number', phone)
     res.render('payment')
-    //{name:name,phonenumber:phone,email:email}
+        //{name:name,phonenumber:phone,email:email}
 })
 
 app.get('/success', (req, res) => {
@@ -124,8 +135,7 @@ function fun1(req, res, next) {
 
     if (pos == -1) {
         res.render('register', { validate: 0 })
-    }
-    else {
+    } else {
         if (email.slice(pos + 1, email.length) == "gmail.com" || email.slice(pos + 1, email.length) == "yahoo.com") {
             next()
         } else {
@@ -153,8 +163,8 @@ app.post('/register', fun1, (req, res) => {
             })
         }
     } else {
-        res.redirect('/payment?name=' + req.body.name + '&email=' + req.body.email + '&phonenumber='
-            + req.body.number + '&institute=others')
+        res.redirect('/payment?name=' + req.body.name + '&email=' + req.body.email + '&phonenumber=' +
+            req.body.number + '&institute=others')
     }
 
 })
@@ -275,9 +285,9 @@ app.post('/send', (req, res) => {
 
 app.post('/check', (req, res) => {
     console.log(req.body.id)
-    User.find({ id: req.body.id }, function (err, result) {
+    User.find({ id: req.body.id }, function(err, result) {
         console.log(result.length)
-        if(result.length !=0) res.redirect('/database?name='+result[0].name)
+        if (result.length != 0) res.redirect('/database?name=' + result[0].name)
         else res.redirect('/database')
         console.log(result)
 
@@ -288,5 +298,5 @@ app.post('/check', (req, res) => {
 
 
 // app.listen(5000, () => {
-//    console.log('Connected to server')
+//     console.log('Connected to server')
 // })
