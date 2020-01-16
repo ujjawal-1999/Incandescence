@@ -1,0 +1,8 @@
+body {
+    background: url("/image/gallery/back2.svg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+}
+

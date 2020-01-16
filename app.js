@@ -50,6 +50,9 @@ app.use(bodyParser.urlencoded({ extended: true }))
 
 
 // start of get request
+app.get('/sponsors', (req, res) => {
+    res.render('sponsor')
+})
 app.get('/munhome', (req, res) => {
     res.render('munhome')
 })
