@@ -69,7 +69,7 @@ app.get('/gallery', (req, res) => {
     res.render('gallery')
 })
 
-app.get('/history', (req, res) => {
+app.get('/brochure', (req, res) => {
     res.render('history')
 })
 
