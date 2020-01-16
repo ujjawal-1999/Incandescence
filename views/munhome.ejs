@@ -30,6 +30,72 @@
         #aboutus p {
             color: #fff;
         }
+        
+        .mobile-view {
+            margin-left: 10%;
+        }
+        
+        @media screen and (max-width:768px) {
+            .brand {
+                position: relative;
+                margin-left: 25%;
+            }
+            .text-view {
+                text-align: center;
+            }
+        }
+        
+        .text {
+            text-align: center;
+            font-variant: small-caps;
+            color: #212f74;
+            font-size: 16vh;
+            line-height: 12vh;
+            margin-top: 8%;
+        }
+        
+        .text1 {
+            text-align: center;
+            bottom: 0px;
+            font-variant: small-caps;
+            color: #212d74;
+            font-size: 14vh;
+            line-height: 12vh;
+        }
+        
+        .edition {
+            text-align: center;
+            color: rgba(35, 66, 113, 0.9);
+            opacity: 0.92;
+            font-size: 12vh;
+            line-height: 8vh;
+        }
+        
+        @media (max-width: 768px) {
+            .text {
+                text-align: center;
+                font-size: 3rem;
+                margin-top: 15%;
+                font-variant: small-caps;
+                line-height: 3rem;
+                color: #212f74;
+            }
+            .text1 {
+                text-align: center;
+                bottom: 0px;
+                font-size: 3rem;
+                font-variant: small-caps;
+                line-height: 3rem;
+                color: #212d74;
+            }
+            .edition {
+                text-align: center;
+                font-size: 3rem;
+                line-height: 3rem;
+                color: rgba(35, 66, 113, 0.9);
+                opacity: 0.92
+            }
+        }
     </style>
 </head>
 
@@ -65,15 +131,16 @@
                 </div>
             </div>
         </nav>
-        <div style="background-color:rgb(7, 6, 15);opacity:0.9;height:100vh;text-align:center;background-image:url('/image/mun/logo white1.png');width:100%;background-position:center;background-repeat:no-repeat;background-size:25vh;">
-            <img src="/image/mun/incandlogo.png" style="text-align:center;width:150px;height:100px;padding-top:2%;">
-            <h5 style="text-align: center;color: #212D74">Presents</h5>
-            <div class="d-flex  justify-content-center" style="min-height:100vh;">
+        <div style="background-color:rgb(7, 6, 15);opacity:0.9;height:100vh;background-image:url('/image/mun/logo white1.png');background-position:calc(50vw - 12.5vh) 10vh;background-repeat:no-repeat;background-size:30vh;margin:0;">
+            <a href="/"><img src="/image/mun/incandlogo-white.png" style="width:180px;height:100px;padding-left: 4%;padding:25px;"></a>
+            <img src="/image/mun/nitslogo.png" style="float:right;width:80px;height:80px;margin-right:5%">
+            <div class="d-flex  justify-content-center" style="min-height:100vh;margin-top:10vh;">
                 <div>
-                    <p class="edition " style="text-align:center;font-size:30vh;line-height:30vh;color:rgba(35, 66, 113, 0.9);opacity:0.92">2020
+
+                    <p class="text" id="text" style="color:rgba(35, 66, 113, 0.9)"></p>
+                    <p class="text1" id="text1" style="color:rgba(35, 66, 113, 0.9)"></p>
+                    <p class="edition" style="color:rgba(35, 66, 113, 0.9)">2020
                     </p>
-                    <p class="text" id="text" style="text-align: center;font-size:12vh;font-variant:small-caps;line-height:10vh;color:#212f74;"></p>
-                    <p class="text1" id="text1" style="text-align: center;font-size:12vh;font-variant:small-caps;line-height:10vh;color:#212d74;"></p>
                 </div>
             </div>
         </div>
@@ -199,10 +266,7 @@
     </div>
     <!-- About endssss -->
     <!-- *********************counter******************** -->
-
-
-
-    <div class="row no-gutters countdown-container" style="margin-top:75px;background-color:rgba(255, 87, 51, 0.84);color:#fff;display:flex;height:40vh;align-items:center;">
+    <div class="row no-gutters countdown-container" id="countdown-container" style="margin-top:75px;background-color:rgba(255, 87, 51, 0.84);color:#fff;display:flex;height:40vh;align-items:center;">
         <div class="col-md-2">
         </div>
         <div class="col-md-8">
@@ -250,7 +314,7 @@
                     <div class="col-sm-6 d-flex justify-content-center"><button type="button" style="color:#fff;margin-right:10px" class="btn button-committee" data-container="body" data-toggle="popover" data-placement="bottom" data-content="The Security Council has primary responsibility for the maintenance of international peace and security. The Security Council takes the lead in determining the existence of a threat to the peace or act of aggression. It calls upon the parties to a dispute to settle it by peaceful means and recommends methods of adjustment or terms of the settlement.">
                     KNOW MORE
                   </button></div>
-                    <div class="col-sm-6 d-flex justify-content-center"><button class="btn button-committee" style="color:#fff">BACKGROUND GUIDE</button></div>
+                    <div class="col-sm-6 d-flex justify-content-center"><button class="btn button-committee" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Coming Soon" style="color:#fff">BACKGROUND GUIDE</button></div>
                 </div>
 
                 <div class="line-bottom" style="width:80px;height:10px;margin-top:10%;/*background-color:#212d74;*/ background: #234271e6;margin-left:calc(50% - 40px)"></div>
@@ -276,16 +340,13 @@
                     <div class="col-sm-6 d-flex justify-content-center"><button type="button" style="outline:none;color:#212d74;margin-right:10px;background-color:#fff" class="btn button-committee btn-control-no-border" data-container="body" data-toggle="popover" data-placement="bottom" data-content=" In United Nations General Assembly - one of the six main organs of the UN -The Member States of the Organization are represented to discuss and work together on a wide array of international issues covered by the Charter of the United Nations, such as development, peace, and security, international law, etc.">
                       KNOW MORE
                     </button></div>
-                    <div class="col-sm-6 d-flex justify-content-center"><button style="color:#212d74;background-color: #fff" class="btn button-committee">BACKGROUND GUIDE</button></div>
+                    <div class="col-sm-6 d-flex justify-content-center"><button style="color:#212d74;background-color: #fff" class="btn button-committee" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Coming Soon">BACKGROUND GUIDE</button></div>
                 </div>
-                <div class="line-bottom" style="width:80px;height:10px;/*background-color:#212d74;*/ background: #234271e6;margin-top:10%;margin-left:calc(50% - 40px)"></div>
+                <div class="line-bottom" style="width:80px;height:10px;background: #234271e6;margin-top:10%;margin-left:calc(50% - 40px)"></div>
 
             </div>
-
-
         </div>
     </div>
-
     <!-- team alteenate ends -->
     <!-- team -->
 
@@ -362,14 +423,15 @@
     </div>
 
     <!--  team ends ***********************-->
-
-    <!-- *********************footer ********************* -->
     <!-- *********************footer ********************* -->
     <footer style="background:#343a40;padding-left:1rem">
         <div class="row no-gutters">
-            <div class="col-md-3 quicklinks" style="background:#343a40;">
+            <div class="col-md-4">
+                <div class="brand brand1"><img class="rounded-circle mobile-view" id="image" src="/image/mun/logo white1.png" width="150px" height="150px" style="margin-top:15%;align-items:center;"></div>
+            </div>
+            <div class="col-md-4 quicklinks text-view" style="background:#343a40;">
                 <h3 style="padding:2rem 0px 0.5rem 1rem">Quick Links</h3>
-                <ul class="quicklinks" style="text-align:justify;display: flex;flex-direction: column;margin-left: 10%;">
+                <ul class="quicklinks text-view" style="display: flex;flex-direction: column;">
                     <li><a href="/munhome">Home</a></li>
                     <li><a href="#aboutus">About Us</a></li>
                     <li><a href="#committees">Committees</a></li>
@@ -378,47 +440,10 @@
                     <li><a href="/munregistration" target="_blank">Apply</a></li>
                 </ul>
             </div>
-            <div class="col-md-9">
-                <div class="containerS">
+            <div class="col-md-4">
+                <div class="containerS text-view">
                     <div class="wrapper animated bounceInLeft row no-gutters">
-                        <div class="contact col-md-9">
-                            <h3 style="padding-left:20px">Email Us</h3>
-                            <div class="alert">Your message has been displayed</div>
-                            <form id="contactForm">
-                                <div class="row no-gutters">
-                                    <div class="col-md-4" style="padding:0px 20px 0px 0px">
-                                        <p>
-                                            <label>Name</label>
-                                            <input type="text" name="name" id="name" required>
-                                        </p>
-                                    </div>
-                                    <div class="col-md-4" style="padding:0px 20px 0px 0px">
-                                        <p>
-                                            <label>Email Address</label>
-                                            <input type="email" name="company" id="company" required>
-                                        </p>
-                                    </div>
-                                    <div class="col-md-4" style="padding:0px 20px 0px 0px">
-
-                                        <p>
-                                            <label>Phone Number</label>
-                                            <input type="text" name="email" id="email" required>
-                                        </p>
-                                    </div>
-
-                                </div>
-
-                                <p class="full">
-                                    <label>Message</label>
-                                    <textarea name="message" rows="5"></textarea>
-                                </p>
-
-                                <p class="full">
-                                    <button><b style="letter-spacing: 0.8px;">Submit</b></button>
-                                </p>
-                            </form>
-                        </div>
-                        <div class="company-info col-md-3">
+                        <div class="company-info col-md-12">
                             <h3 style="padding-left: 1rem;">Contact Us</h3>
                             <ul style="color:#fff">
                                 <li><i class="fa fa-road" style="margin-left:1rem;"></i> NIT Silchar</li>
@@ -443,10 +468,8 @@
         </div>
         <div class="row no-gutters">
             <img src="/image/mun/top_up.png" style="display:none;" class="nav_up" id="nav_up"></div>
-        <!-- <img class="rounded-circle" src="/image/mun/incand.jpg" width="50px" height="50px"alt="incandenece"> -->
         </div>
     </footer>
-
 
 
     <!--  -->
@@ -548,7 +571,7 @@
             // If the count down is over, write some text 
             if (distance < 0) {
                 clearInterval(x);
-                document.getElementById("days").innerHTML = "EXPIRED";
+                document.getElementById("countdown-container").style.display = "none";
             }
         }, 1000);
     </script>

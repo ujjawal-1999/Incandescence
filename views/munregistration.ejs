@@ -9,13 +9,26 @@
     <link rel="stylesheet" type="text/css" href="stylesheet/mun/registration.css">
     <link rel="stylesheet" href="stylesheet/mun/bootstrap.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <!--  <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css"> -->
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <title>NITS MUN</title>
     <style>
         a:hover {
             text-decoration: none;
             color: white;
+        }
+        
+        .mobile-view {
+            margin-left: 10%;
+        }
+        
+        @media screen and (max-width:768px) {
+            .brand {
+                position: relative;
+                margin-left: 25%;
+            }
+            .text-view {
+                text-align: center;
+            }
         }
     </style>
 </head>
@@ -31,8 +44,6 @@
             <div class="container-style" style="height:12vh;">
                 <div class="brand"><img id="image" class="rounded-circle" src="/image/mun/logo white1.png" width="90px" style="padding-bottom:12px;margin-left:7%;"></div>
                 <div class="tagline">
-                    <!-- <span class="tagline-style">NITS</span>
-    <span class="tagline-base">Model United Nations</span> -->
                 </div>
                 <div class="navbar-style">
                     <ul class="navbar-list">
@@ -49,112 +60,55 @@
         </nav>
         <div class="d-flex justify-content-center align-items-center" style="display:none; background-color:#fff;min-height:100vh">
 
-            <h1 style="font-size:4rem;color:#212d74;text-shadow:2px 2px 2px #7890cd">Coming Soon</h1>
-        </div>
+            <div class="row no-gutters" style="min-height:100vh">
+                <div class="col-md-4 d-flex justify-content-center align-items-center">
+                </div>
+                <div class="col-md-4 d-flex justify-content-center align-items-center">
+                    <div class="delegate">
+                        <div class="delegate-flip">
+                            <div class="front d-flex justify-content-center align-items-center">
+                                <h2>Delegate</h2>
+                            </div>
+                            <div class="back d-flex justify-content-center align-items-center">
+                                <button class="btn"><a href="https://docs.google.com/forms/d/e/1FAIpQLSf-lPbJFRcMXK-ae3bwgPuQfwcNe8pzF7S2im27c1NebI5oOQ/viewform?embedded=true" target="_parent" style="font-size:2rem;font-weight:700;">Apply</a></button>
+                            </div>
+                        </div>
+                    </div>
 
-        <div class="col-md-4 d-flex justify-content-center align-items-center">
-            <div class="delegate">
-                <div class="delegate-flip">
-                    <div class="front d-flex justify-content-center align-items-center">
-                        <h2>Delegate</h2>
-                    </div>
-                    <div class="back d-flex justify-content-center align-items-center">
-                        <button class="btn"><a href="register_delegate.html">Delegate</a></button>
-                    </div>
+                </div>
+                <div class="col-md-4 d-flex justify-content-center align-items-center">
                 </div>
             </div>
-
-        </div>
-        <div class="col-md-4 d-flex justify-content-center align-items-center">
-            <div class="delegate">
-                <div class="delegate-flip">
-                    <div class="front d-flex justify-content-center align-items-center">
-                        <h2>Executive Board</h2>
-                    </div>
-                    <div class="back d-flex justify-content-center align-items-center">
-                        <button class="btn"><a href="register_eb.html">Executive Board</a></button>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-        <div class="col-md-4 d-flex justify-content-center align-items-center">
-            <div class="delegate">
-                <div class="delegate-flip">
-                    <div class="front d-flex justify-content-center align-items-center">
-                        <h2>International Press</h2>
-                    </div>
-                    <div class="back d-flex justify-content-center align-items-center">
-                        <button class="btn"><a href="register_ip.html">International Press</a></button>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-        </div> -->
     </header>
-    <footer style="background-color: #343a40;padding-left:1rem">
+    <!-- *********************footer ********************* -->
+    <footer style="background:#343a40;padding-left:1rem">
         <div class="row no-gutters">
-            <div class="col-md-3 quicklinks" style="background-color:#343a40;">
+            <div class="col-md-4">
+                <div class="brand brand1"><img class="rounded-circle mobile-view" id="image" src="/image/mun/logo white1.png" width="150px" height="150px" style="margin-top:15%;align-items:center;"></div>
+            </div>
+            <div class="col-md-4 quicklinks text-view" style="background:#343a40;">
                 <h3 style="padding:2rem 0px 0.5rem 1rem">Quick Links</h3>
-                <ul class="quicklinks" style="text-align:justify">
+                <ul class="quicklinks text-view" style="display: flex;flex-direction: column;">
                     <li><a href="/munhome">Home</a></li>
-                    <li><a href="/munhome">About Us</a></li>
-                    <li><a href="/munhome">Committees</a></li>
+                    <li><a href="#aboutus">About Us</a></li>
+                    <li><a href="#committees">Committees</a></li>
                     <li><a href="/mungallery" target="_blank">Gallery</a></li>
-                    <li><a href="/munteam">Secretariat</a></li>
+                    <li><a href="#team">Secretariat</a></li>
                     <li><a href="/munregistration" target="_blank">Apply</a></li>
                 </ul>
             </div>
-            <div class="col-md-9">
-                <div class="containerS">
+            <div class="col-md-4">
+                <div class="containerS text-view">
                     <div class="wrapper animated bounceInLeft row no-gutters">
-                        <div class="contact col-md-9">
-                            <h3 style="padding-left:20px">Email Us</h3>
-                            <div class="alert">Your message has been displayed</div>
-                            <form id="contactForm">
-                                <div class="row no-gutters">
-                                    <div class="col-md-4" style="padding:0px 20px 0px 0px">
-                                        <p>
-                                            <label>Name</label>
-                                            <input type="text" name="name" id="name" required>
-                                        </p>
-                                    </div>
-                                    <div class="col-md-4" style="padding:0px 20px 0px 0px">
-                                        <p>
-                                            <label>Email Address</label>
-                                            <input type="email" name="company" id="company" required>
-                                        </p>
-                                    </div>
-                                    <div class="col-md-4" style="padding:0px 20px 0px 0px">
-
-                                        <p>
-                                            <label>Phone Number</label>
-                                            <input type="text" name="email" id="email" required>
-                                        </p>
-                                    </div>
-
-                                </div>
-
-                                <p class="full">
-                                    <label>Message</label>
-                                    <textarea name="message" rows="5"></textarea>
-                                </p>
-
-                                <p class="full">
-                                    <button><b style="letter-spacing: 0.8px;color:black;font-weight: bold;">Submit</b></button>
-                                </p>
-                            </form>
-                        </div>
-                        <div class="company-info col-md-3">
+                        <div class="company-info col-md-12">
                             <h3 style="padding-left: 1rem;">Contact Us</h3>
                             <ul style="color:#fff">
-                                <li><i class="fa fa-road"></i> NIT Silchar</li>
-                                <li> Silchar</li>
-                                <li>Assam</li>
-                                <li> 788010</li>
-                                <li><i class="fa fa-phone"></i> 8133840765</li>
-                                <li><i class="fa fa-envelope"></i> nitsmun@gmail.com</li>
+                                <li><i class="fa fa-road" style="margin-left:1rem;"></i> NIT Silchar</li>
+                                <li style="margin-left:1rem;"> Silchar</li>
+                                <li style="margin-left:1rem;">Assam</li>
+                                <li style="margin-left:1rem;"> 788010</li>
+                                <li><i class="fa fa-phone" style="margin-left:1rem;"></i> 8133840765</li>
+                                <li><i class="fa fa-envelope" style="margin-left:1rem;"></i> nitsmun@gmail.com</li>
                             </ul>
                             <div class="social">
                                 <ul class="list-inline d-flex justify-content-center">
@@ -170,10 +124,9 @@
             </div>
         </div>
         <div class="row no-gutters">
-            <!-- <img class="rounded-circle" src="/image/mun/incand.jpg" width="50px" height="50px"alt="incandenece"> -->
+            <img src="/image/mun/top_up.png" style="display:none;" class="nav_up" id="nav_up"></div>
         </div>
     </footer>
-
 
 
     <script>
