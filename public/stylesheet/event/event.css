@@ -214,24 +214,21 @@
      text-align: center;
  }
  
- @media screen and (max-width: 900px) {
-     .content {
-         transform: translateX(4vw);
-         zoom: 0.8;
+ @media screen and (max-width: 1200px) {
+     .event-info {
+         zoom: 0.9;
+     }
+ }
+ 
+ @media screen and (max-width: 800px) {
+     .event-info {
+         zoom: 0.7;
      }
  }
  
  @media screen and (max-width: 600px) {
-     .content {
-         transform: translateX(4vw);
-         zoom: 0.6;
-     }
- }
- 
- @media screen and (max-width: 400px) {
-     .content {
-         transform: translateX(4vw);
-         zoom: 0.5;
+     .event-info {
+         zoom: 0.55;
      }
  }
  
