@@ -314,8 +314,9 @@ body {
 }
 
 h1 {
+    font-family: 'Papyrus';
     color: #111;
-    /* font-size: 7em; */
+    font-size: 4em;
 }
 
 h1 span {
