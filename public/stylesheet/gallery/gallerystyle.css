@@ -769,7 +769,8 @@ h1 span span:nth-child(7) {
         margin-top: -7%;
     }
 }
-@media only screen and (min-width: 590px) and (max-width: 690px) {
+
+@media only screen and (min-width: 640px) and (max-width: 690px) {
         .upperpart {
         margin-left: -78%;
     
