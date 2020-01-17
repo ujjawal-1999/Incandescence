@@ -9,6 +9,11 @@ h1 {
     text-align: center;
 }
 
+.back {
+    display: none;
+}
+
+
 .container h1 {
 
 }
@@ -153,6 +158,18 @@ hr {
 }
 
 #navbar {
+    font-family: "Papyrus";
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px auto;
+    overflow: hidden;
+    background-color: #fff;
+    z-index: 9999;
+    width: 100%;
+}
+
+#navbar1 {
     font-family: "Papyrus";
     justify-content: center;
     align-items: center;
@@ -359,5 +376,8 @@ ul li {
     display: none;
  }
 
+.back {
+    display: block;
+}
 
 }
