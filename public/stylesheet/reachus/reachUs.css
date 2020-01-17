@@ -2,7 +2,12 @@ body {
     margin: 0px;
     padding: 0px;
     overflow-x: hidden;
-    background: linear-gradient(to bottom, #FE985A, #FF2061);
+    background-color: #FE985A;
+    background-image: linear-gradient(top, #FE985A 85vh, #FF2061 100%);
+    background-image: -moz-linear-gradient(top, #FE985A 85vh, #FF2061 100%);
+    background-image: -webkit-linear-gradient(top, #FE985A 85vh, #FF2061 100%);
+    width: 100vw;
+    height: auto;
     z-index: 0;
 }
 
@@ -11,7 +16,6 @@ body {
     background-image: url(/image/reachus/bg.jpg);
     height: 85vh;
     background-size: auto 100%;
-    /* width: 100%; */
     position: relative;
     top: 0;
     left: 0;
@@ -29,6 +33,7 @@ body {
 }
 
 .airplane-animation-conatiner {
+    position: absolute;
     zoom: 1;
     z-index: 3;
 }
@@ -179,17 +184,10 @@ body {
 }
 
 .road-animation-container {
-    zoom: 1;
-    width: 100vw;
-    position: absolute;
-    top: 85vh;
-    left: 0vw;
-}
-
-#road-container {
-    position: absolute;
     width: 100vw;
     height: auto;
+    position: relative;
+    left: 0vw;
 }
 
 .road {
@@ -215,10 +213,6 @@ body {
     position: absolute;
     z-index: 4;
     transform-origin: bottom left;
-    /* width: 150px;
-    margin-top: -147px;
-    left: 60vw;
-    top: 100%; */
     width: 150px;
     margin-top: -167px;
     left: 65vw;
@@ -265,8 +259,8 @@ body {
 }
 
 .map {
-    position: absolute;
-    top: 130vw;
+    position: relative;
+    /* top: 130vw; */
     width: 100vw;
 }
 

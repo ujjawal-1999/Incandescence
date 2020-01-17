@@ -148,18 +148,18 @@
         <p id="ind">Incandescence</p>
     </div>
 
-    <div class="road-animation-container" id='road-container'>
-        <img src='image/reachus/road.png' class='road' id='road'>
-        <img src='image/reachus/signRoad.png' class='signRoad' id='signRoad'>
-        <img src='image/reachus/bus.png' class='bus' id='bus'>
+    <div class="road-animation-container">
+        <img src='image/reachus/road.png' class='road'>
+        <img src='image/reachus/signRoad.png' class='signRoad'>
+        <img src='image/reachus/bus.png' class='bus'>
     </div>
-    <div class="map" id='map'>
+    <div class="map">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12447.812559505042!2d92.78105362853823!3d24.75820761849005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x374e49dcb63bae9b%3A0x81efa836714a289b!2sNational%20Institute%20Of%20Technology%2C%20Silchar%2C%20Assam!5e0!3m2!1sen!2sin!4v1577280295747!5m2!1sen!2sin"
             width="100%" height="300px" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
     </div>
 
 
-    <footer class="footer-distributed" id='footer'>
+    <footer class="footer-distributed" style="margin-top: -10px;">
 
         <div class="footer-left">
             <a href='/'><img src='/image/menu/logo.png' style="width: 100%;"></a>
@@ -196,17 +196,14 @@
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src='js/menu/menu.js'></script>
-    <script src='js/reachus/resize.js'></script>
+
     <script type="text/javascript">
-        document.getElementById('loader').remove();
         window.addEventListener('load', function() {
+            document.getElementById('loader').remove();
             $(window).resize(function(e) {
                 adaptMenu();
-                resizer();
             });
-            document.getElementById('loader').remove();
+            $(window).trigger('resize');
         });
-        adaptMenu();
-        resizer();
     </script>
 </body>
