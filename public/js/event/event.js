@@ -102,8 +102,6 @@ btn16.onclick = function() {
     modal16.style.display = "block";
 }
 
-
-
 //when user clicks x, close the module
 span1.onclick = function() {
     modal1.style.display = "none";
