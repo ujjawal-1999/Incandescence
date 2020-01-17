@@ -10,6 +10,28 @@
  }
  /*canvas animation*/
  
+ .svg-background {
+     position: fixed;
+     width: 200px;
+     height: 200px;
+     transform-origin: top left;
+ }
+ 
+ .animateToCenter {
+     animation: move ease-in-out 1 1s 0s;
+ }
+ 
+ @keyframes move {
+     0% {
+         top: 0;
+         left: 0;
+     }
+     100% {
+         top: 2.5vh;
+         left: 15vw;
+     }
+ }
+ 
  .people {
      color: black;
      font-weight: bold;
