@@ -4,9 +4,10 @@
  
  body {
      background: url(/image/gallery/back2.svg);
-     background-size: cover;
-     background-position: bottom left;
+     background-size: auto 100%;
+     background-position: bottom center;
      background-attachment: fixed;
+     background-repeat: repeat-x;
  }
  /*canvas animation*/
  

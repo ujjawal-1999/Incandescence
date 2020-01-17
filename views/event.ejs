@@ -14,6 +14,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
     <link rel='stylesheet' type="text/css" href='stylesheet/footer/footer.css'>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
     <style>
         * {
             scrollbar-color: #EBD62C transparent;
@@ -671,7 +674,7 @@
 
     </div>
     <!--Scroll up button-->
-    <a href="#top "><i class='fas fa-chevron-circle-up' id="scrollup " style="font-size:48px;color:#9d0b0b;margin-top: 25vh; background: white; border-radius: 50%; "></i></a>
+    <a href="#top "><i class='fas fa-chevron-circle-up' id="scrollup " style="font-size:48px;color:#9d0b0b;margin-top: 25vh; background: white; border-radius: 50%; z-index: 5;"></i></a>
 
 
     <footer class="footer-distributed">
@@ -708,13 +711,12 @@
 
     </footer>
 
-    <script type="text/javascript " src="js/event/event.js "></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js "></script>
     <script src="https://code.jquery.com/jquery-3.3.1.js "></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.3/jquery-ui.js "></script>
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
     <script src="js/menu/menu.js "></script>
     <script src="js/event/resizer.js "></script>
+    <script type="text/javascript " src="js/event/event.js "></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js "></script>
     <script type="text/javascript ">
         window.addEventListener('load', function() {
             $(window).resize(function(e) {
@@ -722,12 +724,14 @@
                 resizer();
             });
 
+            AOS.init();
             background();
             document.getElementById('loader').remove();
         });
         adaptMenu();
         resizer();
     </script>
+
 </body>
 
 </html>
