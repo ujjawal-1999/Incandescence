@@ -154,7 +154,7 @@ span16.onclick = function() {
     modal16.style.display = "none";
 }
 
-// modal background
+
 AOS.init({
     offset: 120,
     duration: 800

@@ -399,13 +399,13 @@ h1 span:nth-child(8) {
     0%,
     100% {
         color: rgb(233, 198, 3);
-        filter: blur(1px);
+        /* filter: blur(1px); */
         /* text-shadow: 0 0 10px #f9ca56, 0 0 20px #f9ca56, 0 0 40px #f9ca56, 0 0 80px #f9ca56, 0 0 120px #f9ca56, 0 0 200px #f9ca56, 0 0 300px #f9ca56, 0 0 400px #f9ca56; */
     }
     40%,
     80% {
         color: #111;
-        filter: blur(0px);
+        /* filter: blur(0px); */
         /* text-shadow: none; */
     }
 }
