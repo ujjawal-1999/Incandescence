@@ -348,7 +348,7 @@
      float: left;
  }
  
- .time .img:hover {
+ .time img:hover {
      height: 250px;
      width: 250px;
      transition: 0.3s ease-in-out;
