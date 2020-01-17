@@ -673,7 +673,7 @@ h1 span span:nth-child(7) {
     }
 }
 
-@media only screen and (max-width: 375px) and (min-width: 365px) {
+@media only screen and (max-width: 390px) and (min-width: 365px) {
     .carousel-inner>h1 {
         font-size: 2vw;
     }
@@ -706,6 +706,10 @@ h1 span span:nth-child(7) {
     .popuptext1 {
         width: 90px;
     }
+}
+@media only screen and (max-width: 390px) and (min-width: 380px) {
+   .upperpart {
+        margin-left: -85%;
 }
 
 @media only screen and (min-width: 590px) and (max-width: 1024px) {
@@ -760,10 +764,16 @@ h1 span span:nth-child(7) {
 @media only screen and (min-width: 590px) and (max-width: 690px) {
     .upperpart {
         width: 100rem;
-        height: 40rem;
-        margin-left: -85%;
+        height: 42rem;
+        margin-left: -82%;
         margin-top: -7%;
     }
+}
+@media only screen and (min-width: 590px) and (max-width: 690px) {
+        .upperpart {
+        margin-left: -78%;
+    
+        }
 }
 
 @media only screen and (min-width: 800px) and (max-width: 900px) {
@@ -774,6 +784,7 @@ h1 span span:nth-child(7) {
         margin-top: -7%;
     }
 }
+
 
 @media only screen and (min-width: 1024px) and (max-width: 1026px) {
     .popuptext1 {
