@@ -31,9 +31,9 @@ var app = express()
 app.set('view engine', 'ejs')
 app.use(express.static('public'))
     //--- http server code  begins--
-var http = require('http');
-var httpServer = http.createServer(app);
-httpServer.listen(80);
+//var http = require('http');
+//var httpServer = http.createServer(app);
+//httpServer.listen(80);
 // // ends
 
 app.use(bodyParser.urlencoded({ extended: true }))
@@ -70,7 +70,7 @@ app.get('/gallery', (req, res) => {
     res.render('gallery')
 })
 
-app.get('/history', (req, res) => {
+app.get('/brochure', (req, res) => {
     res.render('history')
 })
 
@@ -314,6 +314,9 @@ app.post('/check', (req, res) => {
 // End of post request
 
 
-// app.listen(5000, () => {
-//     console.log('Connected to server')
-// })
+
+
+ app.listen(5000, () => {
+     console.log('Connected to server')
+ })
+

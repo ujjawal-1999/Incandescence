@@ -1,8 +1,8 @@
 
 var i = 0;
 var j = 0;
-var txt = 'NIT Silchar';
-var txt1 = 'Model United Nations';
+var txt = 'Model United Nations';
+var txt1 = '14 . 15 . 16 Feb 2020';
 var speed = 100;
 var speed1 = 100;
  window.onload = function typeWriter() {

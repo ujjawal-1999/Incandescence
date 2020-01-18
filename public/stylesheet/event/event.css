@@ -5,10 +5,32 @@
  body {
      background: url(/image/gallery/back2.svg);
      background-size: cover;
-     background-position: bottom left;
+     background-position: bottom center;
      background-attachment: fixed;
  }
  /*canvas animation*/
+ 
+ .svg-background {
+     position: fixed;
+     width: 200px;
+     height: 200px;
+     transform-origin: top left;
+ }
+ 
+ .animateToCenter {
+     animation: move ease-in-out 1 1s 0s;
+ }
+ 
+ @keyframes move {
+     0% {
+         top: 0;
+         left: 0;
+     }
+     100% {
+         top: 2.5vh;
+         left: 15vw;
+     }
+ }
  
  .people {
      color: black;
@@ -214,24 +236,21 @@
      text-align: center;
  }
  
- @media screen and (max-width: 900px) {
-     .content {
-         transform: translateX(4vw);
-         zoom: 0.8;
+ @media screen and (max-width: 1200px) {
+     .event-info {
+         zoom: 0.9;
+     }
+ }
+ 
+ @media screen and (max-width: 800px) {
+     .event-info {
+         zoom: 0.7;
      }
  }
  
  @media screen and (max-width: 600px) {
-     .content {
-         transform: translateX(4vw);
-         zoom: 0.6;
-     }
- }
- 
- @media screen and (max-width: 400px) {
-     .content {
-         transform: translateX(4vw);
-         zoom: 0.5;
+     .event-info {
+         zoom: 0.55;
      }
  }
  
@@ -329,7 +348,7 @@
      float: left;
  }
  
- .time .img:hover {
+ .time img:hover {
      height: 250px;
      width: 250px;
      transition: 0.3s ease-in-out;
