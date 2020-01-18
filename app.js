@@ -88,6 +88,10 @@ app.get('/campus', (req, res) => {
 app.get('/reachus', (req, res) => {
     res.render('reachus')
 })
+app.get('/team',(req,res)=>{
+    res.render('team')
+})
+
 app.get('/database', (req, res) => {
     var name = req.query.name || "NO ONE"
     res.render('database', { customer: name })
