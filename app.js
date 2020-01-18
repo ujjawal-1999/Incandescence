@@ -2,6 +2,7 @@ const express = require('express')
 const bodyParser = require('body-parser')
 var Razorpay = require('razorpay')
 const shortid = require('shortid');
+const alert = require('alert-node')
 
 shortid.characters('0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ$@');
 
@@ -142,16 +143,29 @@ function fun1(req, res, next) {
         if (email.slice(pos + 1, email.length) == "gmail.com" || email.slice(pos + 1, email.length) == "yahoo.com") {
             next()
         } else {
+            alert('Email is not valid. Please enter again.')
             res.render('register', { validate: 0 })
         }
     }
 }
 
 app.post('/register', fun1, (req, res) => {
+    email_id = req.body.email
+    User.findOne({email : email_id}, function(err,user){
+        if(err) res.redirect('/register')
+        if(user){
+            alert("There exists a user with that email. Please give a correct email.")
+            res.redirect('/register')
+            return
+        }
+    })
     college_id = req.body.college
     if (college_id == "1") {
         phone = req.body.number
-        if (phone.length != 10) res.redirect('/register')
+        if (phone.length != 10){
+            alert('Phone number is not 10 digits. Please Enter Again')
+            res.redirect('/register')
+        }
         else {
             uniq_id = shortid.generate()
             new User({

@@ -119,7 +119,7 @@ $(document).ready(function(){
   $('.cover').on('click', '.eve', function() {
     $('#carousel-example-generic').carousel('dispose');
     var myval = this.id;
-
+    $('#carousel-example-generic')[0].scrollIntoView({ block: 'end',  behavior: 'smooth' },true);
     showstuff(values[myval],myval); 
   });
 
