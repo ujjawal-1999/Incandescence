@@ -2,7 +2,7 @@ html,
 body {
     height: 100%;
     margin: 0;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 body {
@@ -333,4 +333,12 @@ body::-webkit-scrollbar {
 
 body {
     -ms-overflow-style: none;
+}
+
+.footer-distributed {
+    position: absolute;
+    top: 50vh;
+    left: 100vw;
+    width: 100%;
+    z-index: 100;
 }
