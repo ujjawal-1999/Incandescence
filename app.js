@@ -162,7 +162,7 @@ app.post('/register', fun1, (req, res) => {
     college_id = req.body.college
     if (college_id == "1") {
         phone = req.body.number
-        if (phone.length != 10){
+        if (phone.length == 10){
             alert('Phone number is not 10 digits. Please Enter Again')
             res.redirect('/register')
         }
