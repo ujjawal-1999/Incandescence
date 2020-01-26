@@ -1,0 +1,55 @@
+.logoincand {
+  top: 0%;
+  left: 80%;
+  position: fixed;
+  margin: 10px;
+  width: 15%;
+  z-index: 999;
+}
+
+.card-team {
+  margin-right: 3vh;
+  transition: all 0.2s;
+}
+
+.card-team {
+  background-color: #ebeef8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0.5rem 0.5rem 3rem rgba(0, 0, 0, 0.2);
+}
+
+.card-team .card-img {
+  width: 90%;
+  height: 20rem;
+  object-fit: cover;
+  clip-path: polygon(0 0, 0 100%, 100% 0, 100% 0);
+  width: 100%;
+  border-radius: calc(0.25rem - 1px);
+  transition: all 0.2s;
+}
+
+.card-team:hover > .card-img {
+  clip-path: polygon(0 0, 0 0, 100% 0, 100% 100%);
+}
+
+.card-team:hover {
+  padding: 10px;
+}
+
+.profile-img {
+  padding: 0;
+  box-sizing: border-box;
+  width: 15rem;
+  height: 15rem;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-top: -11rem;
+  z-index: 999;
+  border: 1rem solid #ebeef8;
+}
+.bob li {
+  text-align: left;
+}

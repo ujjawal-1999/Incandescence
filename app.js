@@ -32,10 +32,10 @@ var app = express()
 app.set('view engine', 'ejs')
 app.use(express.static('public'))
     //--- http server code  begins--
-//var http = require('http');
-//var httpServer = http.createServer(app);
-//httpServer.listen(80);
-// // ends
+    //var http = require('http');
+    //var httpServer = http.createServer(app);
+    //httpServer.listen(80);
+    // // ends
 
 app.use(bodyParser.urlencoded({ extended: true }))
 
@@ -52,6 +52,15 @@ app.use(bodyParser.urlencoded({ extended: true }))
 
 
 // start of get request
+
+//ThunderMarch
+var tmroutes = require('./thundermarch.js')
+app.use("/thundermarch", tmroutes)
+
+//Indie Unplugges
+var indieroutes = require('./indieunplugged.js')
+app.use("/indieunplugged", indieroutes)
+
 app.get('/participate', (req, res) => {
     res.render('participate', { validate: 1 })
 })
@@ -92,7 +101,7 @@ app.get('/campus', (req, res) => {
 app.get('/reachus', (req, res) => {
     res.render('reachus')
 })
-app.get('/team',(req,res)=>{
+app.get('/team', (req, res) => {
     res.render('team')
 })
 
@@ -120,18 +129,18 @@ app.get('/payment', (req, res) => {
     event = req.query.event
     localStorage.setItem('event_id', event)
     var amt = 0
-    if(event!=0){
-        if(event==1) localStorage.setItem('event', "Battle of the Bands")
-        else if(event==2) localStorage.setItem('event', "Voice of Incand")
-        else if(event==3) localStorage.setItem('event', "Indie Unplugged")
+    if (event != 0) {
+        if (event == 1) localStorage.setItem('event', "Battle of the Bands")
+        else if (event == 2) localStorage.setItem('event', "Voice of Incand")
+        else if (event == 3) localStorage.setItem('event', "Indie Unplugged")
         amt = 200
-    }else amt =500
+    } else amt = 500
 
     localStorage.setItem('email', email)
     localStorage.setItem('name', name)
     localStorage.setItem('number', phone)
 
-    res.render('payment',{amt: amt})
+    res.render('payment', { amt: amt })
         //{name:name,phonenumber:phone,email:email}
 })
 
@@ -147,7 +156,7 @@ app.get('/newsuccess', (req, res) => {
     var name = localStorage.getItem("name") || req.query.name;
     var id = req.query.id
     event = req.query.event
-    res.render('newsuccess', { name: name, cust_id: id ,event:event})
+    res.render('newsuccess', { name: name, cust_id: id, event: event })
     localStorage.clear()
 })
 app.get('/admin', (req, res) => {
@@ -176,9 +185,9 @@ function fun1(req, res, next) {
 
 app.post('/register', fun1, (req, res) => {
     email_id = req.body.email
-    User.findOne({email : email_id}, function(err,user){
-        if(err) res.redirect('/register')
-        if(user){
+    User.findOne({ email: email_id }, function(err, user) {
+        if (err) res.redirect('/register')
+        if (user) {
             alert("There exists a user with that email. Please give a correct email.")
             res.redirect('/register')
             return
@@ -187,11 +196,10 @@ app.post('/register', fun1, (req, res) => {
     college_id = req.body.college
     if (college_id == "1") {
         phone = req.body.number
-        if (phone.length != 10){
+        if (phone.length != 10) {
             alert('Phone number is not 10 digits. Please Enter Again')
             res.redirect('/register')
-        }
-        else {
+        } else {
             uniq_id = shortid.generate()
             new User({
                 name: req.body.name,
@@ -213,33 +221,32 @@ app.post('/register', fun1, (req, res) => {
 
 app.post('/participate', fun1, (req, res) => {
     email_id = req.body.email
-    Participant.findOne({email : email_id}, function(err,participant){
-        if(err) res.redirect('/participate')
-        if(participant){
+    Participant.findOne({ email: email_id }, function(err, participant) {
+        if (err) res.redirect('/participate')
+        if (participant) {
             alert("There exists a user with that email. Please give a correct email.")
             res.redirect('/participate')
             return
         }
     })
     event_id = req.body.event
-    if(event_id==1) event="Battle of the Bands"
-    else if(event_id==2) event="Voice of Incand"
-    else if(event_id==3) event="Indie Unplugged"
-    else{
+    if (event_id == 1) event = "Battle of the Bands"
+    else if (event_id == 2) event = "Voice of Incand"
+    else if (event_id == 3) event = "Indie Unplugged"
+    else {
         alert("Enter Valid Event")
         res.redirect('/participate')
     }
     college_id = req.body.college
-   if(college_id == "2" & event_id==1) {
+    if (college_id == "2" & event_id == 1) {
         res.redirect('/payment?name=' + req.body.name + '&email=' + req.body.email + '&phonenumber=' +
-            req.body.number + '&institute=others'+'&event='+event_id)
-    }  else{
+            req.body.number + '&institute=others' + '&event=' + event_id)
+    } else {
         phone = req.body.number
-        if (phone.length != 10){
+        if (phone.length != 10) {
             alert('Phone number is not 10 digits. Please Enter Again')
             res.redirect('/participate')
-        }
-        else {
+        } else {
             uniq_id = shortid.generate()
             new Participant({
                 name: req.body.name,
@@ -250,7 +257,7 @@ app.post('/participate', fun1, (req, res) => {
                 event: event
             }).save().then((participant) => {
                 console.log(participant)
-                res.redirect('/newsuccess?name=' + req.body.name + "&id=" + uniq_id+"&event="+event)
+                res.redirect('/newsuccess?name=' + req.body.name + "&id=" + uniq_id + "&event=" + event)
             })
         }
     }
@@ -274,7 +281,7 @@ app.post('/pay', (req, res) => {
     email = localStorage.getItem('email')
     phone = localStorage.getItem('number')
     event_id = localStorage.getItem('event_id')
-    if(event_id==0) amount = 1000
+    if (event_id == 0) amount = 1000
     else amount = 2000
     console.log(localStorage.getItem("name"))
     console.log(localStorage.getItem("email"))
@@ -296,31 +303,31 @@ app.post('/pay', (req, res) => {
                 console.log(response)
                 rzp.payments.capture(req.body.razorpay_payment_id, response.amount).then((capture) => {
                     uniq_id = shortid.generate()
-                    if(event_id==0){
+                    if (event_id == 0) {
                         new User({
-                        name: name,
-                        email: email,
-                        institute: "Others",
-                        phonenumber: phone,
-                        id: uniq_id
-                    }).save().then((user) => {
-                        console.log(user)
-                        res.redirect('/success?id=' + uniq_id)
-                    })
-                }else {
-                    event = localStorage.getItem('event')
-                    new Participant({
-                        name: name,
-                        email: email,
-                        institute: "Others",
-                        phonenumber: phone,
-                        id: uniq_id,
-                        event: event
-                    }).save().then((user) => {
-                        console.log(user)
-                        res.redirect('/newsuccess?id=' + uniq_id +'&event='+event)
-                    })
-                }
+                            name: name,
+                            email: email,
+                            institute: "Others",
+                            phonenumber: phone,
+                            id: uniq_id
+                        }).save().then((user) => {
+                            console.log(user)
+                            res.redirect('/success?id=' + uniq_id)
+                        })
+                    } else {
+                        event = localStorage.getItem('event')
+                        new Participant({
+                            name: name,
+                            email: email,
+                            institute: "Others",
+                            phonenumber: phone,
+                            id: uniq_id,
+                            event: event
+                        }).save().then((user) => {
+                            console.log(user)
+                            res.redirect('/newsuccess?id=' + uniq_id + '&event=' + event)
+                        })
+                    }
                     console.log("Payment Captured Successfully: ")
                     console.log(capture)
                 }).catch((error) => {
@@ -404,6 +411,5 @@ app.post('/check', (req, res) => {
 
 
 app.listen(5000, () => {
-      console.log('Connected to server')
-  })
-
+    console.log('Connected to server')
+})
