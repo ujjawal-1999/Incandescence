@@ -342,8 +342,6 @@ a:active {
 # Hero Section
 --------------------------------------------------------------*/
 
-.hero-slider {}
-
 .hero-content {
     padding-top: 150px;
     padding-bottom: 120px;
@@ -560,8 +558,9 @@ a:active {
 .homepage-featured-events {
     height: auto;
     padding: 110px 0 150px;
-    background: url("../../image/music/featured-events-bg.jpg") no-repeat center;
+    background: url("/image/music/featured-events-bg.jpg") no-repeat center;
     background-size: cover !important;
+    background-blend-mode: overlay;
 }
 
 .homepage-featured-events .event-content-wrap {
@@ -576,6 +575,7 @@ a:active {
 .homepage-featured-events .event-content-wrap figure img {
     display: block;
     width: 100%;
+    border: #eeedf1 3px solid;
 }
 
 .homepage-featured-events .event-content-wrap .entry-header {
@@ -788,7 +788,7 @@ a:active {
     font-weight: bold;
     line-height: 1;
     color: #232127;
-    background: url("../../image/music/next-events-header-bg.png") no-repeat center;
+    background: url("/image/music/next-events-header-bg.png") no-repeat center;
     text-align: center;
 }
 
@@ -888,7 +888,7 @@ a:active {
 .homepage-regional-events {
     min-height: 700px;
     padding-top: 280px;
-    background: url("../../image/music/regional-events-bg.jpg") no-repeat;
+    background: url("/image/music/regional-events-bg.jpg") no-repeat;
     background-size: cover;
 }
 
@@ -1023,7 +1023,7 @@ a:active {
 
 .newsletter-subscribe {
     padding: 150px 0;
-    background: url("../../image/music/newsletter-bg.jpg") no-repeat;
+    background: url("/image/music/newsletter-bg.jpg") no-repeat;
     background-size: cover;
     text-align: center;
 }
@@ -1126,23 +1126,23 @@ a:active {
 }
 
 .events-page-header {
-    background-image: url("../../image/music/events-page-header-bg.jpg");
+    background-image: url("/image/music/events-page-header-bg.jpg");
 }
 
 .single-event-page-header {
-    background-image: url("../../image/music/single-event-bg.jpg");
+    background-image: url("/image/music/single-event-bg.jpg");
 }
 
 .events-news-page-header {
-    background-image: url("../../image/music/events-news-bg.jpg");
+    background-image: url("/image/music/events-news-bg.jpg");
 }
 
 .contact-page-header {
-    background-image: url("../../image/music/contact-bg.jpg");
+    background-image: url("/image/music/contact-bg.jpg");
 }
 
 .elements-page-header {
-    background-image: url("../../image/music/elements-bg.jpg");
+    background-image: url("/image/music/elements-bg.jpg");
 }
 
 
@@ -1219,7 +1219,7 @@ a:active {
 .events-list-page .event-content-wrap .event-location {
     padding-left: 32px;
     margin-top: 12px;
-    background: url("../../image/music/location-icon.png") no-repeat left top;
+    background: url("/image/music/location-icon.png") no-repeat left top;
 }
 
 .events-list-page .event-content-wrap .event-location a {
@@ -1289,7 +1289,7 @@ a:active {
 .upcoming-events-outer {
     padding: 400px 0 120px;
     margin-top: -200px;
-    background: url("../../image/music/upcoming-events-bg.jpg") no-repeat;
+    background: url("/image/music/upcoming-events-bg.jpg") no-repeat;
     background-size: cover;
 }
 
@@ -1542,7 +1542,7 @@ ul.tabs-nav .tab-nav.active {
 .single-event-page .event-content-wrap .event-location {
     padding-left: 32px;
     margin-top: 12px;
-    background: url("../../image/music/location-icon.png") no-repeat left top;
+    background: url("/image/music/location-icon.png") no-repeat left top;
 }
 
 .single-event-page .event-content-wrap .event-location a {
@@ -1954,15 +1954,15 @@ ul.tabs-nav .tab-nav.active {
 }
 
 .contact-location-details .entry-footer li.contact-address {
-    background: url("../../image/music/location-icon.png") no-repeat left center;
+    background: url("/image/music/location-icon.png") no-repeat left center;
 }
 
 .contact-location-details .entry-footer li.contact-number {
-    background: url("../../image/music/phone-icon.png") no-repeat left center;
+    background: url("/image/music/phone-icon.png") no-repeat left center;
 }
 
 .contact-location-details .entry-footer li.contact-email {
-    background: url("../../image/music/folder-icon.png") no-repeat left center;
+    background: url("/image/music/folder-icon.png") no-repeat left center;
 }
 
 .contact-page-map {
