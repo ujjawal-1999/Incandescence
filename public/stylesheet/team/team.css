@@ -8,14 +8,15 @@ body {
     position: relative;
     top: 0px;
     left: 0px;
-    display: flex;
+    width: 100%;
+    height: auto;
 }
 
 .circle1 {
     display: inline-flex;
-    width: 10%;
+    width: 1vw;
     height: 0;
-    padding: 5% 0;
+    padding: 0.5vw 0;
     margin: 1em auto;
     border-radius: 50%;
     background: #a7cd80;
@@ -23,9 +24,9 @@ body {
 
 .circle2 {
     display: inline-flex;
-    width: 20%;
+    width: 2vw;
     height: 0;
-    padding: 10% 0;
+    padding: 1vw 0;
     margin: 1em auto;
     border-radius: 50%;
     background: #a7cd80;
@@ -33,9 +34,9 @@ body {
 
 .circle3 {
     display: inline-flex;
-    width: 15%;
+    width: 3vw;
     height: 0;
-    padding: 7.5% 0;
+    padding: 1.5vw 0;
     margin: 1em auto;
     border-radius: 50%;
     background: #a7cd80;
@@ -43,9 +44,9 @@ body {
 
 .circle4 {
     display: inline-flex;
-    width: 25%;
+    width: 4vw;
     height: 0;
-    padding: 12.5% 0;
+    padding: 2vw 0;
     margin: 1em auto;
     border-radius: 50%;
     background: #a7cd80;
@@ -53,9 +54,9 @@ body {
 
 .circle5 {
     display: inline-flex;
-    width: 5%;
+    width: 5vw;
     height: 0;
-    padding: 2.5% 0;
+    padding: 2.5vw 0;
     margin: 1em auto;
     border-radius: 50%;
     background: #a7cd80;
@@ -63,9 +64,9 @@ body {
 
 .circle6 {
     display: inline-flex;
-    width: 30%;
+    width: 6vw;
     height: 0;
-    padding: 15% 0;
+    padding: 3vw 0;
     margin: 1em auto;
     border-radius: 50%;
     background: #a7cd80;
@@ -73,9 +74,289 @@ body {
 
 .circle7 {
     display: inline-flex;
-    width: 18%;
+    width: 7vw;
     height: 0;
-    padding: 9% 0;
+    padding: 3.5vw 0;
+    margin: 1em auto;
+    border-radius: 50%;
+    background: #a7cd80;
+}
+
+.circle8 {
+    display: inline-flex;
+    width: 8vw;
+    height: 0;
+    padding: 4vw 0;
+    margin: 1em auto;
+    border-radius: 50%;
+    background: #a7cd80;
+}
+
+.circle9 {
+    display: inline-flex;
+    width: 9vw;
+    height: 0;
+    padding: 4.5vw 0;
+    margin: 1em auto;
+    border-radius: 50%;
+    background: #a7cd80;
+}
+
+.circle10 {
+    display: inline-flex;
+    width: 10vw;
+    height: 0;
+    padding: 5vw 0;
+    margin: 1em auto;
+    border-radius: 50%;
+    background: #a7cd80;
+}
+
+.circle11 {
+    display: inline-flex;
+    width: 11vw;
+    height: 0;
+    padding: 5.5vw 0;
+    margin: 1em auto;
+    border-radius: 50%;
+    background: #a7cd80;
+}
+
+.circle12 {
+    display: inline-flex;
+    width: 12vw;
+    height: 0;
+    padding: 6vw 0;
+    margin: 1em auto;
+    border-radius: 50%;
+    background: #a7cd80;
+}
+
+.circle13 {
+    display: inline-flex;
+    width: 13vw;
+    height: 0;
+    padding: 6.5vw 0;
+    margin: 1em auto;
+    border-radius: 50%;
+    background: #a7cd80;
+}
+
+.circle14 {
+    display: inline-flex;
+    width: 14vw;
+    height: 0;
+    padding: 7vw 0;
+    margin: 1em auto;
+    border-radius: 50%;
+    background: #a7cd80;
+}
+
+.circle15 {
+    display: inline-flex;
+    width: 15vw;
+    height: 0;
+    padding: 7.5vw 0;
+    margin: 1em auto;
+    border-radius: 50%;
+    background: #a7cd80;
+}
+
+.circle16 {
+    display: inline-flex;
+    width: 16vw;
+    height: 0;
+    padding: 8vw 0;
+    margin: 1em auto;
+    border-radius: 50%;
+    background: #a7cd80;
+}
+
+.circle17 {
+    display: inline-flex;
+    width: 17vw;
+    height: 0;
+    padding: 8.5vw 0;
+    margin: 1em auto;
+    border-radius: 50%;
+    background: #a7cd80;
+}
+
+.circle18 {
+    display: inline-flex;
+    width: 18vw;
+    height: 0;
+    padding: 9vw 0;
+    margin: 1em auto;
+    border-radius: 50%;
+    background: #a7cd80;
+}
+
+.circle19 {
+    display: inline-flex;
+    width: 19vw;
+    height: 0;
+    padding: 8.5vw 0;
+    margin: 1em auto;
+    border-radius: 50%;
+    background: #a7cd80;
+}
+
+.circle20 {
+    display: inline-flex;
+    width: 20vw;
+    height: 0;
+    padding: 10vw 0;
+    margin: 1em auto;
+    border-radius: 50%;
+    background: #a7cd80;
+}
+
+.circle21 {
+    display: inline-flex;
+    width: 21vw;
+    height: 0;
+    padding: 10.5vw 0;
+    margin: 1em auto;
+    border-radius: 50%;
+    background: #a7cd80;
+}
+
+.circle22 {
+    display: inline-flex;
+    width: 22vw;
+    height: 0;
+    padding: 11vw 0;
+    margin: 1em auto;
+    border-radius: 50%;
+    background: #a7cd80;
+}
+
+.circle23 {
+    display: inline-flex;
+    width: 23vw;
+    height: 0;
+    padding: 11.5vw 0;
+    margin: 1em auto;
+    border-radius: 50%;
+    background: #a7cd80;
+}
+
+.circle24 {
+    display: inline-flex;
+    width: 24vw;
+    height: 0;
+    padding: 12vw 0;
+    margin: 1em auto;
+    border-radius: 50%;
+    background: #a7cd80;
+}
+
+.circle25 {
+    display: inline-flex;
+    width: 25vw;
+    height: 0;
+    padding: 12.5vw 0;
+    margin: 1em auto;
+    border-radius: 50%;
+    background: #a7cd80;
+}
+
+.circle26 {
+    display: inline-flex;
+    width: 26vw;
+    height: 0;
+    padding: 13vw 0;
+    margin: 1em auto;
+    border-radius: 50%;
+    background: #a7cd80;
+}
+
+.circle27 {
+    display: inline-flex;
+    width: 27vw;
+    height: 0;
+    padding: 13.5vw 0;
+    margin: 1em auto;
+    border-radius: 50%;
+    background: #a7cd80;
+}
+
+.circle28 {
+    display: inline-flex;
+    width: 28vw;
+    height: 0;
+    padding: 14vw 0;
+    margin: 1em auto;
+    border-radius: 50%;
+    background: #a7cd80;
+}
+
+.circle29 {
+    display: inline-flex;
+    width: 29vw;
+    height: 0;
+    padding: 14.5vw 0;
+    margin: 1em auto;
+    border-radius: 50%;
+    background: #a7cd80;
+}
+
+.circle30 {
+    display: inline-flex;
+    width: 30vw;
+    height: 0;
+    padding: 15vw 0;
+    margin: 1em auto;
+    border-radius: 50%;
+    background: #a7cd80;
+}
+
+.circle31 {
+    display: inline-flex;
+    width: 31vw;
+    height: 0;
+    padding: 15.5vw 0;
+    margin: 1em auto;
+    border-radius: 50%;
+    background: #a7cd80;
+}
+
+.circle32 {
+    display: inline-flex;
+    width: 32vw;
+    height: 0;
+    padding: 16vw 0;
+    margin: 1em auto;
+    border-radius: 50%;
+    background: #a7cd80;
+}
+
+.circle33 {
+    display: inline-flex;
+    width: 33vw;
+    height: 0;
+    padding: 16.5vw 0;
+    margin: 1em auto;
+    border-radius: 50%;
+    background: #a7cd80;
+}
+
+.circle40 {
+    display: inline-flex;
+    width: 40vw;
+    height: 0;
+    padding: 20vw 0;
+    margin: 1em auto;
+    border-radius: 50%;
+    background: #a7cd80;
+}
+
+.circle50 {
+    display: inline-flex;
+    width: 50vw;
+    height: 0;
+    padding: 25vw 0;
     margin: 1em auto;
     border-radius: 50%;
     background: #a7cd80;
