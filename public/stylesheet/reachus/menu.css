@@ -40,12 +40,18 @@
 
 #cld8 {
     background-image: url(/image/menu/frame.png);
-    display: none;
 }
 
 #cld9 {
     background-image: url(/image/menu/frame.png);
-    display: none;
+}
+
+#cld10 {
+    background-image: url(/image/menu/frame.png);
+}
+
+#cld11 {
+    background-image: url(/image/menu/frame.png);
 }
 
 #menu a {
