@@ -40,182 +40,84 @@
 }
 
 #cld1c {
+    -webkit-animation: both infinite 4s 1s;
+    animation: bounce both infinite 4s 1s;
+}
+
+#cld4c {
     -webkit-animation: bounce both infinite 4s 0s;
     animation: bounce both infinite 4s 0s;
 }
 
-#cld2c {
+#cld5c {
     -webkit-animation: both infinite 4s 0.2s;
     animation: bounce both infinite 4s 0.2s;
 }
 
-#cld3c {
+#cld6c {
     -webkit-animation: both infinite 4s 0.4s;
     animation: bounce both infinite 4s 0.4s;
 }
 
-#cld4c {
+#cld7c {
     -webkit-animation: both infinite 4s 0.6s;
     animation: bounce both infinite 4s 0.6s;
 }
 
-#cld5c {
+#cld8c {
     -webkit-animation: both infinite 4s 0.8s;
     animation: bounce both infinite 4s 0.8s;
 }
 
-#cld6c {
+#cld9c {
     -webkit-animation: both infinite 4s 1s;
     animation: bounce both infinite 4s 1s;
 }
 
-#cld7c {
-    -webkit-animation: both infinite 4s 1s;
-    animation: bounce both infinite 4s 1s;
+#cld10c {
+    -webkit-animation: both infinite 4s 1.2s;
+    animation: bounce both infinite 4s 1.2s;
+}
+
+#cld11c {
+    -webkit-animation: both infinite 4s 1.4s;
+    animation: bounce both infinite 4s 1.4s;
 }
 
 #cld1 {
     background-image: url(../../image/menu/cloud.png);
-    background-size: 100% 100%;
     z-index: 5;
-    position: absolute;
-    height: 9vh;
-    width: 11vw;
-    left: 46vw;
-    top: 3vh;
+    background-size: 100% 100%;
     visibility: hidden;
-    display: flex;
-    justify-content: center;
-}
-
-@keyframes cld1m {
-    from {
-        height: 9vh;
-        width: 11vw;
-        left: 46vw;
-        top: 3vh;
-        visibility: hidden;
-    }
-    to {
-        top: 10vh;
-        left: 20vw;
-        height: 15vh;
-        width: 23vw;
-        visibility: visible;
-    }
-}
-
-@keyframes cld1i {
-    from {
-        top: 10vh;
-        left: 20vw;
-        height: 15vh;
-        width: 23vw;
-        visibility: visible;
-    }
-    to {
-        height: 9vh;
-        width: 11vw;
-        left: 46vw;
-        top: 3vh;
-        visibility: hidden;
-    }
+    position: absolute;
+    height: 10vh;
+    width: 20vw;
+    left: 40vw;
+    top: 14vh;
 }
 
 #cld2 {
     background-image: url(../../image/menu/cloud.png);
-    background-size: 100% 100%;
     z-index: 5;
+    background-size: 100% 100%;
+    visibility: visible;
     position: absolute;
-    height: 10vh;
+    height: 5vh;
     width: 10vw;
-    left: 54vw;
-    top: 4vh;
-    visibility: hidden;
-    display: flex;
-    justify-content: center;
-}
-
-@keyframes cld2m {
-    from {
-        height: 10vh;
-        width: 10vw;
-        left: 54vw;
-        top: 4vh;
-        visibility: hidden;
-    }
-    to {
-        top: 40vh;
-        left: 10vw;
-        height: 15vh;
-        width: 23vw;
-        visibility: visible;
-    }
-}
-
-@keyframes cld2i {
-    from {
-        top: 40vh;
-        left: 10vw;
-        height: 15vh;
-        width: 23vw;
-        visibility: visible;
-    }
-    to {
-        height: 10vh;
-        width: 10vw;
-        left: 54vw;
-        top: 4vh;
-        visibility: hidden;
-    }
+    left: 5vw;
+    top: 14vh;
 }
 
 #cld3 {
+    z-index: 5;
     background-image: url(../../image/menu/cloud.png);
     background-size: 100% 100%;
-    z-index: 5;
+    visibility: visible;
     position: absolute;
-    height: 10vh;
-    width: 11vw;
-    left: 61vw;
-    top: 1vh;
-    visibility: hidden;
-    display: flex;
-    justify-content: center;
-}
-
-@keyframes cld3m {
-    from {
-        height: 10vh;
-        width: 11vw;
-        left: 61vw;
-        top: 1vh;
-        visibility: hidden;
-    }
-    to {
-        top: 70vh;
-        left: 20vw;
-        height: 15vh;
-        width: 23vw;
-        visibility: visible;
-    }
-}
-
-@keyframes cld3i {
-    from {
-        top: 70vh;
-        left: 20vw;
-        height: 15vh;
-        width: 23vw;
-        visibility: visible;
-    }
-    to {
-        height: 10vh;
-        width: 11vw;
-        left: 61vw;
-        top: 1vh;
-        visibility: hidden;
-    }
+    height: 5vh;
+    width: 10vw;
+    left: 85vw;
+    top: 14vh;
 }
 
 #cld4 {
@@ -223,10 +125,10 @@
     background-size: 100% 100%;
     z-index: 5;
     position: absolute;
-    height: 10vh;
-    width: 13vw;
-    left: 69vw;
-    top: 2vh;
+    height: 9vh;
+    width: 11vw;
+    left: 85vw;
+    top: 3vh;
     visibility: hidden;
     display: flex;
     justify-content: center;
@@ -234,15 +136,15 @@
 
 @keyframes cld4m {
     from {
-        height: 10vh;
-        width: 13vw;
-        left: 69vw;
-        top: 2vh;
+        height: 9vh;
+        width: 11vw;
+        left: 85vw;
+        top: 3vh;
         visibility: hidden;
     }
     to {
         top: 10vh;
-        left: 55vw;
+        left: 10vw;
         height: 15vh;
         width: 23vw;
         visibility: visible;
@@ -252,16 +154,16 @@
 @keyframes cld4i {
     from {
         top: 10vh;
-        left: 55vw;
+        left: 10vw;
         height: 15vh;
         width: 23vw;
         visibility: visible;
     }
     to {
-        height: 10vh;
-        width: 13vw;
-        left: 69vw;
-        top: 2vh;
+        height: 9vh;
+        width: 11vw;
+        left: 85vw;
+        top: 3vh;
         visibility: hidden;
     }
 }
@@ -271,7 +173,7 @@
     background-size: 100% 100%;
     z-index: 5;
     position: absolute;
-    height: 9vh;
+    height: 10vh;
     width: 10vw;
     left: 78vw;
     top: 6vh;
@@ -282,15 +184,15 @@
 
 @keyframes cld5m {
     from {
-        height: 9vh;
+        height: 10vh;
         width: 10vw;
         left: 78vw;
         top: 6vh;
         visibility: hidden;
     }
     to {
-        top: 40vh;
-        left: 65vw;
+        top: 35vh;
+        left: 10vw;
         height: 15vh;
         width: 23vw;
         visibility: visible;
@@ -299,14 +201,14 @@
 
 @keyframes cld5i {
     from {
-        top: 40vh;
-        left: 65vw;
+        top: 35vh;
+        left: 10vw;
         height: 15vh;
         width: 23vw;
         visibility: visible;
     }
     to {
-        height: 9vh;
+        height: 10vh;
         width: 10vw;
         left: 78vw;
         top: 6vh;
@@ -320,9 +222,9 @@
     z-index: 5;
     position: absolute;
     height: 10vh;
-    width: 12vw;
-    left: 85vw;
-    top: 3vh;
+    width: 11vw;
+    left: 69vw;
+    top: 2vh;
     visibility: hidden;
     display: flex;
     justify-content: center;
@@ -331,14 +233,14 @@
 @keyframes cld6m {
     from {
         height: 10vh;
-        width: 12vw;
-        left: 85vw;
-        top: 3vh;
+        width: 11vw;
+        left: 69vw;
+        top: 2vh;
         visibility: hidden;
     }
     to {
-        top: 70vh;
-        left: 55vw;
+        top: 55vh;
+        left: 10vw;
         height: 15vh;
         width: 23vw;
         visibility: visible;
@@ -347,8 +249,152 @@
 
 @keyframes cld6i {
     from {
-        top: 70vh;
-        left: 55vw;
+        top: 55vh;
+        left: 10vw;
+        height: 15vh;
+        width: 23vw;
+        visibility: visible;
+    }
+    to {
+        height: 10vh;
+        width: 11vw;
+        left: 69vw;
+        top: 2vh;
+        visibility: hidden;
+    }
+}
+
+#cld7 {
+    background-image: url(../../image/menu/cloud.png);
+    background-size: 100% 100%;
+    z-index: 5;
+    position: absolute;
+    height: 10vh;
+    width: 10vw;
+    left: 61vw;
+    top: 4vh;
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+@keyframes cld7m {
+    from {
+        height: 10vh;
+        width: 10vw;
+        left: 61vw;
+        top: 4vh;
+        visibility: hidden;
+    }
+    to {
+        top: 80vh;
+        left: 10vw;
+        height: 15vh;
+        width: 23vw;
+        visibility: visible;
+    }
+}
+
+@keyframes cld7i {
+    from {
+        top: 80vh;
+        left: 10vw;
+        height: 15vh;
+        width: 23vw;
+        visibility: visible;
+    }
+    to {
+        height: 10vh;
+        width: 10vw;
+        left: 61vw;
+        top: 4vh;
+        visibility: hidden;
+    }
+}
+
+#cld8 {
+    background-image: url(../../image/menu/cloud.png);
+    background-size: 100% 100%;
+    z-index: 5;
+    position: absolute;
+    height: 9vh;
+    width: 10vw;
+    left: 54vw;
+    top: 8vh;
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+@keyframes cld8m {
+    from {
+        height: 9vh;
+        width: 10vw;
+        left: 54vw;
+        top: 8vh;
+        visibility: hidden;
+    }
+    to {
+        top: 10vh;
+        left: 70vw;
+        height: 15vh;
+        width: 23vw;
+        visibility: visible;
+    }
+}
+
+@keyframes cld8i {
+    from {
+        top: 10vh;
+        left: 70vw;
+        height: 15vh;
+        width: 23vw;
+        visibility: visible;
+    }
+    to {
+        height: 9vh;
+        width: 10vw;
+        left: 54vw;
+        top: 8vh;
+        visibility: hidden;
+    }
+}
+
+#cld9 {
+    background-image: url(../../image/menu/cloud.png);
+    background-size: 100% 100%;
+    z-index: 5;
+    position: absolute;
+    height: 10vh;
+    width: 12vw;
+    left: 46vw;
+    top: 3vh;
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+@keyframes cld9m {
+    from {
+        height: 10vh;
+        width: 12vw;
+        left: 46vw;
+        top: 3vh;
+        visibility: hidden;
+    }
+    to {
+        top: 35vh;
+        left: 70vw;
+        height: 15vh;
+        width: 23vw;
+        visibility: visible;
+    }
+}
+
+@keyframes cld9i {
+    from {
+        top: 35vh;
+        left: 70vw;
         height: 15vh;
         width: 23vw;
         visibility: visible;
@@ -356,46 +402,106 @@
     to {
         height: 10vh;
         width: 12vw;
-        left: 85vw;
+        left: 46vw;
         top: 3vh;
         visibility: hidden;
     }
 }
 
-#cld7 {
+#cld10 {
     background-image: url(../../image/menu/cloud.png);
-    z-index: 5;
     background-size: 100% 100%;
-    visibility: hidden;
+    z-index: 5;
     position: absolute;
     height: 10vh;
-    width: 20vw;
-    left: 40vw;
-    top: 14vh;
+    width: 10vw;
+    left: 38vw;
+    top: 6vh;
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
 }
 
-#cld8 {
-    background-image: url(../../image/menu/cloud.png);
-    z-index: 5;
-    background-size: 100% 100%;
-    visibility: visible;
-    position: absolute;
-    height: 5vh;
-    width: 10vw;
-    left: 5vw;
-    top: 14vh;
+@keyframes cld10m {
+    from {
+        height: 10vh;
+        width: 10vw;
+        left: 38vw;
+        top: 6vh;
+        visibility: hidden;
+    }
+    to {
+        top: 55vh;
+        left: 70vw;
+        height: 15vh;
+        width: 23vw;
+        visibility: visible;
+    }
 }
 
-#cld9 {
-    z-index: 5;
+@keyframes cld10i {
+    from {
+        top: 55vh;
+        left: 70vw;
+        height: 15vh;
+        width: 23vw;
+        visibility: visible;
+    }
+    to {
+        height: 10vh;
+        width: 10vw;
+        left: 38vw;
+        top: 6vh;
+        visibility: hidden;
+    }
+}
+
+#cld11 {
     background-image: url(../../image/menu/cloud.png);
     background-size: 100% 100%;
-    visibility: visible;
+    z-index: 5;
     position: absolute;
-    height: 5vh;
-    width: 10vw;
-    left: 85vw;
-    top: 14vh;
+    height: 10vh;
+    width: 12vw;
+    left: 30vw;
+    top: 3vh;
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+@keyframes cld11m {
+    from {
+        height: 10vh;
+        width: 12vw;
+        left: 30vw;
+        top: 3vh;
+        visibility: hidden;
+    }
+    to {
+        top: 80vh;
+        left: 70vw;
+        height: 15vh;
+        width: 23vw;
+        visibility: visible;
+    }
+}
+
+@keyframes cld11i {
+    from {
+        top: 80vh;
+        left: 70vw;
+        height: 15vh;
+        width: 23vw;
+        visibility: visible;
+    }
+    to {
+        height: 10vh;
+        width: 12vw;
+        left: 30vw;
+        top: 3vh;
+        visibility: hidden;
+    }
 }
 
 @keyframes cld {
